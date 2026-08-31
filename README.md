@@ -15,6 +15,12 @@
   <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue">
 </p>
 
+<p align="center">
+  <a href="https://github.com/LaurentiuStaicu/world3-empirical-flatpak/releases/latest/download/World3-Empirical-0.10.0-x86_64.flatpak">
+    <img alt="Download Flatpak for elementary OS 8" src="https://img.shields.io/badge/Download%20Flatpak-elementary%20OS%208-4A90D9?logo=flatpak&logoColor=white">
+  </a>
+</p>
+
 ![World3 Empirical displaying population trajectories, observations and the BAU Hibrid 2026 sensitivity range](data/screenshots/world3-empirical-population-cropped.jpg)
 
 Aplicație nativă Vala/GTK 4 pentru elementary OS 8. Compară date globale
@@ -97,9 +103,26 @@ infrastructura AI, conflictele și politicile nu sunt încă feedbackuri cuplate
 
 ## Instalare pe elementary OS 8
 
-Repository-ul oferă în prezent o construire Flatpak reproductibilă din sursă.
-Un pachet Flatpak publicat ca GitHub Release va fi adăugat separat; până atunci,
-clonarea și construirea locală reprezintă metoda verificată de instalare.
+### Fără terminal
+
+Apasă butonul de mai jos pentru a descărca pachetul verificat pentru calculatoare
+`x86_64`:
+
+[![Download Flatpak for elementary OS 8](https://img.shields.io/badge/Download%20Flatpak-elementary%20OS%208-4A90D9?logo=flatpak&logoColor=white)](https://github.com/LaurentiuStaicu/world3-empirical-flatpak/releases/latest/download/World3-Empirical-0.10.0-x86_64.flatpak)
+
+După descărcare, deschide fișierul `.flatpak` prin dublu clic și confirmă
+instalarea în elementary Sideload. Sistemul va afișa explicit sursa externă și
+permisiunile aplicației. Pachetul include aplicația, iar runtime-ul elementary
+necesar este obținut din remote-ul oficial AppCenter.
+
+Suma SHA-256 este publicată alături de instalator în pagina
+[Releases](https://github.com/LaurentiuStaicu/world3-empirical-flatpak/releases).
+
+### Construire din sursă
+
+Pentru dezvoltare sau audit, repository-ul oferă și construirea Flatpak
+reproductibilă din sursă. Instalează o singură dată SDK-ul elementary și
+Flatpak Builder:
 
 Instalează o singură dată SDK-ul elementary și Flatpak Builder:
 

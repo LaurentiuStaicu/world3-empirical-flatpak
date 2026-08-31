@@ -1,0 +1,59 @@
+name: Build and publish Flatpak
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/release-flatpak.yml
+
+permissions:
+  contents: write
+
+jobs:
+  flatpak:
+    name: Flatpak x86_64
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-48
+      options: --privileged
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+
+      - name: Validate scientific data and metadata
+        run: python3 scripts/validate.py
+
+      - name: Build Flatpak bundle
+        uses: flatpak/flatpak-github-actions/flatpak-builder@v6
+        with:
+          bundle: World3-Empirical-0.10.0-x86_64.flatpak
+          manifest-path: io.github.laurentiustaicu.World3Empirical.yml
+          repository-name: appcenter
+          repository-url: https://flatpak.elementary.io/repo.flatpakrepo
+          branch: master
+          arch: x86_64
+          upload-artifact: false
+
+      - name: Create SHA-256 checksum
+        run: sha256sum World3-Empirical-0.10.0-x86_64.flatpak > World3-Empirical-0.10.0-x86_64.flatpak.sha256
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: v0.10.0
+          name: World3 Empirical 0.10.0
+          target_commitish: ${{ github.sha }}
+          make_latest: true
+          fail_on_unmatched_files: true
+          body: |
+            Prima versiune publică instalabilă a aplicației World3 Empirical pentru elementary OS 8, arhitectura x86_64.
+
+            Descărcați fișierul `.flatpak`, deschideți-l prin dublu clic și confirmați instalarea în elementary Sideload. Nu sunt necesare comenzi în terminal.
+
+            BAU Hibrid 2026 este un scenariu experimental și condițional, nu o prognoză garantată și nu estimează probabilitatea unui colaps.
+          files: |
+            World3-Empirical-0.10.0-x86_64.flatpak
+            World3-Empirical-0.10.0-x86_64.flatpak.sha256
