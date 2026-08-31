@@ -1,155 +1,123 @@
-# World3 Empirical pentru elementary OS
+<p align="center">
+  <img src="data/icons/io.github.laurentiustaicu.World3Empirical.svg" width="96" height="96" alt="World3 Empirical icon">
+</p>
 
-Aplicație Vala/GTK 4 care compară datele globale observate cu scenariile
-World3-03 BAU și BAU2 originale și cu proiecția condițională
-**BAU Hibrid 2026**. Interfața este nativă pentru elementary OS 8 și
-funcționează complet offline după instalare.
+<h1 align="center">World3 Empirical</h1>
 
-## Ce se schimbă în versiunea 0.10.0
+<p align="center">
+  Explore the original World3 BAU and BAU2 trajectories alongside observed global data and the conditional BAU Hibrid 2026 scenario.
+</p>
 
-- păstrează neschimbată selecția structurală World3-03 și aceeași rulare
-  centrală cu șapte parametri;
-- adaugă două punți de observație selectate exclusiv cu date încheiate în 2018;
-- pentru FAOSTAT combină în spațiu logaritmic 25% semnalul alimentar World3 și
-  75% capacitatea industrială de input;
-- pentru CO₂ anual folosește activitatea industrială drept proxy observabil,
-  păstrând generarea și stocul persistent de poluare drept stări World3 latente;
-- reduce MAPE istoric al hranei de la aproximativ 41% la 7% și al proxy-ului
-  CO₂ de la aproximativ 31% la 18%;
-- îmbunătățește toate cele cinci holdouturi recente și, pentru hrană și CO₂,
-  validarea multi-origin;
-- etichetează explicit aceste relații drept punți empirice, nu drept feedbackuri
-  noi sau dovadă că structura World3 a fost validată integral.
+<p align="center">
+  <img alt="Version 0.10.0" src="https://img.shields.io/badge/version-0.10.0-4e9a06">
+  <img alt="elementary OS 8" src="https://img.shields.io/badge/elementary_OS-8-64baff">
+  <img alt="Flatpak" src="https://img.shields.io/badge/package-Flatpak-4a90d9">
+  <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue">
+</p>
 
-## Schimbările introduse în 0.9.2
+![World3 Empirical displaying population trajectories, observations and the BAU Hibrid 2026 sensitivity range](data/screenshots/world3-empirical-population.jpg)
 
-- separă explicit potrivirea retrospectivă in-sample de sprijinul empiric al
-  proiecției;
-- calculează un scor conservator 0–9 din MAPE istoric, holdoutul recent și
-  validarea multi-origin;
-- plafonează scorul când hibridul este mai slab decât BAU2, astfel încât o
-  potrivire istorică bună să nu fie confundată cu putere de prognoză;
-- clasifică sprijinul proiecției ca moderat pentru populație, industrie și
-  bunăstare, limitat pentru hrană și foarte limitat pentru proxy-ul poluării;
-- păstrează neschimbate traiectoriile și cuantilele v0.9.1: această versiune
-  îmbunătățește evaluarea și comunicarea incertitudinii, nu acuratețea numerică.
+Aplicație nativă Vala/GTK 4 pentru elementary OS 8. Compară date globale
+observate cu scenariile World3-03 originale și cu o variantă empirică derivată
+din BAU2. După instalare funcționează complet offline.
 
-## Schimbările introduse în 0.9.1
+Interfața și documentația principală sunt în limba română. An English summary
+is available in the [project description](#english-summary).
 
-- P10 și P90 sunt cuantilele punctuale autentice ale celor 12 rulări și nu mai
-  sunt deformate pentru a cuprinde obligatoriu linia centrală;
-- cardurile avertizează atunci când medoidul cade în afara P10–P90;
-- fiecare indicator observat primește o calificare retrospectivă: bună,
-  moderată, slabă sau foarte slabă;
-- hrana și poluarea sunt marcate explicit drept insuficiente pentru o prognoză
-  autonomă, fără ajustări cosmetice ale retrospectivelor;
-- validarea multi-origin spune direct dacă procedura este mai bună sau mai
-  slabă decât BAU2 ancorat.
+## Ce afișează
 
-## Schimbările structurale introduse în 0.9.0
+Aplicația păstrează doar trei trasee, pentru ca diferențele să poată fi citite
+fără ambiguitate:
 
-- graficul afișează numai BAU original, BAU2 original și BAU Hibrid 2026;
-- observațiile sunt puncte negre independente;
-- grila verticală este trasată la fiecare 5 ani, cu etichete la 10 ani;
-- pointerul fixează cel mai apropiat an și afișează valorile tuturor modelelor;
-- BAU Hibrid 2026 este acum o singură rulare World3-03, nu cinci ajustări
-  independente ale curbelor;
-- același vector de șapte parametri structurali determină simultan cele cinci
-  ținte calibrate și trei diagnostice suplimentare;
-- plaja albastră poate fi ascunsă și reprezintă sensibilitatea la configurații
-  structurale alternative admisibile, nu un interval probabilistic.
-- porțiunea retrospectivă a hibridului este albastră, subțire și întreruptă;
-  proiecția este albastră, groasă și continuă;
-- axele verticale folosesc valori rotunjite, iar unitatea apare în grafic;
-- interfața afișează separat potrivirea istorică descriptivă, backtestul recent
-  și validarea multi-origin;
-- separă modelul de validare înghețat în 2018 de refitul final afișat, care
-  folosește toate observațiile disponibile până în 2023–2025;
-- alege linia centrală ca medoid: o singură rulare World3 reală, cea mai
-  apropiată de centrul celor 12 configurații finale complet admisibile;
-- filtrează plaja prin limite largi de plauzibilitate pentru 2030–2035,
-  declarate în manifest și distincte de probabilități;
-- producția industrială totală este ancorată exact la observația din 2025;
-- resursele BAU, BAU2 și hibrid folosesc același numitor, stocul BAU din 1900,
-  astfel încât diferențele de stoc inițial nu mai sunt ascunse;
-- aplicația raportează explicit identificabilitatea slabă a parametrilor.
+| Traseu | Ce reprezintă |
+|---|---|
+| **BAU original** | Scenariul World3-03 de referință, păstrat nemodificat. |
+| **BAU2 original** | Scenariul 2 World3-03, cu resurse inițiale mai mari; este păstrat nemodificat. |
+| **BAU Hibrid 2026** | O singură rulare World3 derivată structural din BAU2, calibrată comun față de observații și continuată condițional după ultimul an observat. |
 
-## Ce este și ce nu este BAU Hibrid 2026
+Punctele negre sunt observații independente, nu părți ale curbelor. Segmentul
+albastru întrerupt este reconstrucția retrospectivă a hibridului, iar segmentul
+albastru continuu este proiecția. Banda P10–P90 descrie sensibilitatea la cele
+12 configurații structurale admisibile; nu este un interval de încredere și
+nu exprimă probabilitatea unui „colaps”.
 
-BAU Hibrid 2026 pornește din scenariul 2 al modelului oficial World3-03. Un set
-de 128 de configurații a fost declarat înaintea selecției. Fiecare configurație
-schimbă aceiași șapte parametri pentru întregul sistem: resursele inițiale,
-raportul capital/producție, durata de viață a capitalului industrial,
-randamentul terenurilor, generarea și asimilarea poluării și mărimea dorită a
-familiei.
+## Funcții principale
 
-Validarea și proiecția finală sunt două etape distincte. Mai întâi, o
-configurație este aleasă numai cu observații disponibile până în 2018, după
-prognoze retrospective 2005–2009, 2010–2014 și 2015–2018. Intervalul
-2019–ultimul an observat rămâne test neatins pentru acea procedură. Rezultatele
-recent și multi-origin rămân mixte și sunt afișate fără cosmetizare.
+- opt grafice pentru populație, industrie, hrană, CO₂/proxy de activitate,
+  bunăstare, producție industrială totală, poluare persistentă și resurse;
+- grilă verticală la cinci ani și citirea sub pointer a anului și valorilor
+  celor trei trasee;
+- separarea vizuală dintre observații, reconstrucția retrospectivă și
+  proiecția de după ultimul an observat;
+- rezultate de backtesting recent și validare multi-origin, afișate separat de
+  potrivirea istorică;
+- diagnostic pentru identificabilitatea parametrilor și control pentru
+  ascunderea benzii de sensibilitate;
+- date și metodă incluse local, fără conexiune la internet în timpul utilizării.
 
-Numai după încheierea evaluării, aplicația construiește refitul final afișat,
-folosind toate observațiile disponibile. Dintre configurațiile cu mapări
-admisibile și fără încălcarea limitelor de plauzibilitate, păstrează primele 12
-și alege drept centru rularea cea mai apropiată de mediana traiectoriilor lor.
-Backtestul nu trebuie atribuit acestei linii finale, deoarece ea a văzut datele
-recente.
+## Ce este BAU Hibrid 2026
 
-Populația, industria și bunăstarea folosesc o transformare de scară către
-unitatea observată. Hrana și CO₂ anual folosesc suplimentar două punți de
-observație fixe, alese fără date ulterioare lui 2018. Acestea transformă ieșirea
-afișată, dar nu schimbă selecția parametrilor, stocurile sau feedbackurile
-World3. Fiecare nivel este ancorat la ultima observație. Banda albastră este o
-plajă de sensibilitate între cele mai bune configurații structurale cu mapări
-admisibile; nu este un interval de încredere. P10 și P90 sunt păstrate ca
-valori autentice, iar medoidul poate rămâne în exterior pentru un diagnostic
-latent care nu a fost folosit la definirea sa. Limitele de plauzibilitate
-folosesc reperul demografic UN WPP 2024 și praguri largi pentru hrană,
-industrie și bunăstare. BAU și BAU2 originale rămân referințe nemodificate.
+BAU Hibrid 2026 pornește din structura scenariului 2 al World3-03. Cele cinci
+ținte calibrate și cele trei diagnostice provin din aceeași rulare și din
+același vector de șapte parametri; curbele nu sunt ajustate independent.
 
-Modelul este experimental și condițional. Nu estimează probabilitatea unui
-„colaps” și nu identifică unic parametrii adevărați ai sistemului mondial.
+Procedura evaluează 128 de configurații predeclarate. Selecția de validare
+folosește numai date încheiate în 2018, iar anii ulteriori formează un test
+recent neatins. După evaluare, linia afișată este refăcută cu toate observațiile
+disponibile până în 2023–2025, în funcție de indicator. Centrul este o rulare
+World3 efectivă, aleasă dintre 12 configurații finale admisibile.
 
-## Surse incluse
+Pentru hrană și CO₂ anual sunt folosite două punți de observație alese numai cu
+date pre-2019. Ele îmbunătățesc legătura dintre stările World3 și indicatorii
+observați, dar nu adaugă sectoare sau feedbackuri noi modelului.
 
-- World Bank WDI: populație și valoarea adăugată a industriei;
-- FAOSTAT Production Indices: producția alimentară mondială pe locuitor;
-- World Bank/EDGAR: emisiile antropice anuale folosite ca indicator observat al
-  activității industriale; generarea și stocul persistent World3 rămân latente;
-- UNDP Human Development Report 2025: HDI;
-- UN World Population Prospects 2024: reper demografic extern;
-- World3-03 scenario 2: traiectoria structurală BAU2.
-- Energy Institute Statistical Review 2026: reper pentru viitoarea calibrare
-  energetică până în 2025;
-- IEA Key Questions on Energy and AI: 485 TWh în 2025 și aproximativ 950 TWh
-  în 2030 pentru centrele de date, păstrate ca ancore pentru viitorul submodul
-  AI, nu ca observații EROI.
+Metoda completă, parametrii, erorile și limitele sunt documentate în
+[SCIENTIFIC_METHOD.md](SCIENTIFIC_METHOD.md). Datele și configurațiile pot fi
+auditate în [`data/scenarios`](data/scenarios), iar istoricul versiunilor este
+în [CHANGELOG.md](CHANGELOG.md).
 
-Fișierul `data/scenarios/bau_hybrid_2026_manifest.json` conține metoda,
-parametrii, limitele și candidații reținuți. Rezultatele testului recent și ale
-validării multi-origin se află în fișierele `backtest_*.csv`, iar
-`parameter_identifiability.csv` arată că șase parametri din șapte rămân slab
-identificați de seriile globale agregate. `candidate_ranking.csv` documentează
-refitul final și filtrele de plauzibilitate, iar
-`validation_candidate_ranking.csv` păstrează selecția înghețată pentru test.
-`bridge_validation.csv` păstrează căutarea predeclarată a celor cinci ponderi
-pentru fiecare punte și alegerea făcută fără date post-2018.
+> **Limită esențială:** BAU Hibrid 2026 este un scenariu experimental și
+> condițional. Nu estimează probabilitatea unui colaps, nu identifică unic
+> parametrii reali ai sistemului mondial și nu trebuie citit ca o prognoză
+> punctuală garantată.
 
-## Construire în elementary OS 8
+## Date folosite
 
-Din directorul proiectului:
+- World Bank WDI — populație și valoare adăugată a industriei;
+- FAOSTAT Production Indices — producție alimentară mondială pe locuitor;
+- World Bank/EDGAR — emisii antropice anuale folosite ca proxy observabil;
+- UNDP Human Development Report 2025 — HDI;
+- UN World Population Prospects 2024 — reper demografic extern;
+- World3-03 — scenariile originale BAU și BAU2.
+
+Energy Institute Statistical Review 2026 și ancorele IEA pentru centre de date
+sunt păstrate pentru dezvoltarea viitoare. EROI, clima, apa, mineralele,
+infrastructura AI, conflictele și politicile nu sunt încă feedbackuri cuplate
+în rularea centrală.
+
+## Instalare pe elementary OS 8
+
+Repository-ul oferă în prezent o construire Flatpak reproductibilă din sursă.
+Un pachet Flatpak publicat ca GitHub Release va fi adăugat separat; până atunci,
+clonarea și construirea locală reprezintă metoda verificată de instalare.
+
+Instalează o singură dată SDK-ul elementary și Flatpak Builder:
 
 ```bash
+flatpak install --user appcenter io.elementary.Platform//8 io.elementary.Sdk//8
+flatpak install --user flathub org.flatpak.Builder
+```
+
+Apoi clonează, construiește și instalează aplicația:
+
+```bash
+git clone https://github.com/LaurentiuStaicu/world3-empirical-flatpak.git
+cd world3-empirical-flatpak
 ./build-flatpak.sh
 ```
 
-Sau direct:
-
-```bash
-flatpak run org.flatpak.Builder --user --install --force-clean build-dir \
-  io.github.laurentiustaicu.World3Empirical.yml
-```
+Dacă arhiva ZIP a pierdut permisiunea de execuție a scriptului, rulează o
+singură dată `chmod +x build-flatpak.sh`.
 
 Pornire:
 
@@ -157,37 +125,39 @@ Pornire:
 flatpak run io.github.laurentiustaicu.World3Empirical
 ```
 
-Validare statică înainte de construire:
+Scriptul rulează validarea statică înainte de fiecare construire. Validarea
+poate fi pornită și separat:
 
 ```bash
 python3 scripts/validate.py
 ```
 
-Codul auditabil care generează scenariile EROI se află în `model/`. El nu este
-executat la construirea Flatpakului, astfel încât aplicația rămâne mică și
-offline; instrucțiunile de regenerare sunt în `model/README.md`.
+## Dezvoltare
 
-## Limite de interpretare
+Manifestul Flatpak folosește `io.elementary.Sdk//8`, Meson, Vala, GTK 4 și
+Granite 7. Codul auditabil din `model/` generează scenariile experimentale de
+energie netă/EROI, dar nu este executat în timpul construirii aplicației.
 
-- producția industrială World Bank este un proxy și include construcțiile;
-- puntea alimentară este o aproximație a dependenței producției agricole de
-  inputurile industriale, nu un sector agricol recalibrat structural;
-- fluxul anual de CO₂ este un proxy de activitate industrială; nu observă
-  generarea generică sau stocul latent de poluare persistentă din World3;
-- producția industrială totală este diagnostic derivat și nu este ponderată a
-  doua oară în calibrare;
-- stocul persistent de poluare și resursele neregenerabile rămase sunt stări
-  latente ale World3, nu observații empirice;
-- HDI nu este identic cu Human Welfare Index din World3;
-- agregatul BAU/BAU2 nu descrie distribuția regională, conflictele sau
-  politicile ca sectoare explicite;
-- EROI, apa, clima, mineralele și AI nu sunt încă feedbackuri cuplate în
-  rularea centrală și nu trebuie presupus că proiecțiile le includ;
-- după ultimul an observat, toate valorile sunt condiționale pe structură și
-  ipoteze.
+Problemele reproductibile pot fi raportate în
+[GitHub Issues](https://github.com/LaurentiuStaicu/world3-empirical-flatpak/issues).
 
-## Licențe
+## Limite și licențe
 
-Codul aplicației este MIT. Seriile FAOSTAT sunt CC BY 4.0. Celelalte serii își
-păstrează termenii instituțiilor-sursă. World3-03 este utilizat ca model de
-referință, iar proveniența numerică este documentată în manifest.
+Agregarea globală ascunde diferențele regionale și distribuționale. Industria
+World Bank și HDI sunt proxy-uri, iar stocul persistent de poluare și resursele
+rămase sunt stări World3 latente, nu observații directe. Lista completă a
+limitelor este în [documentația metodei](SCIENTIFIC_METHOD.md).
+
+Codul aplicației este publicat sub licența [MIT](LICENSE). Seriile FAOSTAT sunt
+CC BY 4.0; celelalte seturi de date își păstrează termenii
+instituțiilor-sursă. Proveniența numerică este documentată în manifest.
+
+## English summary
+
+World3 Empirical is an offline elementary OS 8 application for comparing
+observed global indicators with the original World3-03 BAU and BAU2 scenarios
+and BAU Hibrid 2026, an experimental BAU2-derived calibration. It provides
+eight interactive charts, five-year grid lines, retrospective validation,
+multi-origin backtesting and a structural sensitivity range. Projections are
+conditional scenarios, not guaranteed point forecasts or collapse
+probabilities.

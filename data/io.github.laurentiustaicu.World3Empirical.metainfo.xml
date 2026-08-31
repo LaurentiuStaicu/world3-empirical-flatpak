@@ -7,20 +7,54 @@
   <project_license>MIT</project_license>
   <description>
     <p>
-      World3 Empirical afișează offline observații globale recente și compară
-      scenariile World3 BAU și BAU2 originale cu BAU Hibrid 2026.
+      World3 Empirical compară offline observații globale recente cu scenariile
+      World3-03 BAU și BAU2 originale și cu scenariul condițional BAU Hibrid 2026.
     </p>
     <p>
-      Graficul păstrează numai cele trei traiectorii de model, folosește o grilă
-      la cinci ani și arată anul și valorile sub pointer. Observațiile sunt
-      puncte independente, iar plaja de sensibilitate structurală poate fi ascunsă.
+      BAU Hibrid 2026 pornește structural din BAU2 și folosește un singur vector
+      de parametri pentru toate ieșirile. Observațiile, reconstrucția retrospectivă
+      și proiecția sunt afișate separat.
+    </p>
+    <p>Aplicația include:</p>
+    <ul>
+      <li>Opt grafice globale interactive</li>
+      <li>Grilă la cinci ani și valori afișate sub pointer</li>
+      <li>Backtesting recent și validare multi-origin</li>
+      <li>Plajă de sensibilitate structurală care poate fi ascunsă</li>
+      <li>Funcționare complet offline după instalare</li>
+    </ul>
+    <p>
+      Proiecțiile sunt scenarii experimentale și condiționale, nu predicții
+      garantate sau estimări ale probabilității unui colaps.
     </p>
   </description>
   <launchable type="desktop-id">io.github.laurentiustaicu.World3Empirical.desktop</launchable>
   <developer id="io.github.laurentiustaicu">
     <name>Laurentiu Staicu</name>
   </developer>
-  <url type="homepage">https://github.com/laurentiustaicu</url>
+  <url type="homepage">https://github.com/LaurentiuStaicu/world3-empirical-flatpak</url>
+  <url type="bugtracker">https://github.com/LaurentiuStaicu/world3-empirical-flatpak/issues</url>
+  <url type="vcs-browser">https://github.com/LaurentiuStaicu/world3-empirical-flatpak</url>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Populația globală: observații, BAU, BAU2 și BAU Hibrid 2026</caption>
+      <image>https://raw.githubusercontent.com/LaurentiuStaicu/world3-empirical-flatpak/main/data/screenshots/world3-empirical-population.jpg</image>
+    </screenshot>
+  </screenshots>
+  <branding>
+    <color type="primary">#3689e6</color>
+  </branding>
+  <keywords>
+    <keyword>World3</keyword>
+    <keyword>Limits to Growth</keyword>
+    <keyword>system dynamics</keyword>
+    <keyword>scenario</keyword>
+    <keyword>data visualization</keyword>
+  </keywords>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+  </supports>
   <provides>
     <binary>io.github.laurentiustaicu.World3Empirical</binary>
   </provides>
