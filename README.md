@@ -15,7 +15,7 @@
   <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue">
 </p>
 
-![World3 Empirical displaying population trajectories, observations and the BAU Hibrid 2026 sensitivity range](data/screenshots/world3-empirical-population.jpg)
+![World3 Empirical displaying population trajectories, observations and the BAU Hibrid 2026 sensitivity range](data/screenshots/world3-empirical-population-cropped.jpg)
 
 Aplicație nativă Vala/GTK 4 pentru elementary OS 8. Compară date globale
 observate cu scenariile World3-03 originale și cu o variantă empirică derivată
