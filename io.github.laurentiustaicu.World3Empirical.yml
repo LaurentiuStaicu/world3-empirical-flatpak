@@ -1,0 +1,21 @@
+app-id: io.github.laurentiustaicu.World3Empirical
+runtime: io.elementary.Platform
+runtime-version: '8'
+sdk: io.elementary.Sdk
+command: io.github.laurentiustaicu.World3Empirical
+
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+
+modules:
+  - name: world3-empirical
+    buildsystem: meson
+    config-opts:
+      - --buildtype=release
+    sources:
+      - type: dir
+        path: .
+

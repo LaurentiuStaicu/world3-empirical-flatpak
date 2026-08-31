@@ -1,0 +1,183 @@
+{
+  "model": "BAU Hybrid 2026 Joint",
+  "version": "0.10.0",
+  "scientific_status": "experimental scenario model; not a probabilistic forecast",
+  "generated_on": "2026-08-30",
+  "structural_model": "official World3-03 scenario 2 (BAU2)",
+  "method": "locked structural validation model selected through 2018, followed by a separate production refit using all available observations; the displayed medoid remains one common World3-03 parameter vector; food and annual CO2 use fixed empirical observation bridges selected only with pre-2019 data and do not alter structural selection or feedbacks",
+  "candidate_count": 128,
+  "selection_cutoff": 2018,
+  "production_fit_cutoff": 2025,
+  "validation_candidate_id": 73,
+  "validation_parameters": {
+    "resources": 1958082534663.6162,
+    "industrial_output_ratio": 3.2172024380060487,
+    "industrial_capital_life": 15.703678168478206,
+    "land_yield": 0.9853058940626603,
+    "pollution_generation": 0.7135368589294719,
+    "pollution_assimilation": 1.392576242453725,
+    "family_size": 3.8012315439199575
+  },
+  "central_candidate_id": 114,
+  "production_candidate_id": 114,
+  "ensemble_candidate_ids": [
+    0,
+    73,
+    1,
+    100,
+    114,
+    125,
+    103,
+    6,
+    60,
+    28,
+    5,
+    85
+  ],
+  "central_selection_rule": "trajectory medoid of the 12 best production candidates satisfying all mapping and near-term plausibility guardrails",
+  "central_medoid_log_rms_distance": 0.009371596496610493,
+  "joint_log_rmse": 0.19644284278150292,
+  "rolling_forecast_log_rmse": 0.03396936254059317,
+  "central_mapping_boundary_count_at_selection": 0,
+  "central_plausibility_violation_count": 0,
+  "central_parameters": {
+    "resources": 1823314204960.3545,
+    "industrial_output_ratio": 3.126701979517635,
+    "industrial_capital_life": 14.160840458754885,
+    "land_yield": 1.085227641676636,
+    "pollution_generation": 1.0725170814221245,
+    "pollution_assimilation": 1.3753865713058433,
+    "family_size": 3.7786302220657113
+  },
+  "parameter_bounds": {
+    "resources": {
+      "model_name": "initial nonrenewable resources",
+      "baseline": 2000000000000.0,
+      "lower": 1500000000000.0,
+      "upper": 3500000000000.0
+    },
+    "industrial_output_ratio": {
+      "model_name": "industrial capital output ratio 1",
+      "baseline": 3.0,
+      "lower": 2.55,
+      "upper": 3.45
+    },
+    "industrial_capital_life": {
+      "model_name": "average life of industrial capital 1",
+      "baseline": 14.0,
+      "lower": 11.0,
+      "upper": 18.0
+    },
+    "land_yield": {
+      "model_name": "land yield factor 1",
+      "baseline": 1.0,
+      "lower": 0.82,
+      "upper": 1.18
+    },
+    "pollution_generation": {
+      "model_name": "persistent pollution generation factor 1",
+      "baseline": 1.0,
+      "lower": 0.65,
+      "upper": 1.35
+    },
+    "pollution_assimilation": {
+      "model_name": "assimilation half life in 1970",
+      "baseline": 1.5,
+      "lower": 1.0,
+      "upper": 2.3
+    },
+    "family_size": {
+      "model_name": "desired completed family size normal",
+      "baseline": 3.8,
+      "lower": 3.1,
+      "upper": 4.4
+    }
+  },
+  "weakly_identified_parameters": [
+    "resources",
+    "industrial_output_ratio",
+    "industrial_capital_life",
+    "land_yield",
+    "pollution_generation",
+    "pollution_assimilation"
+  ],
+  "observation_scales": {
+    "population": 1.0775969822781608,
+    "industry_per_capita": 1.0756304455888546,
+    "food_per_capita": 1.0119403634255177,
+    "pollution_pressure": 1.4819374137845325,
+    "human_welfare": 0.9878156540294526
+  },
+  "structural_observation_scales": {
+    "population": 1.0775969822781608,
+    "industry_per_capita": 1.0756304455888546,
+    "food_per_capita": 1.1498263162045603,
+    "pollution_pressure": 0.6079864001803282,
+    "human_welfare": 0.9878156540294526
+  },
+  "observation_scale_bounds": {
+    "population": [
+      0.9,
+      1.15
+    ],
+    "industry_per_capita": [
+      0.5,
+      1.6
+    ],
+    "food_per_capita": [
+      0.5,
+      1.8
+    ],
+    "pollution_pressure": [
+      0.3,
+      2.0
+    ],
+    "human_welfare": [
+      0.5,
+      1.5
+    ]
+  },
+  "indicator_log_rmse": {
+    "population": 0.020927607641203584,
+    "industry_per_capita": 0.15927612792958915,
+    "food_per_capita": 0.051300650208721446,
+    "pollution_pressure": 0.11658783526420693,
+    "human_welfare": 0.01857520386529492
+  },
+  "structural_indicator_log_rmse": {
+    "population": 0.020927607641203584,
+    "industry_per_capita": 0.15927612792958915,
+    "food_per_capita": 0.30379915287006676,
+    "pollution_pressure": 0.27295263183812113,
+    "human_welfare": 0.01857520386529492
+  },
+  "observation_bridges": {
+    "selection_cutoff": 2018,
+    "food_per_capita": {
+      "world3_food_weight": 0.25,
+      "industrial_input_capacity_weight": 0.75,
+      "form": "geometric Cobb-Douglas-like observation operator",
+      "selection": "five predeclared weights evaluated with data and rolling validation ending no later than 2018"
+    },
+    "pollution_pressure": {
+      "world3_persistent_pollution_generation_weight": 0.0,
+      "industrial_throughput_weight": 1.0,
+      "form": "annual CO2 activity proxy; persistent pollution stock remains a separate latent World3 diagnostic",
+      "selection": "five predeclared weights evaluated with data and rolling validation ending no later than 2018"
+    }
+  },
+  "uncertainty": "10th--90th percentile across 12 best production candidates with admissible observation mappings and transparent near-term guardrails; sensitivity envelope, not a calibrated probability interval",
+  "band_definition": "actual pointwise 10th and 90th percentiles of the accepted ensemble; the displayed medoid is not forced inside the band and may fall outside it for latent diagnostics",
+  "plausibility_guardrails": {
+    "population": "2030 within +/-3% and 2035 within +/-5% of UN WPP 2024 medium",
+    "food_per_capita": "2030 at least 75% and 2035 at least 55% of latest observation",
+    "industry_per_capita": "2030 at least 75% of latest observation",
+    "human_welfare": "2030 at least 85% and 2035 at least 70% of latest observation",
+    "interpretation": "broad scenario admissibility constraints, not fitted observations or probability bounds"
+  },
+  "validation": "the reported 2019-latest holdout belongs only to the model-selection procedure frozen in 2018; the displayed production trajectory is a separate post-validation refit using all available observations and is not itself a holdout forecast",
+  "food_mapping": "FAOSTAT food per capita is mapped to 25% World3 food signal and 75% industrial-input-capacity signal in log space; this observation bridge does not feed back into World3",
+  "pollution_mapping": "annual CO2 uses industrial throughput as an activity proxy; World3 persistent pollution generation and stock remain latent and continue to drive the model feedbacks",
+  "diagnostics": "total industrial output is level-anchored at its 2025 observation but excluded from fitting because it is algebraically redundant with population and per-capita output; persistent pollution stock and remaining resources are latent World3 states without direct observations; all resource curves use the common BAU-1900 stock denominator of 1e12 units",
+  "important_limit": "the food and CO2 bridges improve observed-output validation but are not new feedback states; HDI remains a proxy; EROI, climate-water, minerals and AI are not yet coupled into the central run"
+}

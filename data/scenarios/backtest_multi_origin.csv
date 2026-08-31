@@ -1,0 +1,6 @@
+key,origins,n_origins,n,bau2_level_anchored_mape_pct,bau2_e2026_mape_pct,improvement_pct,selection_rule
+population,2005/2010/2015/2018,4,52,1.566337605159209,2.4943573649732165,-59.24774817110259,joint candidate selected using observations ending at each origin
+industry_per_capita,2005/2010/2015/2018,4,52,5.949844767787332,4.413470760328045,25.822085574018157,joint candidate selected using observations ending at each origin
+food_per_capita,2005/2010/2015/2018,4,48,10.309400923330081,2.033479885423804,80.27547962731708,joint candidate selected using observations ending at each origin
+pollution_pressure,2005/2010/2015/2018,4,48,11.998801779243394,7.017344941296819,41.51628578916894,joint candidate selected using observations ending at each origin
+human_welfare,2005/2010/2015/2018,4,44,2.002269268339324,2.122199893917455,-5.989735120771284,joint candidate selected using observations ending at each origin

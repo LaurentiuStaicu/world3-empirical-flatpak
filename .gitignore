@@ -1,0 +1,19 @@
+# Flatpak Builder output
+.flatpak-builder/
+build-dir/
+repo/
+
+# Generated distributable bundles belong in GitHub Releases
+*.flatpak
+*.flatpakref
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Editor and desktop metadata
+.idea/
+.vscode/
+*~
+.DS_Store
+Thumbs.db

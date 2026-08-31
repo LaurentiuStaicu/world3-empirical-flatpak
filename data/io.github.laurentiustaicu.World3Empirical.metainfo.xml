@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.laurentiustaicu.World3Empirical</id>
+  <name>World3 Empirical</name>
+  <summary>Compară BAU, BAU2 și BAU Hibrid 2026 cu datele observate</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <description>
+    <p>
+      World3 Empirical afișează offline observații globale recente și compară
+      scenariile World3 BAU și BAU2 originale cu BAU Hibrid 2026.
+    </p>
+    <p>
+      Graficul păstrează numai cele trei traiectorii de model, folosește o grilă
+      la cinci ani și arată anul și valorile sub pointer. Observațiile sunt
+      puncte independente, iar plaja de sensibilitate structurală poate fi ascunsă.
+    </p>
+  </description>
+  <launchable type="desktop-id">io.github.laurentiustaicu.World3Empirical.desktop</launchable>
+  <developer id="io.github.laurentiustaicu">
+    <name>Laurentiu Staicu</name>
+  </developer>
+  <url type="homepage">https://github.com/laurentiustaicu</url>
+  <provides>
+    <binary>io.github.laurentiustaicu.World3Empirical</binary>
+  </provides>
+  <releases>
+    <release version="0.10.0" date="2026-08-30">
+      <description>
+        <p>Adaugă două punți de observație validate numai cu date pre-2019 pentru hrană și CO₂, fără a modifica selecția structurală sau feedbackurile World3, și îmbunătățește toate cele cinci holdouturi recente.</p>
+      </description>
+    </release>
+    <release version="0.9.2" date="2026-08-30">
+      <description>
+        <p>Separă potrivirea retrospectivă de sprijinul empiric al proiecției și introduce un scor conservator bazat pe MAPE istoric, holdout recent și validare multi-origin, plafonat când hibridul pierde față de BAU2.</p>
+      </description>
+    </release>
+    <release version="0.9.1" date="2026-08-30">
+      <description>
+        <p>Păstrează cuantilele P10–P90 autentice chiar dacă medoidul cade în afara lor și afișează calitatea empirică și rezultatul validării pentru fiecare indicator observat.</p>
+      </description>
+    </release>
+    <release version="0.9.0" date="2026-08-30">
+      <description>
+        <p>Separă modelul înghețat pentru validare de refitul final, alege o rulare centrală reprezentativă, elimină traiectoriile apropiate implauzibile și corectează ancorarea industriei totale și numitorul comun al resurselor.</p>
+      </description>
+    </release>
+    <release version="0.8.0" date="2026-08-30">
+      <description>
+        <p>Îngheață selecția structurală în 2018, extinde ansamblul la 128 de rulări, folosește 20 de configurații pentru sensibilitate și adaugă diagnostice pentru industria totală, poluarea persistentă și resursele rămase.</p>
+      </description>
+    </release>
+    <release version="0.7.1" date="2026-08-29">
+      <description>
+        <p>Separă vizual reconstrucția retrospectivă de proiecție, rotunjește axele și afișează erorile istorice fără a le confunda cu testele holdout.</p>
+      </description>
+    </release>
+    <release version="0.7.0" date="2026-08-29">
+      <description>
+        <p>Înlocuiește ajustările independente cu o singură rulare World3-03 BAU2 recalibrată comun pentru cinci indicatori și validată temporal.</p>
+      </description>
+    </release>
+    <release version="0.6.1" date="2026-08-29">
+      <description>
+        <p>Corectează legarea bibliotecii matematice necesare citirii interactive a anului sub pointer.</p>
+      </description>
+    </release>
+    <release version="0.6.0" date="2026-08-29">
+      <description>
+        <p>Simplifică graficele la BAU original, BAU2 original și BAU Hibrid 2026 și adaugă citire interactivă la fiecare an.</p>
+      </description>
+    </release>
+    <release version="0.5.0" date="2026-08-29">
+      <description>
+        <p>Adaugă modulul dinamic energie netă/EROI cu trei scenarii structurale clar separate de proiecțiile calibrate.</p>
+      </description>
+    </release>
+    <release version="0.4.0" date="2026-08-29">
+      <description>
+        <p>Adaugă backtesting multi-origin fără acces la date viitoare, reperul ONU în carduri și controale de diagnostic.</p>
+      </description>
+    </release>
+    <release version="0.3.0" date="2026-08-29">
+      <description>
+        <p>Separă P10–P90 de sensibilitatea BAU/BAU2, adaugă backtesting vizibil și corectează comparația poluării la flux-la-flux.</p>
+      </description>
+    </release>
+    <release version="0.2.0" date="2026-08-28">
+      <description>
+        <p>Adaugă BAU2-E2026, observații până în 2023–2025, backtesting și plaje de sensibilitate.</p>
+      </description>
+    </release>
+    <release version="0.1.1" date="2026-08-28">
+      <description>
+        <p>Corectează stocarea seriilor numerice pentru compatibilitate cu Vala 0.56.</p>
+      </description>
+    </release>
+    <release version="0.1.0" date="2026-08-28">
+      <description>
+        <p>Prima versiune cu scenariile oficiale BAU și BAU2 și indicatori 2025–2035.</p>
+      </description>
+    </release>
+  </releases>
+  <content_rating type="oars-1.1" />
+</component>

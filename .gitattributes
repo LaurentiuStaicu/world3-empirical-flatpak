@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.csv text eol=lf
+*.vala text eol=lf
+*.yml text eol=lf
+*.xml text eol=lf
+*.svg text eol=lf
+*.sh text eol=lf

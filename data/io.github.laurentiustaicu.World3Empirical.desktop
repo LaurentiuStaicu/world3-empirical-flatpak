@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=World3 Empirical
+Comment=Compară observațiile globale cu BAU, BAU2 și BAU Hibrid 2026
+Exec=io.github.laurentiustaicu.World3Empirical
+Icon=io.github.laurentiustaicu.World3Empirical
+Terminal=false
+Type=Application
+Categories=Education;Science;
+Keywords=World3;BAU2;date empirice;system dynamics;Limits to Growth;
+StartupNotify=true
