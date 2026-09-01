@@ -2,7 +2,7 @@ project(
   'io.github.laurentiustaicu.World3Empirical',
   'vala',
   'c',
-  version: '0.10.0',
+  version: '0.10.1',
   meson_version: '>=0.59.0',
   default_options: ['warning_level=2']
 )
@@ -14,12 +14,21 @@ granite = dependency('granite-7')
 cc = meson.get_compiler('c')
 math = cc.find_library('m', required: true)
 
+version_config = configuration_data()
+version_config.set('PROJECT_VERSION', meson.project_version())
+build_config = configure_file(
+  input: 'src/BuildConfig.vala.in',
+  output: 'BuildConfig.vala',
+  configuration: version_config
+)
+
 executable(
   meson.project_name(),
   'src/Application.vala',
   'src/MainWindow.vala',
   'src/ScenarioData.vala',
   'src/ChartView.vala',
+  build_config,
   dependencies: [gtk, granite, math],
   install: true
 )
@@ -55,6 +64,9 @@ install_data(
   'data/scenarios/candidate_ranking.csv',
   'data/scenarios/validation_candidate_ranking.csv',
   'data/scenarios/bridge_validation.csv',
+  'data/scenarios/lookup_extrapolation_audit.csv',
   'data/scenarios/bau_hybrid_2026_manifest.json',
+  'data/scenarios/scenario_schema.json',
+  'data/scenarios/release_integrity.json',
   install_dir: get_option('datadir') / meson.project_name() / 'scenarios'
 )

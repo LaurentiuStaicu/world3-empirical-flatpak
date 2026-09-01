@@ -59,6 +59,11 @@
     <binary>io.github.laurentiustaicu.World3Empirical</binary>
   </provides>
   <releases>
+    <release version="0.10.1" date="2026-09-01">
+      <description>
+        <p>Separă validarea integrității de evaluarea performanței, citește seriile CSV după numele coloanelor, adaugă scheme, hash-uri SHA-256 și auditul extrapolărilor lookup și include sursa reproductibilă fără a modifica traiectoriile științifice 0.10.0.</p>
+      </description>
+    </release>
     <release version="0.10.0" date="2026-08-30">
       <description>
         <p>Adaugă două punți de observație validate numai cu date pre-2019 pentru hrană și CO₂, fără a modifica selecția structurală sau feedbackurile World3, și îmbunătățește toate cele cinci holdouturi recente.</p>

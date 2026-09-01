@@ -1,0 +1,17 @@
+{
+  "world3_standard": {
+    "label": "World3 standard run (1974 implementation)",
+    "evidence_status": "reference_implementation",
+    "description": "Default constants in the technical World3 implementation.",
+    "constant_overrides": {}
+  },
+  "bau2_structural_proxy": {
+    "label": "BAU2 structural proxy: doubled nonrenewable resources",
+    "evidence_status": "proxy_not_reference_exact",
+    "description": "Tests the central BAU2 mechanism in which a larger resource stock delays the resource constraint and permits greater industrial and pollution pressure. It is not yet the exact World3-03 BAU2 parameterization.",
+    "constant_overrides": {
+      "nri": 2000000000000.0
+    }
+  }
+}
+

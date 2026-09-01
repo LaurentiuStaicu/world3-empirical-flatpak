@@ -100,6 +100,23 @@ neregenerabile rămase sunt stări latente World3 fără serii observate direct
 echivalente. Resursele folosesc un numitor comun, stocul BAU din 1900 = 100;
 BAU2 pornește astfel de la 200, nu de la un procent propriu resetat la 100.
 
+PySD avertizează când o rulare solicită unui tabel lookup World3 valori în
+afara domeniului tabulat și extrapolează cu valoarea de capăt. Aceste
+avertismente nu sunt suprimate global. Generatorul le capturează exclusiv pe
+cele provenite din `pysd/py_backend/lookups.py`, păstrează vizibile toate
+celelalte categorii și exportă pentru fiecare dintre cei 128 de candidați
+numărul total, împărțirea sub/peste domeniu și numărul mesajelor distincte în
+`lookup_extrapolation_audit.csv`. Fișierul este un diagnostic de validitate a
+domeniului, nu o măsură directă a erorii de prognoză; versiuni viitoare trebuie
+să testeze explicit dacă respingerea candidaților cu extrapolări structurale
+materiale îmbunătățește validarea în afara eșantionului.
+
+În release-ul actual, rularea centrală (candidatul 114) produce 1.273 de
+evenimente de avertizare, aparținând la 21 de mesaje distincte; cele 12 rulări
+admise au între 884 și 1.693 de evenimente. Numărul mare confirmă că domeniul
+tabelelor lookup trebuie tratat ca limită metodologică explicită înainte ca
+modelul să poată fi prezentat drept prognoză robustă.
+
 ## Limite
 
 - Puntea alimentară nu este un sector agricol structural nou și nu modelează

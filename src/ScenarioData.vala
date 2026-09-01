@@ -24,23 +24,57 @@ public class World3Empirical.ScenarioData : Object {
         string contents;
         FileUtils.get_contents (path, out contents);
         var lines = contents.split ("\n");
+        if (lines.length < 2) {
+            throw new IOError.INVALID_DATA ("Fișier CSV gol sau fără antet: " + path);
+        }
+
+        var headers = lines[0].strip ().split (",");
+        int year_column = require_column (headers, "year", path);
+        int observed_column = require_column (headers, "observed", path);
+        int bau_column = require_column (headers, "original_bau", path);
+        int bau2_column = require_column (headers, "original_bau2", path);
+        int hybrid_column = require_column (headers, "hybrid_2026", path);
+        int p10_column = require_column (headers, "p10", path);
+        int p90_column = require_column (headers, "p90", path);
+        int benchmark_column = require_column (headers, "benchmark", path);
+        int largest_column = year_column;
+        int[] required_indices = {
+            observed_column, bau_column, bau2_column, hybrid_column,
+            p10_column, p90_column, benchmark_column
+        };
+        foreach (int index in required_indices) {
+            if (index > largest_column) {
+                largest_column = index;
+            }
+        }
+
+        double previous_year = -double.MAX;
         for (int row = 1; row < lines.length; row++) {
             var line = lines[row].strip ();
             if (line == "") {
                 continue;
             }
             var fields = line.split (",");
-            if (fields.length < 13) {
-                continue;
+            if (fields.length <= largest_column) {
+                throw new IOError.INVALID_DATA (
+                    "%s: rândul %d are mai puține coloane decât antetul".printf (path, row + 1)
+                );
             }
-            years_data += parse_value (fields[0]);
-            observed_data += parse_value (fields[1]);
-            original_bau2_data += parse_value (fields[2]);
-            original_bau_data += parse_value (fields[4]);
-            p10_data += parse_value (fields[6]);
-            p90_data += parse_value (fields[7]);
-            benchmark_data += parse_value (fields[11]);
-            hybrid_data += parse_value (fields[12]);
+            double year = parse_value (fields[year_column]);
+            if (!year.is_finite () || year <= previous_year) {
+                throw new IOError.INVALID_DATA (
+                    "%s: an lipsă, duplicat sau nesortat la rândul %d".printf (path, row + 1)
+                );
+            }
+            previous_year = year;
+            years_data += year;
+            observed_data += parse_value (fields[observed_column]);
+            original_bau_data += parse_value (fields[bau_column]);
+            original_bau2_data += parse_value (fields[bau2_column]);
+            hybrid_data += parse_value (fields[hybrid_column]);
+            p10_data += parse_value (fields[p10_column]);
+            p90_data += parse_value (fields[p90_column]);
+            benchmark_data += parse_value (fields[benchmark_column]);
         }
 
         if (years_data.length == 0) {
@@ -51,6 +85,22 @@ public class World3Empirical.ScenarioData : Object {
     private double parse_value (string field) {
         var clean = field.strip ();
         return clean == "" ? double.NAN : double.parse (clean);
+    }
+
+    public static int require_column (string[] headers, string column, string path) throws Error {
+        int result = -1;
+        for (int index = 0; index < headers.length; index++) {
+            if (headers[index].strip () == column) {
+                if (result >= 0) {
+                    throw new IOError.INVALID_DATA (path + ": coloană duplicată: " + column);
+                }
+                result = index;
+            }
+        }
+        if (result < 0) {
+            throw new IOError.INVALID_DATA (path + ": lipsește coloana obligatorie: " + column);
+        }
+        return result;
     }
 
     public int last_observed_year () {

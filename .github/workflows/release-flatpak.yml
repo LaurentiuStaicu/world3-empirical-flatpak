@@ -5,15 +5,48 @@ on:
   push:
     branches:
       - main
-    paths:
-      - .github/workflows/release-flatpak.yml
+    tags:
+      - 'v*'
 
 permissions:
   contents: write
 
 jobs:
+  science:
+    name: Reproduce scientific release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install locked scientific environment
+        uses: astral-sh/setup-uv@v7
+        with:
+          version: '0.11.33'
+
+      - name: Reproduce model outputs
+        run: |
+          python3 scripts/generate_science_input_manifest.py
+          git diff --exit-code -- science/data/input_manifest.json
+          uv run --project science --extra world3-03 python scripts/reproduce_scientific_results.py
+          uv run --project science --extra world3-03 python scripts/generate_science_test_artifacts.py
+          uv run --project science --extra world3-03 python -m unittest discover -s science/tests -v
+
+      - name: Validate release contract and tests
+        run: |
+          python3 scripts/generate_integrity_manifest.py
+          git diff --exit-code -- data/scenarios/release_integrity.json
+          python3 scripts/validate.py
+          python3 -m unittest discover -s tests -v
+
   flatpak:
     name: Flatpak x86_64
+    needs: science
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-48
@@ -23,13 +56,23 @@ jobs:
       - name: Check out source
         uses: actions/checkout@v6
 
+      - name: Read application version
+        id: version
+        shell: bash
+        run: |
+          version=$(sed -n "s/.*version: '\([^']*\)'.*/\1/p" meson.build | head -1)
+          test -n "$version"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
       - name: Validate scientific data and metadata
-        run: python3 scripts/validate.py
+        run: |
+          python3 scripts/validate.py
+          python3 -m unittest discover -s tests -v
 
       - name: Build Flatpak bundle
         uses: flatpak/flatpak-github-actions/flatpak-builder@v6
         with:
-          bundle: World3-Empirical-0.10.0-x86_64.flatpak
+          bundle: World3-Empirical-${{ steps.version.outputs.version }}-x86_64.flatpak
           manifest-path: io.github.laurentiustaicu.World3Empirical.yml
           repository-name: appcenter
           repository-url: https://flatpak.elementary.io/repo.flatpakrepo
@@ -38,22 +81,29 @@ jobs:
           upload-artifact: false
 
       - name: Create SHA-256 checksum
-        run: sha256sum World3-Empirical-0.10.0-x86_64.flatpak > World3-Empirical-0.10.0-x86_64.flatpak.sha256
+        shell: bash
+        run: sha256sum "World3-Empirical-${{ steps.version.outputs.version }}-x86_64.flatpak" > "World3-Empirical-${{ steps.version.outputs.version }}-x86_64.flatpak.sha256"
+
+      - name: Verify tag matches application version
+        if: github.ref_type == 'tag'
+        shell: bash
+        run: test "${GITHUB_REF_NAME}" = "v${{ steps.version.outputs.version }}"
 
       - name: Publish GitHub Release
+        if: github.ref_type == 'tag'
         uses: softprops/action-gh-release@v3
         with:
-          tag_name: v0.10.0
-          name: World3 Empirical 0.10.0
+          tag_name: v${{ steps.version.outputs.version }}
+          name: World3 Empirical ${{ steps.version.outputs.version }}
           target_commitish: ${{ github.sha }}
           make_latest: true
           fail_on_unmatched_files: true
           body: |
-            Prima versiune publică instalabilă a aplicației World3 Empirical pentru elementary OS 8, arhitectura x86_64.
+            Versiune instalabilă World3 Empirical pentru elementary OS 8, arhitectura x86_64.
 
             Descărcați fișierul `.flatpak`, deschideți-l prin dublu clic și confirmați instalarea în elementary Sideload. Nu sunt necesare comenzi în terminal.
 
             BAU Hibrid 2026 este un scenariu experimental și condițional, nu o prognoză garantată și nu estimează probabilitatea unui colaps.
           files: |
-            World3-Empirical-0.10.0-x86_64.flatpak
-            World3-Empirical-0.10.0-x86_64.flatpak.sha256
+            World3-Empirical-${{ steps.version.outputs.version }}-x86_64.flatpak
+            World3-Empirical-${{ steps.version.outputs.version }}-x86_64.flatpak.sha256

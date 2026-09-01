@@ -1,0 +1,29 @@
+{
+  "app_version": "0.10.1",
+  "data_snapshot": "2026-08-30",
+  "file_count": 18,
+  "files": {
+    "data/scenarios/backtest_2019_latest.csv": "28a50b6f83ee97322024feb4ba34aad42564032da675417627eb5cb47256f17b",
+    "data/scenarios/backtest_multi_origin.csv": "aaf44a46c6ea7c7a3c55a4472ed6a4d7af041fa126edca60b2db31f29389b403",
+    "data/scenarios/bau_hybrid_2026_manifest.json": "b426fbb19f277db7f11b89a0cb2629148bb388ce2bc317bd46d239ab1cb80259",
+    "data/scenarios/bridge_validation.csv": "1a908a3c32456edf32b8c6f3bb3b87a14f3fb27dbd5c9d102b326eefe3de906c",
+    "data/scenarios/candidate_ranking.csv": "2da2add9e682fd55f90dae27552d8156afb2f56495d8ba3e141b4995e7ed0bd0",
+    "data/scenarios/fit_diagnostics.csv": "bbe77e6bc38db738f041343bcb238503f14e8bf1b8b05d507f85e9af30bec10a",
+    "data/scenarios/food_per_capita.csv": "7a4f397289a5327d364a3e3397211e1beb3a880a6fbf3f0425d7fbd8b7b29f08",
+    "data/scenarios/human_welfare.csv": "96d94348667de5b8f6c954a1dd8a7f367bcfc2ad1cb0dfc4e56c03b3bf300ff4",
+    "data/scenarios/industry_per_capita.csv": "c6d33f09d33dabe922791461179aa4010885a652873b928a5bbdbfd64260352c",
+    "data/scenarios/industry_total.csv": "59e381730ffa709db8a1f0c13d3eb1ff7afc0aa3f2802d1d5275009668410d50",
+    "data/scenarios/lookup_extrapolation_audit.csv": "9efe4d2c172aa50417e65a68d7dc6e1271849fc0bca67bc75c317b75457707d2",
+    "data/scenarios/parameter_identifiability.csv": "6678bbacc81d3c0b014746f434f0a7ef3732314aac6a42e98de76261846d2b59",
+    "data/scenarios/persistent_pollution_stock.csv": "4e808cbf82884802253f84ccdf0d13db7eb35754175f3acebd8d1aa6f07050ac",
+    "data/scenarios/pollution_pressure.csv": "eca3a1ce94d99e801dec0829c2d846dde117793a212642889031ef51fecd90b5",
+    "data/scenarios/population.csv": "8735eddacd998911732686f43a2f715606e46dc060c010699a5fafc73297d50a",
+    "data/scenarios/resources_remaining_pct.csv": "7683cccf44bf05068fc523cee265760cb2858cbe8c6a26fb9bc4f52ac4ddf997",
+    "data/scenarios/scenario_schema.json": "4db9b24f54299563d6a8f3c05ec0297dd64fd6f2bf0caf8ace5bc426e40cb841",
+    "data/scenarios/validation_candidate_ranking.csv": "8b066dc551e990aff16926b17f6179f5aafe05f84ee733a7a6bc5ed7995ccfc2"
+  },
+  "hash_algorithm": "SHA-256",
+  "manifest_version": "1.0",
+  "model_version": "0.10.0",
+  "release_id": "bh26-2026.08-r1"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "app_release": "0.10.1",
+  "model_version": "0.10.0",
+  "data_snapshot": "2026-08-30",
+  "format": {
+    "encoding": "UTF-8",
+    "delimiter": ",",
+    "quoting": "RFC 4180 for diagnostic files; indicator files contain numeric fields only",
+    "missing_value": "empty field"
+  },
+  "indicator_required_columns": [
+    "year",
+    "observed",
+    "original_bau",
+    "original_bau2",
+    "hybrid_2026",
+    "forecast_median",
+    "p10",
+    "p90",
+    "benchmark"
+  ],
+  "indicator_files": {
+    "population.csv": "observed",
+    "industry_per_capita.csv": "observed",
+    "food_per_capita.csv": "observed",
+    "pollution_pressure.csv": "observed",
+    "human_welfare.csv": "observed",
+    "industry_total.csv": "derived_observed_diagnostic",
+    "persistent_pollution_stock.csv": "latent",
+    "resources_remaining_pct.csv": "latent"
+  },
+  "diagnostic_files": [
+    "backtest_2019_latest.csv",
+    "backtest_multi_origin.csv",
+    "fit_diagnostics.csv",
+    "parameter_identifiability.csv",
+    "candidate_ranking.csv",
+    "validation_candidate_ranking.csv",
+    "bridge_validation.csv",
+    "lookup_extrapolation_audit.csv"
+  ],
+  "semantic_contract": {
+    "observed": "empirical observation or empty when no direct observation exists",
+    "original_bau": "original World3-03 BAU reference trajectory",
+    "original_bau2": "original World3-03 scenario 2 reference trajectory",
+    "hybrid_2026": "central BAU Hybrid 2026 reconstruction and conditional continuation",
+    "forecast_median": "legacy alias retained for audit compatibility; not read by the UI",
+    "p10": "pointwise 10th percentile of the admitted sensitivity ensemble",
+    "p90": "pointwise 90th percentile of the admitted sensitivity ensemble",
+    "benchmark": "external benchmark where available"
+  }
+}

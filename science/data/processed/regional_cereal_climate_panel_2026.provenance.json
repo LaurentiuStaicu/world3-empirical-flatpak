@@ -1,0 +1,28 @@
+{
+  "created_on": "2026-08-31",
+  "panel_coverage": {
+    "start_year": 1961,
+    "end_year": 2024,
+    "countries": 174
+  },
+  "production_selection": "FAOSTAT Crops and livestock products; Cereals, primary; Production; tonnes",
+  "country_mapping": "FAOSTAT M49 numeric codes to ISO 3166-1 alpha-3 via pycountry; non-country regional aggregates are excluded",
+  "world_production_coverage": {
+    "minimum_1990_latest": 0.8726229684189005,
+    "minimum_1992_latest": 0.9835791538213764,
+    "median_1992_latest": 0.9970692188249443,
+    "method_note": "1990-1991 are retained but excluded from the >=90% gate because the USSR and successor-state code transition is not representable as a one-to-one current ISO3 country mapping"
+  },
+  "climate_source": "Contains modified Copernicus Climate Change Service ERA5 information, processed by Our World in Data",
+  "raw_files": {
+    "data/raw/faostat/Production_Crops_Livestock_E_All_Data_Normalized_2025.zip": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+    "data/raw/regional_climate/annual-temperature-anomalies_2026-08-31.csv": "b49073e5e3e174a9474999af366a3ec36e8479fae6fc764e2a90a0875e2d5a33",
+    "data/raw/regional_climate/global-precipitation-anomaly_2026-08-31.csv": "18f0b94aea8aef4f8e55cc2a04596ac3020c6020af80954fc525d9096f60fa54"
+  },
+  "source_urls": {
+    "faostat": "https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_All_Data_(Normalized).zip",
+    "temperature": "https://ourworldindata.org/grapher/annual-temperature-anomalies.csv",
+    "precipitation": "https://ourworldindata.org/grapher/global-precipitation-anomaly.csv"
+  },
+  "important_limit": "Annual country means do not represent crop calendars, subnational extremes, irrigation, soil moisture or crop-specific thresholds."
+}

@@ -9,14 +9,14 @@
 </p>
 
 <p align="center">
-  <img alt="Version 0.10.0" src="https://img.shields.io/badge/version-0.10.0-4e9a06">
+  <img alt="Version 0.10.1" src="https://img.shields.io/badge/version-0.10.1-4e9a06">
   <img alt="elementary OS 8" src="https://img.shields.io/badge/elementary_OS-8-64baff">
   <img alt="Flatpak" src="https://img.shields.io/badge/package-Flatpak-4a90d9">
   <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue">
 </p>
 
 <p align="center">
-  <a href="https://github.com/LaurentiuStaicu/world3-empirical-flatpak/releases/latest/download/World3-Empirical-0.10.0-x86_64.flatpak">
+  <a href="https://github.com/LaurentiuStaicu/world3-empirical-flatpak/releases/latest/download/World3-Empirical-0.10.1-x86_64.flatpak">
     <img alt="Download Flatpak for elementary OS 8" src="https://img.shields.io/badge/Download%20Flatpak-elementary%20OS%208-4A90D9?logo=flatpak&logoColor=white">
   </a>
 </p>
@@ -108,7 +108,7 @@ infrastructura AI, conflictele și politicile nu sunt încă feedbackuri cuplate
 Apasă butonul de mai jos pentru a descărca pachetul verificat pentru calculatoare
 `x86_64`:
 
-[![Download Flatpak for elementary OS 8](https://img.shields.io/badge/Download%20Flatpak-elementary%20OS%208-4A90D9?logo=flatpak&logoColor=white)](https://github.com/LaurentiuStaicu/world3-empirical-flatpak/releases/latest/download/World3-Empirical-0.10.0-x86_64.flatpak)
+[![Download Flatpak for elementary OS 8](https://img.shields.io/badge/Download%20Flatpak-elementary%20OS%208-4A90D9?logo=flatpak&logoColor=white)](https://github.com/LaurentiuStaicu/world3-empirical-flatpak/releases/latest/download/World3-Empirical-0.10.1-x86_64.flatpak)
 
 După descărcare, deschide fișierul `.flatpak` prin dublu clic și confirmă
 instalarea în elementary Sideload. Sistemul va afișa explicit sursa externă și
@@ -123,8 +123,6 @@ Suma SHA-256 este publicată alături de instalator în pagina
 Pentru dezvoltare sau audit, repository-ul oferă și construirea Flatpak
 reproductibilă din sursă. Instalează o singură dată SDK-ul elementary și
 Flatpak Builder:
-
-Instalează o singură dată SDK-ul elementary și Flatpak Builder:
 
 ```bash
 flatpak install --user appcenter io.elementary.Platform//8 io.elementary.Sdk//8
@@ -148,18 +146,42 @@ Pornire:
 flatpak run io.github.laurentiustaicu.World3Empirical
 ```
 
-Scriptul rulează validarea statică înainte de fiecare construire. Validarea
-poate fi pornită și separat:
+Scriptul verifică schema, hash-urile, metadatele, rapoartele științifice și
+testele înainte de fiecare construire. Aceste verificări pot fi pornite separat:
 
 ```bash
-python3 scripts/validate.py
+make validate
+make test
+make science-test
 ```
+
+Codul, snapshotul de date procesate, implementarea World3-03 și generatorul
+folosit pentru rezultatele modelului se află în `science/`. După instalarea
+mediului Python declarat în `science/pyproject.toml` și blocat prin `uv.lock`,
+rezultatele distribuite pot fi regenerate și comparate cu cele din aplicație:
+
+```bash
+uv run --project science --extra world3-03 python scripts/reproduce_scientific_results.py
+```
+
+Comanda descarcă automat arhiva FAOSTAT brută din sursa oficială numai dacă
+lipsește, apoi verifică atât dimensiunea, cât și SHA-256 înainte de a o folosi.
+URL-ul și amprenta snapshotului sunt declarate în
+`science/data/remote_inputs.json`. Fișierul brut mare nu este necesar pentru
+instalarea sau utilizarea aplicației.
+
+Performanța științifică este raportată separat de integritatea pachetului. Un
+rezultat mai slab decât BAU2 produce un avertisment și poate bloca promovarea
+unei variante, dar nu este ascuns și nu este transformat într-o eroare tehnică.
+Extrapolările tabelelor lookup emise de PySD sunt numărate pe candidat în
+`lookup_extrapolation_audit.csv`; avertismentele de alt tip rămân vizibile.
 
 ## Dezvoltare
 
 Manifestul Flatpak folosește `io.elementary.Sdk//8`, Meson, Vala, GTK 4 și
-Granite 7. Codul auditabil din `model/` generează scenariile experimentale de
-energie netă/EROI, dar nu este executat în timpul construirii aplicației.
+Granite 7. `science/` conține modelul reproductibil care produce seriile
+centrale, iar `model/` păstrează modulul experimental energie netă/EROI, încă
+necuplat în feedbackurile BAU Hibrid.
 
 Problemele reproductibile pot fi raportate în
 [GitHub Issues](https://github.com/LaurentiuStaicu/world3-empirical-flatpak/issues).

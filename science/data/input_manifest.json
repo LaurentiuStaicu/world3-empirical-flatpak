@@ -1,0 +1,30 @@
+{
+  "file_count": 16,
+  "files": {
+    "science/data/processed/aramendia_global_fossil_eroi_2024.csv": "217823d5bcc340620f8f70ae8e533dc251c5bbd1e174bb61a01d6f0abffd2080",
+    "science/data/processed/aramendia_global_fossil_eroi_2024.provenance.json": "0707e5a70abac4d921161adb027a0826dc074044fcc13f58c250a59555ba52ac",
+    "science/data/processed/empirical_model_inputs_2026-08-28.csv": "050bc2beedb1ee371b83fe34a4e371484f60392c2d1c432986a6846bfc8f114d",
+    "science/data/processed/energy_institute_global_2026.csv": "46b30240372b392f7e7aabb7b63a0521afd9a9af2574ff044867ea84d0a1074c",
+    "science/data/processed/energy_institute_global_2026.provenance.json": "1eca3a26375f7d56a0c4540eabccd8ea0d10c984dc1381757b2f4464f34e6a57",
+    "science/data/processed/nasa_gistemp_global_2026.csv": "c03e15198201c491cfbd665ad655f72c54f2df19db9c93614b5a2fb4ee5590fb",
+    "science/data/processed/nasa_gistemp_global_2026.provenance.json": "2ac56f0f060fbba0b15f483a2510b293fe5cfbebb2a8e39816f3b73270496ed9",
+    "science/data/processed/regional_cereal_climate_panel_2026.csv": "78a9c57f8279ed10eade43f777de36eaa3ffe4709d7af2422cf5bf35c4e8c912",
+    "science/data/processed/regional_cereal_climate_panel_2026.provenance.json": "86e1dc51e99a889b901e55976af4b064d531068551df21c0f98eb06726535e44",
+    "science/data/processed/world_bank_global_snapshot_2026-08-28.csv": "3e31054b295988303956c10160220dee1fb7eea042c58990e32b0c291c47fdd8",
+    "science/data/raw/bau2_e2026/2026-08-28/un_wpp2024_owid_adapter.csv": "2165be88f81291bf8298ee7cb81c3e19dbaa4ed5b79fc83098cbd5f34ae6bb6c",
+    "science/data/raw/bau2_e2026/2026-08-28/undp_hdi_owid_adapter.csv": "59fe1fb0551b57271f9c1ecb75399cf523b970902816901eb23643e2807e02dc",
+    "science/data/registry.csv": "9dc5fd5a59f1c920000aadd8eca0426f7783dd2013d5d1166c7f7af1780252b7",
+    "science/data/remote_inputs.json": "05e616b58cabebbd1ef3484edab70cb0a030e6b1b786a68e8bdb599f3b89da22",
+    "science/vendor/world3_03/World3_03_Scenarios.mdl": "42b22c734a71ee03abc31d80872234fbcd93d3d4fb9a277f606c6d677846731d"
+  },
+  "hash_algorithm": "SHA-256",
+  "manifest_version": "1.1",
+  "remote_files": {
+    "science/data/raw/bau2_e2026/2026-08-28/faostat_production_indices.zip": {
+      "sha256": "04c58034493d91f02e2495570d3864212ac870ec7f829a5f22577d143a6a8a72",
+      "size_bytes": 16167197,
+      "url": "https://bulks-faostat.fao.org/production/Production_Indices_E_All_Data_(Normalized).zip"
+    }
+  },
+  "snapshot_date": "2026-08-30"
+}

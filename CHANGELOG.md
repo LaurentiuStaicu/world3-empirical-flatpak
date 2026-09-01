@@ -1,5 +1,18 @@
 # Istoric versiuni
 
+## 0.10.1 — 1 septembrie 2026
+
+- păstrează neschimbate rezultatele științifice ale modelului 0.10.0;
+- citește seriile și diagnosticele după numele coloanelor, nu după poziție;
+- separă erorile de integritate de rezultatele științifice nefavorabile;
+- adaugă schemă de date, manifest determinist și hash-uri SHA-256;
+- generează versiunea ferestrei „Despre” direct din versiunea Meson;
+- include generatorul, datele procesate, implementarea World3-03 și testele necesare reproducerii;
+- descarcă arhiva FAOSTAT brută din sursa oficială și îi verifică dimensiunea și SHA-256 înainte de reproducere;
+- elimină suprimarea globală a avertismentelor din simulările candidate;
+- rezumă separat, pentru fiecare candidat, extrapolările tabelelor lookup World3/PySD;
+- regenerează în CI auditul climatic, EROI și agricol și rulează toate cele 55 de teste științifice.
+
 ## 0.10.0 — 30 august 2026
 
 - păstrează neschimbată selecția structurală și rularea World3 centrală;

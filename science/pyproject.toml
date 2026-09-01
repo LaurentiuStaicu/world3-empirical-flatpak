@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "world3-empirical-2026"
+version = "0.10.0"
+description = "Reproducible World3 calibration and system-dynamics experiments"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26,<2",
+  "pandas>=2.0",
+  "scipy>=1.12",
+  "matplotlib>=3.8",
+  "pyworld3==1.1",
+  "pycountry>=24.6.1",
+]
+
+[project.optional-dependencies]
+world3-03 = [
+  "pysd==3.14.3",
+  "xarray>=2024.3,<2024.11"
+]
+
+[project.scripts]
+world3-empirical = "world3_empirical.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

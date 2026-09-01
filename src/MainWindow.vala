@@ -430,15 +430,21 @@ public class World3Empirical.MainWindow : Gtk.ApplicationWindow {
         string contents;
         FileUtils.get_contents (path, out contents);
         var lines = contents.split ("\n");
+        if (lines.length < 2) { throw new IOError.INVALID_DATA ("Backtesting CSV gol"); }
+        var headers = lines[0].strip ().split (",");
+        int start_column = ScenarioData.require_column (headers, "test_start", path);
+        int end_column = ScenarioData.require_column (headers, "test_end", path);
+        int reference_column = ScenarioData.require_column (headers, "bau2_level_anchored_mape_pct", path);
+        int hybrid_column = ScenarioData.require_column (headers, "bau2_e2026_mape_pct", path);
         for (int row = 1; row < lines.length; row++) {
             var line = lines[row].strip ();
             if (line == "") { continue; }
             var fields = line.split (",");
-            if (fields.length < 7) { continue; }
-            backtest_start += int.parse (fields[2]);
-            backtest_end += int.parse (fields[3]);
-            backtest_reference += double.parse (fields[5]);
-            backtest_hybrid += double.parse (fields[6]);
+            require_fields (fields, headers.length, path, row + 1);
+            backtest_start += int.parse (fields[start_column]);
+            backtest_end += int.parse (fields[end_column]);
+            backtest_reference += double.parse (fields[reference_column]);
+            backtest_hybrid += double.parse (fields[hybrid_column]);
         }
         if (backtest_hybrid.length != CALIBRATED_INDICATOR_COUNT) {
             throw new IOError.INVALID_DATA ("Rezultatele backtestingului sunt incomplete");
@@ -449,15 +455,21 @@ public class World3Empirical.MainWindow : Gtk.ApplicationWindow {
         string contents;
         FileUtils.get_contents (path, out contents);
         var lines = contents.split ("\n");
+        if (lines.length < 2) { throw new IOError.INVALID_DATA ("Multi-origin CSV gol"); }
+        var headers = lines[0].strip ().split (",");
+        int origins_column = ScenarioData.require_column (headers, "origins", path);
+        int n_column = ScenarioData.require_column (headers, "n", path);
+        int reference_column = ScenarioData.require_column (headers, "bau2_level_anchored_mape_pct", path);
+        int hybrid_column = ScenarioData.require_column (headers, "bau2_e2026_mape_pct", path);
         for (int row = 1; row < lines.length; row++) {
             var line = lines[row].strip ();
             if (line == "") { continue; }
             var fields = line.split (",");
-            if (fields.length < 7) { continue; }
-            multi_origins += fields[1];
-            multi_n += int.parse (fields[3]);
-            multi_reference += double.parse (fields[4]);
-            multi_hybrid += double.parse (fields[5]);
+            require_fields (fields, headers.length, path, row + 1);
+            multi_origins += fields[origins_column];
+            multi_n += int.parse (fields[n_column]);
+            multi_reference += double.parse (fields[reference_column]);
+            multi_hybrid += double.parse (fields[hybrid_column]);
         }
         if (multi_hybrid.length != CALIBRATED_INDICATOR_COUNT) {
             throw new IOError.INVALID_DATA ("Backtestingul multi-origin este incomplet");
@@ -468,18 +480,34 @@ public class World3Empirical.MainWindow : Gtk.ApplicationWindow {
         string contents;
         FileUtils.get_contents (path, out contents);
         var lines = contents.split ("\n");
+        if (lines.length < 2) { throw new IOError.INVALID_DATA ("Diagnostic CSV gol"); }
+        var headers = lines[0].strip ().split (",");
+        int start_column = ScenarioData.require_column (headers, "obs_start", path);
+        int end_column = ScenarioData.require_column (headers, "obs_end", path);
+        int mape_column = ScenarioData.require_column (headers, "historical_mape_pct", path);
+        int bias_column = ScenarioData.require_column (headers, "historical_bias_pct", path);
         for (int row = 1; row < lines.length; row++) {
             var line = lines[row].strip ();
             if (line == "") { continue; }
             var fields = line.split (",");
-            if (fields.length < 6) { continue; }
-            fit_start += int.parse (fields[1]);
-            fit_end += int.parse (fields[2]);
-            fit_mape += double.parse (fields[4]);
-            fit_bias += double.parse (fields[5]);
+            require_fields (fields, headers.length, path, row + 1);
+            fit_start += int.parse (fields[start_column]);
+            fit_end += int.parse (fields[end_column]);
+            fit_mape += double.parse (fields[mape_column]);
+            fit_bias += double.parse (fields[bias_column]);
         }
         if (fit_mape.length != CALIBRATED_INDICATOR_COUNT) {
             throw new IOError.INVALID_DATA ("Diagnosticul retrospectiv este incomplet");
+        }
+    }
+
+    private void require_fields (string[] fields, int expected, string path, int row) throws Error {
+        if (fields.length < expected) {
+            throw new IOError.INVALID_DATA (
+                "%s: rândul %d are %d coloane, antetul are %d".printf (
+                    path, row, fields.length, expected
+                )
+            );
         }
     }
 
@@ -488,7 +516,7 @@ public class World3Empirical.MainWindow : Gtk.ApplicationWindow {
         dialog.transient_for = this;
         dialog.modal = true;
         dialog.program_name = "World3 Empirical";
-        dialog.version = "0.10.0";
+        dialog.version = BuildConfig.VERSION;
         dialog.comments =
             "BAU Hibrid 2026 compară observațiile cu scenariile World3-03 BAU și BAU2 originale. " +
             "Linia hibridă păstrează o singură rulare BAU2 cu același vector de șapte parametri structurali. Pentru comparația cu FAOSTAT, semnalul alimentar observat combină 25% ieșirea alimentară World3 și 75% capacitatea industrială de input. CO₂ anual folosește activitatea industrială drept proxy; stocul persistent de poluare rămâne separat și latent. Aceste două punți au fost alese cu date încheiate în 2018 și nu modifică selecția structurală sau feedbackurile World3. " +

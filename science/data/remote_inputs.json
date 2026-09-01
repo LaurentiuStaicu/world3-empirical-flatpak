@@ -1,0 +1,10 @@
+{
+  "manifest_version": "1.0",
+  "files": {
+    "science/data/raw/bau2_e2026/2026-08-28/faostat_production_indices.zip": {
+      "url": "https://bulks-faostat.fao.org/production/Production_Indices_E_All_Data_(Normalized).zip",
+      "sha256": "04c58034493d91f02e2495570d3864212ac870ec7f829a5f22577d143a6a8a72",
+      "size_bytes": 16167197
+    }
+  }
+}
