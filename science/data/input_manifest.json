@@ -15,7 +15,7 @@
     "science/data/raw/bau2_e2026/2026-08-28/undp_hdi_owid_adapter.csv": "59fe1fb0551b57271f9c1ecb75399cf523b970902816901eb23643e2807e02dc",
     "science/data/registry.csv": "9dc5fd5a59f1c920000aadd8eca0426f7783dd2013d5d1166c7f7af1780252b7",
     "science/data/remote_inputs.json": "05e616b58cabebbd1ef3484edab70cb0a030e6b1b786a68e8bdb599f3b89da22",
-    "science/vendor/world3_03/World3_03_Scenarios.mdl": "42b22c734a71ee03abc31d80872234fbcd93d3d4fb9a277f606c6d677846731d"
+    "science/vendor/world3_03/World3_03_Scenarios.mdl": "252e0c7eebff23d3c44344b6801cf3c40aec82d25b356ea8cce16a052249ac4d"
   },
   "hash_algorithm": "SHA-256",
   "manifest_version": "1.1",
