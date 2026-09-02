@@ -1,5 +1,15 @@
 # Istoric versiuni
 
+## 0.10.2 — 2 septembrie 2026
+
+- păstrează neschimbate rezultatele științifice ale modelului 0.10.0;
+- compară exact structura, textele, identificatorii și ordinea rezultatelor reproduse;
+- acceptă numai diferențe numerice de ordinul preciziei mașinii între platforme;
+- raportează abaterea numerică absolută maximă și respinge orice modificare peste
+  toleranța declarată de 1e-12;
+- adaugă teste care disting variația benignă de virgulă mobilă de schimbările
+  numerice, textuale sau structurale reale.
+
 ## 0.10.1 — 1 septembrie 2026
 
 - păstrează neschimbate rezultatele științifice ale modelului 0.10.0;

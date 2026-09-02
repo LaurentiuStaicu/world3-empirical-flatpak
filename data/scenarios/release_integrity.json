@@ -1,5 +1,5 @@
 {
-  "app_version": "0.10.1",
+  "app_version": "0.10.2",
   "data_snapshot": "2026-08-30",
   "file_count": 18,
   "files": {
@@ -19,7 +19,7 @@
     "data/scenarios/pollution_pressure.csv": "eca3a1ce94d99e801dec0829c2d846dde117793a212642889031ef51fecd90b5",
     "data/scenarios/population.csv": "8735eddacd998911732686f43a2f715606e46dc060c010699a5fafc73297d50a",
     "data/scenarios/resources_remaining_pct.csv": "7683cccf44bf05068fc523cee265760cb2858cbe8c6a26fb9bc4f52ac4ddf997",
-    "data/scenarios/scenario_schema.json": "4db9b24f54299563d6a8f3c05ec0297dd64fd6f2bf0caf8ace5bc426e40cb841",
+    "data/scenarios/scenario_schema.json": "1dfd93d4b86f9681f3532832d4d724641c683a45a176139642b92f9c2f58727a",
     "data/scenarios/validation_candidate_ranking.csv": "8b066dc551e990aff16926b17f6179f5aafe05f84ee733a7a6bc5ed7995ccfc2"
   },
   "hash_algorithm": "SHA-256",

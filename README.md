@@ -9,14 +9,14 @@
 </p>
 
 <p align="center">
-  <img alt="Version 0.10.1" src="https://img.shields.io/badge/version-0.10.1-4e9a06">
+  <img alt="Version 0.10.2" src="https://img.shields.io/badge/version-0.10.2-4e9a06">
   <img alt="elementary OS 8" src="https://img.shields.io/badge/elementary_OS-8-64baff">
   <img alt="Flatpak" src="https://img.shields.io/badge/package-Flatpak-4a90d9">
   <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue">
 </p>
 
 <p align="center">
-  <a href="https://github.com/LaurentiuStaicu/world3-empirical-flatpak/releases/latest/download/World3-Empirical-0.10.1-x86_64.flatpak">
+  <a href="https://github.com/LaurentiuStaicu/world3-empirical-flatpak/releases/latest/download/World3-Empirical-0.10.2-x86_64.flatpak">
     <img alt="Download Flatpak for elementary OS 8" src="https://img.shields.io/badge/Download%20Flatpak-elementary%20OS%208-4A90D9?logo=flatpak&logoColor=white">
   </a>
 </p>
@@ -108,7 +108,7 @@ infrastructura AI, conflictele și politicile nu sunt încă feedbackuri cuplate
 Apasă butonul de mai jos pentru a descărca pachetul verificat pentru calculatoare
 `x86_64`:
 
-[![Download Flatpak for elementary OS 8](https://img.shields.io/badge/Download%20Flatpak-elementary%20OS%208-4A90D9?logo=flatpak&logoColor=white)](https://github.com/LaurentiuStaicu/world3-empirical-flatpak/releases/latest/download/World3-Empirical-0.10.1-x86_64.flatpak)
+[![Download Flatpak for elementary OS 8](https://img.shields.io/badge/Download%20Flatpak-elementary%20OS%208-4A90D9?logo=flatpak&logoColor=white)](https://github.com/LaurentiuStaicu/world3-empirical-flatpak/releases/latest/download/World3-Empirical-0.10.2-x86_64.flatpak)
 
 După descărcare, deschide fișierul `.flatpak` prin dublu clic și confirmă
 instalarea în elementary Sideload. Sistemul va afișa explicit sursa externă și

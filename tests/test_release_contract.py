@@ -3,6 +3,7 @@ from __future__ import annotations
 import importlib.util
 import json
 from pathlib import Path
+import tempfile
 import unittest
 
 
@@ -18,6 +19,9 @@ def load_module(filename: str, name: str):
 
 
 integrity = load_module("validate_integrity.py", "validate_integrity")
+reproduction = load_module(
+    "reproduce_scientific_results.py", "reproduce_scientific_results"
+)
 
 
 class ReleaseContractTests(unittest.TestCase):
@@ -68,6 +72,57 @@ class ReleaseContractTests(unittest.TestCase):
         ):
             self.assertIn(f'require_column (headers, "{column}"', window)
         self.assertNotRegex(window, r"fields\[[0-9]+\]")
+
+    def test_csv_reproduction_accepts_machine_precision_only(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            generated = root / "generated.csv"
+            packaged = root / "packaged.csv"
+            generated.write_text("name,value\ncentral,0.009371596496610582\n", encoding="utf-8")
+            packaged.write_text("name,value\ncentral,0.009371596496610493\n", encoding="utf-8")
+            difference = reproduction.compare_csv(generated, packaged)
+            self.assertGreater(difference, 0)
+
+    def test_csv_reproduction_rejects_material_numeric_change(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            generated = root / "generated.csv"
+            packaged = root / "packaged.csv"
+            generated.write_text("name,value\ncentral,1.000001\n", encoding="utf-8")
+            packaged.write_text("name,value\ncentral,1.0\n", encoding="utf-8")
+            with self.assertRaisesRegex(RuntimeError, "absolute difference"):
+                reproduction.compare_csv(generated, packaged)
+
+    def test_csv_reproduction_rejects_text_or_schema_change(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            generated = root / "generated.csv"
+            packaged = root / "packaged.csv"
+            generated.write_text("name,value\nchanged,1\n", encoding="utf-8")
+            packaged.write_text("name,value\ncentral,1\n", encoding="utf-8")
+            with self.assertRaisesRegex(RuntimeError, "changed"):
+                reproduction.compare_csv(generated, packaged)
+
+    def test_json_reproduction_is_tolerant_only_for_floats(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            generated = root / "generated.json"
+            packaged = root / "packaged.json"
+            generated.write_text(
+                '{"candidate": "c001", "score": 0.009371596496610582}\n',
+                encoding="utf-8",
+            )
+            packaged.write_text(
+                '{"candidate": "c001", "score": 0.009371596496610493}\n',
+                encoding="utf-8",
+            )
+            self.assertGreater(reproduction.compare_json(generated, packaged), 0)
+            generated.write_text(
+                '{"candidate": "c002", "score": 0.009371596496610582}\n',
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(RuntimeError, "c002"):
+                reproduction.compare_json(generated, packaged)
 
 
 if __name__ == "__main__":

@@ -59,6 +59,11 @@
     <binary>io.github.laurentiustaicu.World3Empirical</binary>
   </provides>
   <releases>
+    <release version="0.10.2" date="2026-09-02">
+      <description>
+        <p>Face reproducerea portabilă între platforme: păstrează verificarea exactă a structurii și identificatorilor, acceptă numai diferențe numerice la precizia mașinii și raportează abaterea maximă.</p>
+      </description>
+    </release>
     <release version="0.10.1" date="2026-09-01">
       <description>
         <p>Separă validarea integrității de evaluarea performanței, citește seriile CSV după numele coloanelor, adaugă scheme, hash-uri SHA-256 și auditul extrapolărilor lookup și include sursa reproductibilă fără a modifica traiectoriile științifice 0.10.0.</p>
