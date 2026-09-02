@@ -114,10 +114,19 @@ materiale îmbunătățește validarea în afara eșantionului.
 Auditul de dezvoltare exportă suplimentar `lookup_extrapolation_detail.csv`,
 care descompune pentru fiecare candidat numărul de evenimente după ecuația
 lookup și direcția depășirii. Sumele și numărul combinațiilor distincte sunt
-reconciliate automat cu fișierul agregat. Această descompunere nu este încă un
-filtru de selecție: avertismentul PySD nu conține anul și distanța față de
-capătul domeniului, iar comutatoarele temporale de scenariu trebuie separate de
-lookup-urile cauzale înaintea definirii unui prag.
+reconciliate automat cu fișierul agregat.
+
+`lookup_extrapolation_context.csv` păstrează, pentru fiecare candidat, tabel,
+direcție și moment al simulării, numărul de evenimente, intervalul valorilor de
+intrare, limitele tabelului și distanța absolută și normalizată până la limita
+depășită. Totalurile sunt reconciliate automat cu avertismentele emise de PySD.
+Contextul temporal și distanța permit diferențierea unei abateri marginale și
+scurte de o extrapolare mare și persistentă.
+
+Aceste măsurători nu sunt încă un filtru de selecție. Comutatoarele temporale
+de scenariu trebuie separate de lookup-urile cauzale, iar pragurile de
+severitate trebuie predeclarate și verificate în validarea multi-origin înainte
+ca o penalizare de domeniu să poată influența calibrarea.
 
 În release-ul actual, rularea centrală (candidatul 114) produce 1.273 de
 evenimente de avertizare, aparținând la 21 de mesaje distincte; cele 12 rulări

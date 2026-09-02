@@ -8,6 +8,7 @@ observation-unit mappings; they do not alter the simulated feedbacks.
 from __future__ import annotations
 
 from collections import Counter
+from contextlib import contextmanager
 from dataclasses import dataclass
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import json
@@ -19,7 +20,9 @@ import warnings
 import numpy as np
 import pandas as pd
 import pysd
+from pysd.py_backend.lookups import Lookups
 from scipy.stats import qmc
+import xarray as xr
 
 from build_bau2_e2026 import Indicator, build_indicators
 from world3_empirical.world3_03 import _sanitized_model_text, _source_model_path
@@ -187,6 +190,115 @@ def parse_lookup_warning(message: str) -> tuple[str, str]:
     return lookup, direction
 
 
+def lookup_extrapolation_measurement(
+    lookup: Lookups, data: xr.DataArray, x: object
+) -> dict[str, float | str] | None:
+    """Describe one call that will emit a PySD lookup-boundary warning."""
+    try:
+        bounds = np.asarray(data["lookup_dim"].values, dtype=float)
+    except (AttributeError, KeyError, TypeError, ValueError):
+        return None
+    if bounds.size < 2 or not np.isfinite(bounds).all():
+        return None
+
+    lower = float(bounds[0])
+    upper = float(bounds[-1])
+    if isinstance(x, xr.DataArray):
+        if not x.dims:
+            # PySD immediately recurses with a scalar and warns there.
+            return None
+        values = np.asarray(x.values, dtype=float)
+        if lookup.interp != "extrapolate" and np.all(values > upper):
+            direction = "above"
+        elif lookup.interp != "extrapolate" and np.all(values < lower):
+            direction = "below"
+        else:
+            # Mixed arrays are split by PySD; scalar recursive calls are audited.
+            return None
+    else:
+        try:
+            values = np.asarray([float(x)], dtype=float)
+        except (TypeError, ValueError):
+            return None
+        if values[0] > upper:
+            direction = "above"
+        elif values[0] < lower:
+            direction = "below"
+        else:
+            return None
+
+    finite = values[np.isfinite(values)]
+    if finite.size == 0:
+        return None
+    input_min = float(np.min(finite))
+    input_max = float(np.max(finite))
+    if direction == "above":
+        nearest_distance = input_min - upper
+        furthest_distance = input_max - upper
+    else:
+        nearest_distance = lower - input_max
+        furthest_distance = lower - input_min
+    span = upper - lower
+    return {
+        "lookup": lookup.py_name,
+        "direction": direction,
+        "input_min": input_min,
+        "input_max": input_max,
+        "lower_bound": lower,
+        "upper_bound": upper,
+        "nearest_boundary_distance": float(nearest_distance),
+        "furthest_boundary_distance": float(furthest_distance),
+        "nearest_boundary_distance_normalized": float(nearest_distance / span),
+        "furthest_boundary_distance_normalized": float(furthest_distance / span),
+    }
+
+
+@contextmanager
+def capture_lookup_extrapolation_context(model):
+    """Capture time, input and domain for every warning emitted by PySD lookups."""
+    original_call = Lookups._call
+    aggregated: dict[tuple[str, str, float, float, float], dict[str, object]] = {}
+
+    def audited_call(lookup, data, x, final_subs=None):
+        measurement = lookup_extrapolation_measurement(lookup, data, x)
+        if measurement is not None:
+            year = float(model.time())
+            key = (
+                str(measurement["lookup"]),
+                str(measurement["direction"]),
+                year,
+                float(measurement["lower_bound"]),
+                float(measurement["upper_bound"]),
+            )
+            if key not in aggregated:
+                aggregated[key] = {"year": year, "count": 0, **measurement}
+            row = aggregated[key]
+            row["count"] = int(row["count"]) + 1
+            row["input_min"] = min(
+                float(row["input_min"]), float(measurement["input_min"])
+            )
+            row["input_max"] = max(
+                float(row["input_max"]), float(measurement["input_max"])
+            )
+            for name in (
+                "nearest_boundary_distance",
+                "nearest_boundary_distance_normalized",
+            ):
+                row[name] = min(float(row[name]), float(measurement[name]))
+            for name in (
+                "furthest_boundary_distance",
+                "furthest_boundary_distance_normalized",
+            ):
+                row[name] = max(float(row[name]), float(measurement[name]))
+        return original_call(lookup, data, x, final_subs)
+
+    Lookups._call = audited_call
+    try:
+        yield aggregated
+    finally:
+        Lookups._call = original_call
+
+
 def _run_candidate_chunk(
     tasks: list[tuple[int, np.ndarray]],
 ) -> list[tuple[int, np.ndarray, dict[str, np.ndarray], dict[str, object]]]:
@@ -199,14 +311,15 @@ def _run_candidate_chunk(
         model_path.write_text(_sanitized_model_text(_source_model_path()), encoding="utf-8")
         model = pysd.read_vensim(model_path)
         for candidate_id, values in tasks:
-            with warnings.catch_warnings(record=True) as caught:
-                warnings.simplefilter("always")
-                raw = model.run(
-                    params=model_parameters(values),
-                    return_columns=MODEL_COLUMNS,
-                    return_timestamps=YEARS,
-                    reload=True,
-                )
+            with capture_lookup_extrapolation_context(model) as warning_context:
+                with warnings.catch_warnings(record=True) as caught:
+                    warnings.simplefilter("always")
+                    raw = model.run(
+                        params=model_parameters(values),
+                        return_columns=MODEL_COLUMNS,
+                        return_timestamps=YEARS,
+                        reload=True,
+                    )
             lookup_warnings = [
                 item
                 for item in caught
@@ -226,12 +339,21 @@ def _run_candidate_chunk(
                 "\t".join(parse_lookup_warning(message))
                 for message in warning_messages
             )
+            contextual_rows = list(warning_context.values())
+            contextual_count = sum(int(row["count"]) for row in contextual_rows)
+            if contextual_count != len(warning_messages):
+                raise RuntimeError(
+                    f"Candidate {candidate_id}: contextual lookup audit captured "
+                    f"{contextual_count} events but PySD emitted "
+                    f"{len(warning_messages)} warnings"
+                )
             warning_stats = {
                 "total": len(warning_messages),
                 "above": sum("above the maximum" in value for value in warning_messages),
                 "below": sum("below the minimum" in value for value in warning_messages),
                 "unique": len(set(warning_messages)),
                 "details": dict(warning_details),
+                "context": contextual_rows,
             }
             if not np.isfinite(raw.to_numpy(dtype=float)).all():
                 raise RuntimeError(f"Candidate {candidate_id} produced non-finite output")
@@ -252,6 +374,7 @@ def _run_candidate_chunk(
 def export_lookup_warning_audit(stats: dict[int, dict[str, object]]) -> None:
     rows = []
     detail_rows = []
+    context_rows = []
     for candidate_id in sorted(stats):
         row = {"candidate_id": candidate_id}
         row.update(
@@ -274,6 +397,13 @@ def export_lookup_warning_audit(stats: dict[int, dict[str, object]]) -> None:
                     "count": int(count),
                 }
             )
+        context = stats[candidate_id]["context"]
+        if not isinstance(context, list):
+            raise TypeError("Lookup warning context must be a list")
+        for contextual_row in context:
+            if not isinstance(contextual_row, dict):
+                raise TypeError("Each lookup warning context row must be a dictionary")
+            context_rows.append({"candidate_id": candidate_id, **contextual_row})
     pd.DataFrame(rows).to_csv(
         OUTPUT / "lookup_extrapolation_audit.csv", index=False
     )
@@ -281,6 +411,26 @@ def export_lookup_warning_audit(stats: dict[int, dict[str, object]]) -> None:
         detail_rows,
         columns=("candidate_id", "lookup", "direction", "count"),
     ).to_csv(OUTPUT / "lookup_extrapolation_detail.csv", index=False)
+    pd.DataFrame(
+        context_rows,
+        columns=(
+            "candidate_id",
+            "lookup",
+            "direction",
+            "year",
+            "count",
+            "input_min",
+            "input_max",
+            "lower_bound",
+            "upper_bound",
+            "nearest_boundary_distance",
+            "furthest_boundary_distance",
+            "nearest_boundary_distance_normalized",
+            "furthest_boundary_distance_normalized",
+        ),
+    ).sort_values(
+        ["candidate_id", "lookup", "direction", "year"]
+    ).to_csv(OUTPUT / "lookup_extrapolation_context.csv", index=False)
 
 
 def run_candidates(candidate_values: np.ndarray) -> list[Candidate]:
@@ -293,6 +443,7 @@ def run_candidates(candidate_values: np.ndarray) -> list[Candidate]:
             and np.allclose(cached["values"], candidate_values)
             and all(key in cached for key in warning_keys)
             and "warning_details_json" in cached
+            and "warning_context_json" in cached
         ):
             candidates = []
             for candidate_id, values in enumerate(candidate_values):
@@ -314,6 +465,9 @@ def run_candidates(candidate_values: np.ndarray) -> list[Candidate]:
                         },
                         "details": json.loads(
                             str(cached["warning_details_json"][candidate_id])
+                        ),
+                        "context": json.loads(
+                            str(cached["warning_context_json"][candidate_id])
                         ),
                     }
                     for candidate_id in range(len(candidate_values))
@@ -352,6 +506,13 @@ def run_candidates(candidate_values: np.ndarray) -> list[Candidate]:
     cache_payload["warning_details_json"] = np.array(
         [
             json.dumps(warning_stats[candidate_id]["details"], sort_keys=True)
+            for candidate_id in range(len(candidates))
+        ],
+        dtype=str,
+    )
+    cache_payload["warning_context_json"] = np.array(
+        [
+            json.dumps(warning_stats[candidate_id]["context"], sort_keys=True)
             for candidate_id in range(len(candidates))
         ],
         dtype=str,

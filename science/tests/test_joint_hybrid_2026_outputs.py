@@ -204,6 +204,52 @@ class JointHybrid2026OutputTests(unittest.TestCase):
         self.assertIn("_hardcodedlookup_capacity_utilization_fraction_table", central_lookups)
         self.assertIn("_hardcodedlookup_land_fertility_degredation_rate_table", central_lookups)
 
+    def test_lookup_extrapolation_context_reconciles_and_measures_distance(self):
+        with (OUTPUT / "lookup_extrapolation_detail.csv").open(
+            newline="", encoding="utf-8"
+        ) as handle:
+            details = list(csv.DictReader(handle))
+        with (OUTPUT / "lookup_extrapolation_context.csv").open(
+            newline="", encoding="utf-8"
+        ) as handle:
+            context = list(csv.DictReader(handle))
+
+        expected = {}
+        for row in details:
+            key = (int(row["candidate_id"]), row["lookup"], row["direction"])
+            expected[key] = int(row["count"])
+        measured = {key: 0 for key in expected}
+        for row in context:
+            key = (int(row["candidate_id"]), row["lookup"], row["direction"])
+            self.assertIn(key, expected)
+            measured[key] += int(row["count"])
+            self.assertGreaterEqual(float(row["year"]), 1900.0)
+            self.assertLessEqual(float(row["year"]), 2100.0)
+            self.assertLess(float(row["lower_bound"]), float(row["upper_bound"]))
+            self.assertGreaterEqual(float(row["nearest_boundary_distance"]), 0.0)
+            self.assertGreaterEqual(
+                float(row["furthest_boundary_distance"]),
+                float(row["nearest_boundary_distance"]),
+            )
+            self.assertGreaterEqual(
+                float(row["nearest_boundary_distance_normalized"]), 0.0
+            )
+            self.assertGreaterEqual(
+                float(row["furthest_boundary_distance_normalized"]),
+                float(row["nearest_boundary_distance_normalized"]),
+            )
+        self.assertEqual(measured, expected)
+
+        central_capacity = [
+            row
+            for row in context
+            if int(row["candidate_id"]) == 114
+            and row["lookup"]
+            == "_hardcodedlookup_capacity_utilization_fraction_table"
+        ]
+        self.assertTrue(central_capacity)
+        self.assertGreater(len({float(row["year"]) for row in central_capacity}), 1)
+
 
 if __name__ == "__main__":
     unittest.main()
