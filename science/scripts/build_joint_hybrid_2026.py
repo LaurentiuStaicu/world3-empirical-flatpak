@@ -7,6 +7,7 @@ observation-unit mappings; they do not alter the simulated feedbacks.
 
 from __future__ import annotations
 
+from collections import Counter
 from dataclasses import dataclass
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import json
@@ -171,12 +172,27 @@ def transform_outputs(raw: pd.DataFrame) -> dict[str, pd.Series]:
     }
 
 
+def parse_lookup_warning(message: str) -> tuple[str, str]:
+    """Return the lookup identifier and boundary direction from a PySD warning."""
+    lines = [line.strip() for line in message.splitlines() if line.strip()]
+    if len(lines) != 2:
+        raise ValueError(f"Unexpected PySD lookup warning: {message!r}")
+    lookup = lines[0]
+    if "above the maximum" in lines[1]:
+        direction = "above"
+    elif "below the minimum" in lines[1]:
+        direction = "below"
+    else:
+        raise ValueError(f"Unknown PySD lookup boundary direction: {message!r}")
+    return lookup, direction
+
+
 def _run_candidate_chunk(
     tasks: list[tuple[int, np.ndarray]],
-) -> list[tuple[int, np.ndarray, dict[str, np.ndarray], dict[str, int]]]:
+) -> list[tuple[int, np.ndarray, dict[str, np.ndarray], dict[str, object]]]:
     """Run one deterministic shard with one PySD model load per process."""
     results: list[
-        tuple[int, np.ndarray, dict[str, np.ndarray], dict[str, int]]
+        tuple[int, np.ndarray, dict[str, np.ndarray], dict[str, object]]
     ] = []
     with tempfile.TemporaryDirectory(prefix="joint_world3_03_worker_") as directory:
         model_path = Path(directory) / "World3_03_Joint.mdl"
@@ -206,11 +222,16 @@ def _run_candidate_chunk(
                         item.lineno,
                     )
             warning_messages = [str(item.message) for item in lookup_warnings]
+            warning_details = Counter(
+                "\t".join(parse_lookup_warning(message))
+                for message in warning_messages
+            )
             warning_stats = {
                 "total": len(warning_messages),
                 "above": sum("above the maximum" in value for value in warning_messages),
                 "below": sum("below the minimum" in value for value in warning_messages),
                 "unique": len(set(warning_messages)),
+                "details": dict(warning_details),
             }
             if not np.isfinite(raw.to_numpy(dtype=float)).all():
                 raise RuntimeError(f"Candidate {candidate_id} produced non-finite output")
@@ -228,15 +249,38 @@ def _run_candidate_chunk(
     return results
 
 
-def export_lookup_warning_audit(stats: dict[int, dict[str, int]]) -> None:
+def export_lookup_warning_audit(stats: dict[int, dict[str, object]]) -> None:
     rows = []
+    detail_rows = []
     for candidate_id in sorted(stats):
         row = {"candidate_id": candidate_id}
-        row.update(stats[candidate_id])
+        row.update(
+            {
+                key: int(stats[candidate_id][key])
+                for key in ("total", "above", "below", "unique")
+            }
+        )
         rows.append(row)
+        details = stats[candidate_id]["details"]
+        if not isinstance(details, dict):
+            raise TypeError("Lookup warning details must be a dictionary")
+        for compound, count in sorted(details.items()):
+            lookup, direction = str(compound).split("\t", maxsplit=1)
+            detail_rows.append(
+                {
+                    "candidate_id": candidate_id,
+                    "lookup": lookup,
+                    "direction": direction,
+                    "count": int(count),
+                }
+            )
     pd.DataFrame(rows).to_csv(
         OUTPUT / "lookup_extrapolation_audit.csv", index=False
     )
+    pd.DataFrame(
+        detail_rows,
+        columns=("candidate_id", "lookup", "direction", "count"),
+    ).to_csv(OUTPUT / "lookup_extrapolation_detail.csv", index=False)
 
 
 def run_candidates(candidate_values: np.ndarray) -> list[Candidate]:
@@ -248,6 +292,7 @@ def run_candidates(candidate_values: np.ndarray) -> list[Candidate]:
             cached["values"].shape == candidate_values.shape
             and np.allclose(cached["values"], candidate_values)
             and all(key in cached for key in warning_keys)
+            and "warning_details_json" in cached
         ):
             candidates = []
             for candidate_id, values in enumerate(candidate_values):
@@ -263,8 +308,13 @@ def run_candidates(candidate_values: np.ndarray) -> list[Candidate]:
             export_lookup_warning_audit(
                 {
                     candidate_id: {
-                        key.removeprefix("warning_"): int(cached[key][candidate_id])
-                        for key in warning_keys
+                        **{
+                            key.removeprefix("warning_"): int(cached[key][candidate_id])
+                            for key in warning_keys
+                        },
+                        "details": json.loads(
+                            str(cached["warning_details_json"][candidate_id])
+                        ),
                     }
                     for candidate_id in range(len(candidate_values))
                 }
@@ -277,7 +327,7 @@ def run_candidates(candidate_values: np.ndarray) -> list[Candidate]:
     for candidate_id, values in enumerate(candidate_values):
         task_shards[candidate_id % worker_count].append((candidate_id, values))
     completed: dict[int, Candidate] = {}
-    warning_stats: dict[int, dict[str, int]] = {}
+    warning_stats: dict[int, dict[str, object]] = {}
     with ProcessPoolExecutor(max_workers=worker_count) as executor:
         futures = [executor.submit(_run_candidate_chunk, shard) for shard in task_shards]
         for future in as_completed(futures):
@@ -299,6 +349,13 @@ def run_candidates(candidate_values: np.ndarray) -> list[Candidate]:
             [warning_stats[candidate_id][key] for candidate_id in range(len(candidates))],
             dtype=int,
         )
+    cache_payload["warning_details_json"] = np.array(
+        [
+            json.dumps(warning_stats[candidate_id]["details"], sort_keys=True)
+            for candidate_id in range(len(candidates))
+        ],
+        dtype=str,
+    )
     np.savez_compressed(CACHE, **cache_payload)
     export_lookup_warning_audit(warning_stats)
     return candidates

@@ -175,6 +175,35 @@ class JointHybrid2026OutputTests(unittest.TestCase):
         weak = sum(row["weakly_identified"] == "True" for row in rows)
         self.assertGreaterEqual(weak, 5)
 
+    def test_lookup_extrapolation_detail_reconciles_to_candidate_totals(self):
+        with (OUTPUT / "lookup_extrapolation_audit.csv").open(
+            newline="", encoding="utf-8"
+        ) as handle:
+            audit = {int(row["candidate_id"]): row for row in csv.DictReader(handle)}
+        with (OUTPUT / "lookup_extrapolation_detail.csv").open(
+            newline="", encoding="utf-8"
+        ) as handle:
+            details = list(csv.DictReader(handle))
+
+        counts = {candidate_id: 0 for candidate_id in audit}
+        unique = {candidate_id: 0 for candidate_id in audit}
+        for row in details:
+            candidate_id = int(row["candidate_id"])
+            self.assertIn(row["direction"], {"above", "below"})
+            self.assertTrue(row["lookup"].startswith("_hardcodedlookup_"))
+            counts[candidate_id] += int(row["count"])
+            unique[candidate_id] += 1
+
+        self.assertEqual(len(audit), 128)
+        for candidate_id, row in audit.items():
+            self.assertEqual(counts[candidate_id], int(row["total"]))
+            self.assertEqual(unique[candidate_id], int(row["unique"]))
+
+        central_rows = [row for row in details if int(row["candidate_id"]) == 114]
+        central_lookups = {row["lookup"] for row in central_rows}
+        self.assertIn("_hardcodedlookup_capacity_utilization_fraction_table", central_lookups)
+        self.assertIn("_hardcodedlookup_land_fertility_degredation_rate_table", central_lookups)
+
 
 if __name__ == "__main__":
     unittest.main()

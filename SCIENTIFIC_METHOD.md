@@ -111,6 +111,14 @@ domeniului, nu o măsură directă a erorii de prognoză; versiuni viitoare treb
 să testeze explicit dacă respingerea candidaților cu extrapolări structurale
 materiale îmbunătățește validarea în afara eșantionului.
 
+Auditul de dezvoltare exportă suplimentar `lookup_extrapolation_detail.csv`,
+care descompune pentru fiecare candidat numărul de evenimente după ecuația
+lookup și direcția depășirii. Sumele și numărul combinațiilor distincte sunt
+reconciliate automat cu fișierul agregat. Această descompunere nu este încă un
+filtru de selecție: avertismentul PySD nu conține anul și distanța față de
+capătul domeniului, iar comutatoarele temporale de scenariu trebuie separate de
+lookup-urile cauzale înaintea definirii unui prag.
+
 În release-ul actual, rularea centrală (candidatul 114) produce 1.273 de
 evenimente de avertizare, aparținând la 21 de mesaje distincte; cele 12 rulări
 admise au între 884 și 1.693 de evenimente. Numărul mare confirmă că domeniul
