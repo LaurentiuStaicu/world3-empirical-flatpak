@@ -26,6 +26,11 @@ class LookupDomainGuardrailTests(unittest.TestCase):
         )
         self.assertEqual(sorted(backtest["origin"].unique()), [2005, 2010, 2015, 2018])
 
+    def test_reused_temporal_comparison_is_disclosed(self):
+        manifest = json.loads((OUTPUT / "manifest.json").read_text())
+        self.assertTrue(manifest["temporal_comparison_reused_across_project_audits"])
+        self.assertIn("not a globally untouched", manifest["interpretation_limit"])
+
     def test_metrics_cover_every_candidate_at_every_origin(self):
         metrics = pd.read_csv(OUTPUT / "candidate_lookup_metrics.csv")
         self.assertEqual(len(metrics), 128 * 4)
@@ -35,9 +40,7 @@ class LookupDomainGuardrailTests(unittest.TestCase):
 
     def test_best_development_policy_fails_the_promotion_rule(self):
         summary = pd.read_csv(OUTPUT / "policy_summary.csv")
-        chosen = summary.sort_values(
-            ["development_log_rmse", "independent_log_rmse", "policy"]
-        ).iloc[0]
+        chosen = summary.sort_values(["development_log_rmse", "policy"]).iloc[0]
         self.assertEqual(chosen["policy"], "events_q25")
         self.assertLess(chosen["development_improvement_pct"], 5.0)
         self.assertLess(chosen["independent_improvement_pct"], 5.0)

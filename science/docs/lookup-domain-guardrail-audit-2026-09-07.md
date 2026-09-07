@@ -5,7 +5,7 @@
 Penalizarea sau eliminarea candidaților care extrapolează frecvent tabelele
 lookup World3 nu intră în selecția centrală BAU Hibrid 2026 v0.10.0. Cea mai
 bună regulă aleasă numai pe originile de dezvoltare a redus eroarea agregată cu
-3,42% în dezvoltare și cu 4,12% în testul independent 2018–ultimul an. Ambele
+3,42% în dezvoltare și cu 4,12% în comparația temporală 2018–ultimul an. Ambele
 câștiguri sunt sub pragul predeclarat de 5%, iar unele sectoare s-au degradat
 material.
 
@@ -44,7 +44,9 @@ ating o limită a mapării observaționale rămân excluși înaintea filtrului.
 
 Originile 2005, 2010 și 2015 formează dezvoltarea. Regula cu eroarea agregată
 cea mai mică în aceste origini este înghețată, apoi evaluată separat la originea
-2018. În 2005 nu există încă un segment anterior complet pentru selecție, astfel
+2018. Această origine a fost deja folosită în alte audituri ale proiectului;
+este separată temporal de selecție, dar nu este un holdout confirmator complet
+neatins. În 2005 nu există încă un segment anterior complet pentru selecție, astfel
 încât candidatul de bază 0 este păstrat de ambele proceduri.
 
 ## Rezultat
@@ -57,10 +59,10 @@ dezvoltare și candidatul 100 la originea independentă 2018, față de candidat
 | Criteriu | Rezultat | Prag de acceptare |
 |---|---:|---:|
 | reducerea log-RMSE în dezvoltare | 3,42% | minimum 5% |
-| reducerea log-RMSE în testul independent | 4,12% | minimum 5% |
-| cea mai mare deteriorare sectorială independentă | 120,88% | maximum 10% |
+| reducerea log-RMSE la originea 2018 | 4,12% | minimum 5% |
+| cea mai mare deteriorare sectorială la originea 2018 | 120,88% | maximum 10% |
 
-În testul independent, eroarea populației crește cu 120,88%, iar eroarea
+În comparația temporală, eroarea populației crește cu 120,88%, iar eroarea
 hranei pe locuitor cu 14,68%. O mică îmbunătățire agregată este obținută în
 principal prin sectorul de poluare și nu compensează pierderea de robustețe
 între sectoare.

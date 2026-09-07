@@ -284,7 +284,7 @@ def main() -> None:
             summary_records.append(summarize_policy(frame, baseline))
 
     summary = pd.DataFrame(summary_records).sort_values(
-        ["development_log_rmse", "independent_log_rmse", "policy"]
+        ["development_log_rmse", "policy"]
     )
     feasible_summary = summary.loc[summary["feasible"]]
     if feasible_summary.empty:
@@ -330,6 +330,7 @@ def main() -> None:
         "origins": list(ORIGINS),
         "development_origins": list(DEVELOPMENT_ORIGINS),
         "independent_origin": INDEPENDENT_ORIGIN,
+        "temporal_comparison_reused_across_project_audits": True,
         "scenario_switch_lookups_excluded": True,
         "candidate_count": len(candidates),
         "policies_screened": len(METRICS) * len(RETENTION_QUANTILES),
@@ -355,6 +356,11 @@ def main() -> None:
         "interpretation": (
             "Lookup-domain distance is a useful validity diagnostic, but this "
             "screening rule is not a validated selection improvement."
+        ),
+        "interpretation_limit": (
+            "The 2018-origin comparison is temporally separated from policy "
+            "selection but has been reused by earlier project audits; it is not "
+            "a globally untouched confirmatory holdout."
         ),
     }
     (OUTPUT / "manifest.json").write_text(

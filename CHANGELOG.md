@@ -2,6 +2,12 @@
 
 ## În dezvoltare
 
+- clasifică toate cele 33 de lookup-uri cauzale World3 în șase mecanisme și
+  testează 36 de filtre specifice mecanismului fără informație din viitor;
+- respinge cel mai bun filtru: +2,09% în dezvoltare, −11,64% la originea 2018
+  și o deteriorare sectorială maximă de 276,41%;
+- precizează că originea 2018 este o comparație temporală reutilizată, nu un
+  holdout confirmator complet neatins;
 - testează separat dacă extrapolările funcțiilor lookup pot deveni o regulă de
   selecție a candidaților fără informație din viitor;
 - exclude comutatoarele de scenariu și compară 16 politici pe patru origini;

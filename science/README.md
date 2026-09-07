@@ -104,7 +104,12 @@ Pentru auditul domeniilor lookup:
 
 ```bash
 PYTHONPATH=src:scripts .venv/bin/python scripts/evaluate_lookup_domain_guardrail.py
+PYTHONPATH=src:scripts .venv/bin/python scripts/evaluate_lookup_mechanisms.py
 ```
+
+Al doilea test împarte cele 33 de lookup-uri cauzale în șase mecanisme și
+verifică dacă un filtru specific mecanismului îmbunătățește prospectiv selecția.
+Rezultatul curent este negativ; niciun filtru nu modifică modelul central.
 
 Rezultatele din `outputs/net_energy/` sunt scenarii structurale, nu intervale
 de probabilitate. Ele nu modifică încă traiectoria centrală BAU2-E2026.

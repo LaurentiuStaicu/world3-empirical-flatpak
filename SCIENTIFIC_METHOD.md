@@ -133,6 +133,18 @@ de 5%. În plus, eroarea populației crește cu 120,88%, iar cea a hranei cu
 calibrarea centrală sau ansamblul. Auditul complet este în
 `science/docs/lookup-domain-guardrail-audit-2026-09-07.md`.
 
+Un al doilea audit predeclară șase familii cauzale pentru toate cele 33 de
+lookup-uri nespecifice scenariilor: capacitate și muncă, agricultură și teren,
+poluare și ecologie, sănătate și mortalitate, fertilitate și răspuns social,
+respectiv afluență și cerere materială. Din 36 de politici, cea mai bună după
+originile de dezvoltare filtrează expunerea lookup din mecanismul fertilității.
+Câștigul de dezvoltare este numai 2,09%; la originea 2018 eroarea agregată
+crește cu 11,64%, iar deteriorarea sectorială maximă este 276,41%. Politica
+este respinsă. Originea 2018 este separată temporal de selecție, dar a fost
+reutilizată în auditurile proiectului și nu este prezentată drept holdout
+confirmator neatins. Detaliile sunt în
+`science/docs/lookup-mechanism-audit-2026-09-07.md`.
+
 În release-ul actual, rularea centrală (candidatul 114) produce 1.273 de
 evenimente de avertizare, aparținând la 21 de mesaje distincte; cele 12 rulări
 admise au între 884 și 1.693 de evenimente. Numărul mare confirmă că domeniul
