@@ -123,10 +123,15 @@ depășită. Totalurile sunt reconciliate automat cu avertismentele emise de PyS
 Contextul temporal și distanța permit diferențierea unei abateri marginale și
 scurte de o extrapolare mare și persistentă.
 
-Aceste măsurători nu sunt încă un filtru de selecție. Comutatoarele temporale
-de scenariu trebuie separate de lookup-urile cauzale, iar pragurile de
-severitate trebuie predeclarate și verificate în validarea multi-origin înainte
-ca o penalizare de domeniu să poată influența calibrarea.
+Aceste măsurători au fost testate ulterior ca filtru de selecție, după separarea
+comutatoarelor temporale `scenario_table` de lookup-urile cauzale. Cea mai bună
+regulă aleasă numai pe originile 2005/2010/2015 păstrează quartila de candidați
+cu cele mai puține extrapolări. Ea reduce log-RMSE agregat cu numai 3,42% în
+dezvoltare și 4,12% în testul independent 2018–ultimul an, sub pragul declarat
+de 5%. În plus, eroarea populației crește cu 120,88%, iar cea a hranei cu
+14,68% în testul independent. Regula este respinsă și nu influențează
+calibrarea centrală sau ansamblul. Auditul complet este în
+`science/docs/lookup-domain-guardrail-audit-2026-09-07.md`.
 
 În release-ul actual, rularea centrală (candidatul 114) produce 1.273 de
 evenimente de avertizare, aparținând la 21 de mesaje distincte; cele 12 rulări

@@ -17,6 +17,7 @@ SCRIPTS = (
     "evaluate_eroi_resource_link.py",
     "evaluate_regional_agricultural_stress.py",
     "analyze_energy_coupling.py",
+    "evaluate_lookup_domain_guardrail.py",
 )
 
 

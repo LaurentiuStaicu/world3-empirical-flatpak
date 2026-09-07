@@ -41,6 +41,12 @@ Extensia prospectivă reduce eroarea în holdoutul 2019–2024, dar o mărește 
 realizată este mai slabă. Indicatorul este respins, iar v0.10.0 rămâne
 neschimbată. Următorul test necesită sezoane de vegetație și umiditatea solului.
 
+Un al patrulea audit testează dacă frecvența și distanța extrapolărilor lookup
+pot îmbunătăți selecția candidaților. Cea mai bună regulă reduce eroarea
+agregată cu 3,42% în dezvoltare și 4,12% în testul independent, dar agravează
+puternic populația și hrana. Regula este respinsă; avertismentele rămân
+diagnostic de validitate, nu penalizare automată în modelul central.
+
 În stratul BAU2-E2026 pentru aplicație, intervalul Monte Carlo P10–P90 este
 exportat separat de alternativa structurală BAU. Emisiile anuale de CO₂ sunt
 comparate cu rata de generare a poluării World3, flux-la-flux; stocul persistent
@@ -92,6 +98,12 @@ PYTHONPATH=src:scripts .venv/bin/python scripts/ingest_gistemp.py
 PYTHONPATH=src:scripts .venv/bin/python scripts/evaluate_climate_food_link.py
 PYTHONPATH=src:scripts .venv/bin/python scripts/ingest_regional_agricultural_climate.py
 PYTHONPATH=src:scripts .venv/bin/python scripts/evaluate_regional_agricultural_stress.py
+```
+
+Pentru auditul domeniilor lookup:
+
+```bash
+PYTHONPATH=src:scripts .venv/bin/python scripts/evaluate_lookup_domain_guardrail.py
 ```
 
 Rezultatele din `outputs/net_energy/` sunt scenarii structurale, nu intervale

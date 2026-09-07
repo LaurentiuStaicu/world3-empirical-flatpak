@@ -1,5 +1,14 @@
 # Istoric versiuni
 
+## În dezvoltare
+
+- testează separat dacă extrapolările funcțiilor lookup pot deveni o regulă de
+  selecție a candidaților fără informație din viitor;
+- exclude comutatoarele de scenariu și compară 16 politici pe patru origini;
+- respinge filtrul: câștigurile agregate de 3,42% în dezvoltare și 4,12% în
+  testul independent sunt sub prag, iar unele sectoare se deteriorează;
+- păstrează neschimbate aplicația 0.10.2 și modelul BAU Hibrid 2026 v0.10.0.
+
 ## 0.10.2 — 2 septembrie 2026
 
 - păstrează neschimbate rezultatele științifice ale modelului 0.10.0;
