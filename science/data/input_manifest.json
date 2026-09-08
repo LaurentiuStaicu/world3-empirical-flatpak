@@ -1,5 +1,5 @@
 {
-  "file_count": 16,
+  "file_count": 20,
   "files": {
     "science/data/processed/aramendia_global_fossil_eroi_2024.csv": "217823d5bcc340620f8f70ae8e533dc251c5bbd1e174bb61a01d6f0abffd2080",
     "science/data/processed/aramendia_global_fossil_eroi_2024.provenance.json": "0707e5a70abac4d921161adb027a0826dc074044fcc13f58c250a59555ba52ac",
@@ -10,10 +10,14 @@
     "science/data/processed/nasa_gistemp_global_2026.provenance.json": "2ac56f0f060fbba0b15f483a2510b293fe5cfbebb2a8e39816f3b73270496ed9",
     "science/data/processed/regional_cereal_climate_panel_2026.csv": "78a9c57f8279ed10eade43f777de36eaa3ffe4709d7af2422cf5bf35c4e8c912",
     "science/data/processed/regional_cereal_climate_panel_2026.provenance.json": "86e1dc51e99a889b901e55976af4b064d531068551df21c0f98eb06726535e44",
+    "science/data/processed/unido_national_accounts_world_2026-09-07.csv": "254f99e3af0c4e3c623f5e00730b2e4fca8974bb54362931c2b79297affe1451",
+    "science/data/processed/unido_national_accounts_world_2026-09-07.provenance.json": "7796210f624a6ca6fbdd0459b4dfc6f58cd1e173a7dcd1765e0824ac190eadcf",
     "science/data/processed/world_bank_global_snapshot_2026-08-28.csv": "3e31054b295988303956c10160220dee1fb7eea042c58990e32b0c291c47fdd8",
     "science/data/raw/bau2_e2026/2026-08-28/un_wpp2024_owid_adapter.csv": "2165be88f81291bf8298ee7cb81c3e19dbaa4ed5b79fc83098cbd5f34ae6bb6c",
     "science/data/raw/bau2_e2026/2026-08-28/undp_hdi_owid_adapter.csv": "59fe1fb0551b57271f9c1ecb75399cf523b970902816901eb23643e2807e02dc",
-    "science/data/registry.csv": "9dc5fd5a59f1c920000aadd8eca0426f7783dd2013d5d1166c7f7af1780252b7",
+    "science/data/raw/unido/2026-09-07/national_accounts_metadata.json": "d8bb7ebf4796227f948112bc2627b01f6e5b3617521151e796f0350fc6abe987",
+    "science/data/raw/unido/2026-09-07/national_accounts_world.json": "8da69d87b7e340586e60d764ebf692039d501adaa7fc0191e6ed3e0daca92bf5",
+    "science/data/registry.csv": "adee71f236244cb3551deb7b4c9ef5443ae2b1d4da22896f008bbbae574c0ab6",
     "science/data/remote_inputs.json": "05e616b58cabebbd1ef3484edab70cb0a030e6b1b786a68e8bdb599f3b89da22",
     "science/vendor/world3_03/World3_03_Scenarios.mdl": "252e0c7eebff23d3c44344b6801cf3c40aec82d25b356ea8cce16a052249ac4d"
   },

@@ -47,6 +47,14 @@ agregată cu 3,42% în dezvoltare și 4,12% în testul independent, dar agraveaz
 puternic populația și hrana. Regula este respinsă; avertismentele rămân
 diagnostic de validitate, nu penalizare automată în modelul central.
 
+Un al cincilea audit adaugă agregatul mondial oficial UNIDO pentru valoarea
+adăugată manufacturieră pe locuitor ca reper industrial independent. Variațiile
+anuale ale proxy-ului UNIDO și ale seriei World Bank folosite curent au o
+corelație de 0,954 în intervalul comun 1992–2025. Ambele serii selectează exact
+aceiași candidați la originile 2009, 2014 și 2018, astfel încât auditul nu oferă
+un câștig prospectiv pentru recalibrare. Seria este acceptată în registru ca
+diagnostic, iar BAU Hibrid 2026 v0.10.0 rămâne neschimbat.
+
 În stratul BAU2-E2026 pentru aplicație, intervalul Monte Carlo P10–P90 este
 exportat separat de alternativa structurală BAU. Emisiile anuale de CO₂ sunt
 comparate cu rata de generare a poluării World3, flux-la-flux; stocul persistent
@@ -110,6 +118,18 @@ PYTHONPATH=src:scripts .venv/bin/python scripts/evaluate_lookup_mechanisms.py
 Al doilea test împarte cele 33 de lookup-uri cauzale în șase mecanisme și
 verifică dacă un filtru specific mecanismului îmbunătățește prospectiv selecția.
 Rezultatul curent este negativ; niciun filtru nu modifică modelul central.
+
+Pentru ingestia și auditul reperului industrial UNIDO:
+
+```bash
+PYTHONPATH=src:scripts .venv/bin/python scripts/ingest_unido_national_accounts.py
+PYTHONPATH=src:scripts .venv/bin/python scripts/evaluate_unido_industry_proxy.py
+```
+
+Conectorul citește identificatorul datasetului din metadatele curente ale API,
+solicită grupul oficial `WORLD` și păstrează răspunsurile brute, amprentele
+SHA-256 și proveniența. Auditul înlocuiește numai ținta observată pentru
+industrie; ecuațiile, spațiul candidaților și toate celelalte ținte rămân fixe.
 
 Rezultatele din `outputs/net_energy/` sunt scenarii structurale, nu intervale
 de probabilitate. Ele nu modifică încă traiectoria centrală BAU2-E2026.

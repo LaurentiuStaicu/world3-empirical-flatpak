@@ -2,6 +2,12 @@
 
 ## În dezvoltare
 
+- adaugă agregatul mondial UNIDO MVA/locuitor 1990–2025 ca reper industrial
+  independent, cu răspunsuri API brute, proveniență și hash-uri reproductibile;
+- compară proxy-urile UNIDO și World Bank fără schimbarea ecuațiilor sau a
+  spațiului celor 128 de candidați;
+- păstrează modelul central neschimbat: ambele proxy-uri selectează aceiași
+  candidați, iar criteriul predeclarat pentru promovarea recalibrării nu trece;
 - clasifică toate cele 33 de lookup-uri cauzale World3 în șase mecanisme și
   testează 36 de filtre specifice mecanismului fără informație din viitor;
 - respinge cel mai bun filtru: +2,09% în dezvoltare, −11,64% la originea 2018

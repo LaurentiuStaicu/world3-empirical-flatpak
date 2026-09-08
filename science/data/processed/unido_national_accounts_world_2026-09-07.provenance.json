@@ -1,0 +1,50 @@
+{
+  "retrieved_on": "2026-09-07",
+  "source_institution": "United Nations Industrial Development Organization (UNIDO)",
+  "dataset_key": "NATIONAL_ACCOUNTS",
+  "dataset_id_at_retrieval": 140,
+  "dataset_name": "National Accounts Database",
+  "production_year": "2026",
+  "portal_inserted_on": "11 Mar 2026",
+  "aggregation": "WORLD",
+  "variables": {
+    "MvaCod": {
+      "c": "MvaCod",
+      "lang": {
+        "en": "MVA (Manufacturing Value Added), constant 2020 USD"
+      },
+      "type": "M",
+      "base_year": "2015"
+    },
+    "Pop": {
+      "c": "Pop",
+      "lang": {
+        "en": "Population"
+      },
+      "type": "N",
+      "base_year": "2015"
+    }
+  },
+  "period_start": 1990,
+  "period_end": 2025,
+  "observations": 36,
+  "year_metadata": [
+    {
+      "year": "2025",
+      "metadataList": [
+        {
+          "note": "UNIDO estimate",
+          "noteClass": "Special note"
+        }
+      ]
+    }
+  ],
+  "metadata_url": "https://stat.unido.org/portal/dataset/getDataset/NATIONAL_ACCOUNTS",
+  "data_url": "https://stat.unido.org/portal/dataset/getDataWithoutActivities",
+  "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "attribution": "UNIDO Statistics Portal, National Accounts Database",
+  "raw_metadata_sha256": "d8bb7ebf4796227f948112bc2627b01f6e5b3617521151e796f0350fc6abe987",
+  "raw_data_sha256": "8da69d87b7e340586e60d764ebf692039d501adaa7fc0191e6ed3e0daca92bf5",
+  "unit_note": "The portal variable label says constant 2020 USD while its base_year field reports 2015. The snapshot preserves the published label and records this metadata inconsistency rather than silently resolving it.",
+  "use_limit": "MVA is conceptually closer to manufacturing than the current World Bank industry-including-construction proxy, but it remains value added rather than the physical gross output represented by World3."
+}

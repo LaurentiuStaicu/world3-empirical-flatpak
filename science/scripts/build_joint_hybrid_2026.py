@@ -404,14 +404,24 @@ def export_lookup_warning_audit(stats: dict[int, dict[str, object]]) -> None:
             if not isinstance(contextual_row, dict):
                 raise TypeError("Each lookup warning context row must be a dictionary")
             context_rows.append({"candidate_id": candidate_id, **contextual_row})
-    pd.DataFrame(rows).to_csv(
-        OUTPUT / "lookup_extrapolation_audit.csv", index=False
+    def write_atomic(frame: pd.DataFrame, path: Path) -> None:
+        """Keep readers from observing a partially written diagnostic."""
+
+        temporary = path.with_suffix(path.suffix + ".tmp")
+        frame.to_csv(temporary, index=False)
+        os.replace(temporary, path)
+
+    write_atomic(
+        pd.DataFrame(rows), OUTPUT / "lookup_extrapolation_audit.csv"
     )
-    pd.DataFrame(
-        detail_rows,
-        columns=("candidate_id", "lookup", "direction", "count"),
-    ).to_csv(OUTPUT / "lookup_extrapolation_detail.csv", index=False)
-    pd.DataFrame(
+    write_atomic(
+        pd.DataFrame(
+            detail_rows,
+            columns=("candidate_id", "lookup", "direction", "count"),
+        ),
+        OUTPUT / "lookup_extrapolation_detail.csv",
+    )
+    context_frame = pd.DataFrame(
         context_rows,
         columns=(
             "candidate_id",
@@ -428,9 +438,8 @@ def export_lookup_warning_audit(stats: dict[int, dict[str, object]]) -> None:
             "nearest_boundary_distance_normalized",
             "furthest_boundary_distance_normalized",
         ),
-    ).sort_values(
-        ["candidate_id", "lookup", "direction", "year"]
-    ).to_csv(OUTPUT / "lookup_extrapolation_context.csv", index=False)
+    ).sort_values(["candidate_id", "lookup", "direction", "year"])
+    write_atomic(context_frame, OUTPUT / "lookup_extrapolation_context.csv")
 
 
 def run_candidates(candidate_values: np.ndarray) -> list[Candidate]:

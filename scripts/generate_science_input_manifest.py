@@ -43,6 +43,9 @@ def main() -> None:
     payload = {
         "manifest_version": "1.1",
         "hash_algorithm": "SHA-256",
+        # This is the frozen central-model snapshot declared by the packaged
+        # scenario schema. Later audit-only inputs carry their own retrieval
+        # dates in provenance and the registry.
         "snapshot_date": "2026-08-30",
         "file_count": len(files) + len(remote_files),
         "files": {

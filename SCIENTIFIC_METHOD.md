@@ -145,6 +145,23 @@ reutilizată în auditurile proiectului și nu este prezentată drept holdout
 confirmator neatins. Detaliile sunt în
 `science/docs/lookup-mechanism-audit-2026-09-07.md`.
 
+Un audit separat folosește valoarea adăugată manufacturieră (MVA) pe locuitor
+din baza National Accounts a UNIDO drept proxy industrial independent. Sunt
+folosite agregatul `WORLD` furnizat de UNIDO, valorile constante etichetate de
+portal drept dolari 2020 și populația din același răspuns. Seria este indexată
+la 2015 = 100, fără însumarea manuală a țărilor. În intervalul comun 1992–2025,
+corelația variațiilor logaritmice anuale cu proxy-ul World Bank existent este
+0,954, iar diferența absolută medie dintre indici este 2,06 puncte.
+
+În testele cu origini 2009, 2014 și 2018, ținta UNIDO și ținta World Bank aleg
+aceiași candidați (101, 99 și 73). La originea 2018, eroarea UNIDO pentru
+2019–2025 este MAPE 1,66%, însă schimbarea selectorului nu o reduce. Candidatul
+central de producție rămâne 114, iar reancorarea exclusivă la nivelul UNIDO ar
+schimba industria/locuitor din 2030 și 2035 cu numai −0,27%, fără efect asupra
+celorlalte ieșiri. UNIDO este astfel acceptat ca diagnostic independent, dar
+nu promovat ca nouă calibrare. Protocolul și rezultatele complete sunt în
+`science/docs/unido-industry-proxy-audit-2026-09-07.md`.
+
 În release-ul actual, rularea centrală (candidatul 114) produce 1.273 de
 evenimente de avertizare, aparținând la 21 de mesaje distincte; cele 12 rulări
 admise au între 884 și 1.693 de evenimente. Numărul mare confirmă că domeniul
@@ -159,6 +176,9 @@ modelul să poată fi prezentat drept prognoză robustă.
   generice sau a stocului de poluare persistentă World3.
 - HDI este un proxy pentru Human Welfare Index, nu aceeași mărime.
 - Industria World Bank include construcțiile.
+- Reperul UNIDO exclude construcțiile și definește mai curat manufactura, dar
+  MVA este tot o valoare monetară adăugată, nu producția fizică brută World3;
+  valoarea 2025 este estimată de UNIDO.
 - EROI, clima, apa, mineralele, infrastructura AI, conflictele și politicile nu
   sunt încă feedbackuri explicite în rularea centrală.
 - Agregarea globală ascunde diferențele regionale și distribuționale.
