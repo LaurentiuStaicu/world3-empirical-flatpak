@@ -12,26 +12,39 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Fetch public IIP metadata
+      - name: Fetch public IIP metadata and API schema
         shell: bash
         run: |
           mkdir -p iip-probe
-          curl --fail --silent --show-error --retry 3 \
-            -H 'User-Agent: World3-Empirical-reproducibility/0.10.2' \
-            https://stat.unido.org/portal/dataset/getDataset/IIP \
-            -o iip-probe/iip_metadata.json
+          base=https://stat.unido.org/portal
+          agent='World3-Empirical-reproducibility/0.10.2'
+          curl --fail --silent --show-error --retry 3 -H "User-Agent: $agent" \
+            "$base/dataset/getDataset/IIP" -o iip-probe/iip_metadata.json
+          curl --fail --silent --show-error --retry 3 -H "User-Agent: $agent" \
+            "$base/swagger-ui/swagger-initializer.js" -o iip-probe/swagger-initializer.js
+          curl --fail --silent --show-error --retry 3 -H "User-Agent: $agent" \
+            "$base/api-docs.html" -o iip-probe/api-docs.html
+          api_url=$(sed -n 's/.*url: "\([^"]*\)".*/\1/p' iip-probe/swagger-initializer.js | head -1)
+          printf '%s\n' "$api_url" > iip-probe/openapi-url.txt
+          if test -n "$api_url"; then
+            case "$api_url" in
+              http*) openapi_url="$api_url" ;;
+              /*) openapi_url="https://stat.unido.org$api_url" ;;
+              *) openapi_url="$base/$api_url" ;;
+            esac
+            curl --fail --silent --show-error --retry 3 -H "User-Agent: $agent" \
+              "$openapi_url" -o iip-probe/openapi.json
+          fi
           python3 -m json.tool iip-probe/iip_metadata.json > iip-probe/iip_metadata.pretty.json
 
-      - name: Record a compact schema summary
+      - name: Record compact schema summaries
         shell: bash
         run: |
           python3 - <<'PY'
           import json
           from pathlib import Path
-          meta = json.loads(Path("iip-probe/iip_metadata.json").read_text())
-          def sample(key, n=30):
-              value = meta.get(key)
-              return value[:n] if isinstance(value, list) else value
+          root = Path("iip-probe")
+          meta = json.loads((root / "iip_metadata.json").read_text())
           summary = {
               "top_level_keys": sorted(meta),
               "id": meta.get("id"),
@@ -43,18 +56,30 @@ jobs:
               "variables": meta.get("variables", []),
               "activities": meta.get("activities", []),
               "groups": meta.get("groups", []),
-              "country_sample": sample("countries"),
+              "country_count": len(meta.get("countries", [])),
+              "countries": meta.get("countries", []),
           }
-          Path("iip-probe/schema_summary.json").write_text(
+          (root / "schema_summary.json").write_text(
               json.dumps(summary, indent=2, ensure_ascii=False) + "\n",
               encoding="utf-8",
           )
+          if (root / "openapi.json").is_file():
+              spec = json.loads((root / "openapi.json").read_text())
+              paths = {
+                  key: value for key, value in spec.get("paths", {}).items()
+                  if "dataset" in key.lower() or "data" in key.lower()
+              }
+              schemas = spec.get("components", {}).get("schemas", {})
+              (root / "openapi-relevant.json").write_text(
+                  json.dumps({"paths": paths, "schemas": schemas}, indent=2) + "\n",
+                  encoding="utf-8",
+              )
           PY
 
       - name: Upload probe result
         uses: actions/upload-artifact@v4
         with:
-          name: unido-iip-metadata
+          name: unido-iip-schema
           path: iip-probe/
           if-no-files-found: error
           retention-days: 7
