@@ -20,6 +20,7 @@ SCRIPTS = (
     "evaluate_lookup_domain_guardrail.py",
     "evaluate_lookup_mechanisms.py",
     "evaluate_unido_industry_proxy.py",
+    "evaluate_unido_iip_volume.py",
 )
 
 

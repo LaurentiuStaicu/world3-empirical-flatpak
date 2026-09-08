@@ -162,6 +162,22 @@ celorlalte ieșiri. UNIDO este astfel acceptat ca diagnostic independent, dar
 nu promovat ca nouă calibrare. Protocolul și rezultatele complete sunt în
 `science/docs/unido-industry-proxy-audit-2026-09-07.md`.
 
+Un audit complementar folosește indicele UNIDO al producției industriale
+(IIP), care elimină efectul prețurilor și măsoară în general producția brută
+manufacturieră. Deoarece API-ul IIP nu furnizează agregatul `WORLD` și UNIDO nu
+publică imputările naționale folosite în agregatele proprii, seria este
+reconstruită transparent dintr-un panou echilibrat 2005–2025. Cele 101 economii
+acoperă 94,49% din ponderile MVA 2020 disponibile. Variațiile anuale au o
+corelație de 0,985 cu proxy-ul World Bank și de 0,988 cu UNIDO MVA.
+
+La originile compatibile 2014 și 2018, IIP și World Bank selectează aceiași
+candidați (99 și 100); originea 2009 este indisponibilă și nu este completată
+artificial. Câștigul prospectiv al schimbării proxy-ului este 0%, iar
+candidatul complet refăcut rămâne 114. Diferența de −3,97% a proiecției
+industriale este numai reancorarea la nivelul IIP din 2025, nu o structură sau
+dinamică nouă. Auditul rămâne diagnostic și este documentat în
+`science/docs/unido-iip-volume-audit-2026-09-08.md`.
+
 În release-ul actual, rularea centrală (candidatul 114) produce 1.273 de
 evenimente de avertizare, aparținând la 21 de mesaje distincte; cele 12 rulări
 admise au între 884 și 1.693 de evenimente. Numărul mare confirmă că domeniul
@@ -179,6 +195,9 @@ modelul să poată fi prezentat drept prognoză robustă.
 - Reperul UNIDO exclude construcțiile și definește mai curat manufactura, dar
   MVA este tot o valoare monetară adăugată, nu producția fizică brută World3;
   valoarea 2025 este estimată de UNIDO.
+- IIP UNIDO măsoară volum brut real și este conceptual mai apropiat de World3,
+  dar reconstrucția publică exclude imputările UNIDO, începe abia în 2005 și
+  acoperă numai manufactura, nu întregul sector industrial World3.
 - EROI, clima, apa, mineralele, infrastructura AI, conflictele și politicile nu
   sunt încă feedbackuri explicite în rularea centrală.
 - Agregarea globală ascunde diferențele regionale și distribuționale.

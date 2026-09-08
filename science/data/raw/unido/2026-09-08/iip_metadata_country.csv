@@ -1,0 +1,398 @@
+CountryCode,Country,Title,Note
+008,Albania,Data Supplier,INSTAT Instituti i Statistikave
+008,Albania,Source,Industrial production index by Economic_Activity
+012,Algeria,Data Supplier,Office National des Statistiques Algerie
+012,Algeria,Source,Indice de la production trimestrielle
+020,Andorra,Data Supplier,Govern dAndorra
+020,Andorra,Source,Annual national accounts - Estimated GDP by sectors
+024,Angola,Data Supplier,Instituto Nacional de Estatistica Angola
+024,Angola,Note,Chain-linked index with quarter-over-quarter growth rates
+024,Angola,Source,Index of industrial production
+028,Antigua and Barbuda,Data Supplier,Antigua and Barbuda Statistics Division
+028,Antigua and Barbuda,Source,Gross Domestic Product by Economic Activity
+031,Azerbaijan,Data Supplier,The State Statistical Committee of the Republic of Azerbaijan
+031,Azerbaijan,Source,Indexes of industrial production by kinds of economic activity
+032,Argentina,Data Supplier,INDEC Instituto Nacional de Estadistica y Censos
+032,Argentina,Note,Index calculated out of monthly growth rates
+032,Argentina,Source,Indice de producción industrial manufacturero
+036,Australia,Data Supplier,Australian Bureau of Statistics
+036,Australia,Source,Indexes of Industrial Production
+040,Austria,Data Supplier,Statistik Austria
+040,Austria,Note,Data obtained via Eurostat.
+040,Austria,Source,Index of industrial production
+044,Bahamas,Data Supplier,The Government of Bahamas Department of Statistics
+044,Bahamas,Note,Indices calculated with GDP
+044,Bahamas,Source,Quarterly Gross Domestic Product by economic activity at constant prices
+048,Bahrain,Data Supplier,Information and eGovernment Authority
+048,Bahrain,Source,Quarterly Gross Domestic Product (GDP) at constant prices by economic activities
+050,Bangladesh,Data Supplier,Bangladesh Bureau of Statistics
+050,Bangladesh,Source,Industrial Production Statistics (IPS)
+051,Armenia,Data Supplier,Statistical Committee Republic of Armenia
+051,Armenia,Source,Index of Industrial Production
+052,Barbados,Data Supplier,Barbados Statistical Service
+052,Barbados,Source,Gross Domestic Product at Constant prices
+056,Belgium,Data Supplier,Statbel (Statistics Belgium)
+056,Belgium,Note,Data obtained via Eurostat.
+056,Belgium,Source,Index of industrial production
+060,Bermuda,Data Supplier,Government of Bermuda Department of Statistics
+060,Bermuda,Source,Gross Domestic Product at constant prices
+064,Bhutan,Data Supplier,National Statistics Bureau Bhutan
+064,Bhutan,Source,Gross domestic product by economic activity in constant prices
+068,Bolivia (Plurinational State of),Data Supplier," Instituto Nacional de Estadstica Estado Plurinacional de Bolivia"
+068,Bolivia (Plurinational State of),Source,Volume index of manufacturing sector
+070,Bosnia and Herzegovina,Data Supplier,Agency for Statistics of Bosnia and Herzegovina
+070,Bosnia and Herzegovina,Note,Data obtained via Eurostat.
+070,Bosnia and Herzegovina,Source,Index of industrial production
+072,Botswana,Data Supplier,Statistics Botswana
+072,Botswana,Note,Index calculated with quarterly VA
+072,Botswana,Source,Value Added by Kind of Economic Activity at Constant 2016 Prices
+076,Brazil,Data Supplier,IBGE Instituto Brasileiro de Geografiea e Estatistica
+076,Brazil,Source,Industrial Physical Production by sections and industrial activities
+084,Belize,Data Supplier,Statistical Institute of Belize
+084,Belize,Source,Gross Domestic Product by Activity Constant Prices
+090,Solomon Islands,Data Supplier,Solomon Islands National Statistics Office
+090,Solomon Islands,Source,Gross Domestic Product (GDP) by economic activity
+096,Brunei Darussalam,Data Supplier,Department of Economic Planning and Development Ministry of Finance
+096,Brunei Darussalam,Note,Index calculated with GDP
+096,Brunei Darussalam,Source,National Accounts GDP at constant prices 2010
+100,Bulgaria,Data Supplier,National Statistical Institute Bulgaria
+100,Bulgaria,Note,Data obtained via Eurostat.
+100,Bulgaria,Source,Index of industrial production
+104,Myanmar,Data Supplier,Central Statistical Organization
+104,Myanmar,Source,Gross Domestic Product at constant prices by sector of activity
+108,Burundi,Data Supplier,Institut de Statistiques et Detudes Economiques du Burundi
+108,Burundi,Source,Indices harmonises de la production industrielle
+112,Belarus,Data Supplier,National Statistical Committee of the Republic of Belarus
+112,Belarus,Note,Index calculated out of percentages to the corresponding month of the previous year
+112,Belarus,Source,Industrial production indices by kinds of economic activity
+116,Cambodia,Data Supplier,National Institute of Statistics
+116,Cambodia,Source,GPD Production approach and expenditure
+120,Cameroon,Data Supplier,Institut national de la statistique de Cameroun
+120,Cameroon,Source,Indice de la Production Industrielle IPI 2011=100
+124,Canada,Data Supplier,Statistics Canada
+124,Canada,Note,Trading day adjusted data as proxy for unadjusted data
+124,Canada,Source,Index of Industrial Production IIP
+132,Cabo Verde,Data Supplier,Instituto nacional de estatistica Cabo Verde
+132,Cabo Verde,Note,Index calculated with GDP
+132,Cabo Verde,Source,Quarterly Gross Domestic Product
+136,Cayman Islands,Data Supplier,The economics and statistics office Government of the Cayman Islands
+136,Cayman Islands,Source,Gross Domestic Product at constant prices
+144,Sri Lanka,Data Supplier,Department of Census and Statistics Sri Lanka
+144,Sri Lanka,Source,Index of Industrial Production
+148,Chad,Data Supplier,INSEED-TCHAD
+148,Chad,Source,Indice Harmonise de la Production Industrielle
+152,Chile,Data Supplier,Instituto Nacional de Estadisticas Chile
+152,Chile,Source,Industrial production indices by kinds of economic activity
+156,China,Data Supplier,National Bureau of Statistics of China
+156,China,Note,Index calculated out of monthly Growth Rates of Industrial Value-Added
+156,China,Source,Growth Rate of Industrial Value-Added by Industry Group
+170,Colombia,Data Supplier,Dane Informaccion para todos
+170,Colombia,Source,Monthly manufacturing survey with territorial approach (EMMET)
+174,Comoros,Data Supplier,Institut Nationale de la Statistique et des Etudes Economiques et Démographiques (INSEED) - Comores
+174,Comoros,Source,Gross Domestic Product production approach
+178,Congo,Data Supplier," Institut National de la Statistique - INS Congo"
+178,Congo,Source,Quarterly Gross Domestic Product by economic activities
+188,Costa Rica,Data Supplier,Banco central de Costa Rica
+188,Costa Rica,Source,Indice mensual de actividad economica (IMAE) base 2017
+191,Croatia,Data Supplier,Croatian Bureau of Statistics (CBS)
+191,Croatia,Note,Data obtained via Eurostat.
+191,Croatia,Source,Index of industrial production
+192,Cuba,Data Supplier,Oficina nacional de estadistica e informacion Republica de Cuba
+192,Cuba,Note,Index calculated with GDP
+192,Cuba,Source,Quarterly gross domestic product
+196,Cyprus,Data Supplier,Statistical Service of Cyprus
+196,Cyprus,Note,Data obtained via Eurostat.
+196,Cyprus,Source,Index of industrial production
+203,Czechia,Data Supplier,Czech Statistical Office
+203,Czechia,Note,Data obtained via Eurostat.
+203,Czechia,Source,Index of industrial production
+204,Benin,Data Supplier,"Institut National de la Statistique et de la Demographie collecte, produit, analyse et diffuse des informations sur l'economie et la societe beninoise"
+204,Benin,Source,Index of industrial production (base 2015)
+208,Denmark,Data Supplier,Danmarks Statistik
+208,Denmark,Note,Data obtained via Eurostat.
+208,Denmark,Source,Index of industrial production
+214,Dominican Republic,Data Supplier,Banco Central Rebuplica Dominicana
+214,Dominican Republic,Source,"Gross Domestic Product per sector, chained volume indices, reference 2018, quarterly"
+218,Ecuador,Data Supplier,Banco Central del Ecuador
+218,Ecuador,Source,Chained volume index based on qarterly GDP
+222,El Salvador,Data Supplier,Central Reserve Bank of El Salvador
+222,El Salvador,Source,GDP Production and Expenditure Chained Volume Indices
+226,Equatorial Guinea,Data Supplier,Instituto nacional de estadistica de Guinea Ecuatorial
+226,Equatorial Guinea,Note,Index calculated with GDP
+226,Equatorial Guinea,Source,Gross domestic product at constant 2006 prices
+233,Estonia,Data Supplier,Statistics Estonia
+233,Estonia,Note,Data obtained via Eurostat.
+233,Estonia,Source,Index of industrial production
+242,Fiji,Data Supplier,Fiji Bureau of Statistics
+242,Fiji,Source,Index of Industrial Production
+246,Finland,Data Supplier,Statistics Finland
+246,Finland,Note,Data obtained via Eurostat.
+246,Finland,Source,Index of industrial production
+250,France,Data Supplier,"INSEE, Direction generale"
+250,France,Note,Data obtained via Eurostat.
+250,France,Source,Index of industrial production
+268,Georgia,Data Supplier,National Statistics Office of Georgia
+268,Georgia,Source,Industrial Production Index
+270,Gambia,Data Supplier,The Gambia Bureau of Statistics
+270,Gambia,Source,Gross Domestic Product by Production Approach
+275,State of Palestine,Data Supplier,Palestinian Central Bureau of Statistics
+275,State of Palestine,Source,Monthly Industrial Production Indices by Major Groups
+276,Germany,Data Supplier,Statistisches Bundesamt
+276,Germany,Note,Data obtained via Eurostat.
+276,Germany,Source,Index of industrial production
+288,Ghana,Data Supplier,Ghana Statistical Service
+288,Ghana,Note,Index calculated with quarterly VA
+288,Ghana,Source,Industry: quarterly value added at constant 2013 prices by economic activity
+296,Kiribati,Data Supplier,Kiribati national statistics office
+296,Kiribati,Source,Output by industry at constant prices
+300,Greece,Data Supplier,Hellenic Statistical Authority
+300,Greece,Note,Data obtained via Eurostat.
+300,Greece,Source,Index of industrial production
+304,Greenland,Data Supplier,Statistics Greenland
+304,Greenland,Source,Production by units 2010-prices chained values
+308,Grenada,Data Supplier,Grenada Central Statistical Office
+308,Grenada,Source,Gross Value Added By Economic Activity
+320,Guatemala,Data Supplier,Banco de Guatemala
+320,Guatemala,Source,Indice Mensual de la Actividad Economica (IMAE)
+340,Honduras,Data Supplier,Banco Central de Honduras
+340,Honduras,Source,Indice Mensual por Actividad Economica
+344,"China, Hong Kong SAR",Data Supplier,Censtatd Census and Statistics Department
+344,"China, Hong Kong SAR",Source,Indices of Industrial Production by Selected Industry Grouping
+348,Hungary,Data Supplier,Hungarian Central Statistical Office
+348,Hungary,Note,Data obtained via Eurostat.
+348,Hungary,Source,Index of industrial production
+352,Iceland,Data Supplier,Statistics Iceland
+352,Iceland,Source,Gross Domestic Product
+356,India,Data Supplier,Ministry of Statistics and Programme Implementation
+356,India,Source,Index of Industrial production (IIP 2022-23 series)
+360,Indonesia,Data Supplier,BPS Statistics Indonesia
+360,Indonesia,Source,Monthly Production Index of Large and Medium Manufacturing by Subsector [KBLI 2020] (2010=100)
+364,Iran (Islamic Republic of),Data Supplier,"Central Bank of the Islamic Republic of Iran, economic accounts department"
+364,Iran (Islamic Republic of),Source,Gross Domestic Product by Activities
+368,Iraq,Data Supplier,Commision of Statistics and GIS
+368,Iraq,Source,Gross Domestic Product by economic activity
+372,Ireland,Data Supplier,Central Statistics Office Ireland
+372,Ireland,Note,data partially available from Eurostat
+372,Ireland,Source,MIM05 Industrial Production Volume and Turnover Indices (Base 2021)
+376,Israel,Data Supplier,CBS Central Bureau of Statistics
+376,Israel,Source,Manufacturing Production Indices
+380,Italy,Data Supplier,Istituto Nazionale di Statistica
+380,Italy,Note,Data obtained via Eurostat.
+380,Italy,Source,Index of industrial production
+384,Côte d'Ivoire,Data Supplier,Institut national de la statistique
+384,Côte d'Ivoire,Source,Index of industrial production by industrial activity
+388,Jamaica,Data Supplier,Statistical Institute of Jamaica
+388,Jamaica,Source,Quarterly Value Added By Industry at Constant(2015) Prices
+392,Japan,Data Supplier,Ministry of Economy Trade and Industry
+392,Japan,Source,Indices of Industrial production
+398,Kazakhstan,Data Supplier,Ministry of National Economy of the Republic of Kazakhstan Statistics committee
+398,Kazakhstan,Note,Index calculated out of percentages to the previous month
+398,Kazakhstan,Source,Industrial production statistics
+400,Jordan,Data Supplier,The Hashemite Kingdom of Jordan Department of Statistics DOS
+400,Jordan,Source,Monthly quantitative Industrial Production Index
+404,Kenya,Data Supplier,Kenya National Bureau of Statistics
+404,Kenya,Note,Index calculated with GDP
+404,Kenya,Source,GDP National Accounts constant prices 2016
+410,Republic of Korea,Data Supplier,Korean Statistical Information Service KOSIS
+410,Republic of Korea,Source,Monthly Survey of Mining And Manufacturing IIP by Industry
+412,Kosovo,Data Supplier,Kosovo Agency of Statistics
+412,Kosovo,Source,Quarterly Gross Domestic Product by activities at constant prices
+414,Kuwait,Data Supplier,Central statistical Bureau Kuwait
+414,Kuwait,Source,GDP at constant prices 2010
+417,Kyrgyzstan,Data Supplier," National Statistical Committee of the Kyrgyz Republic"
+417,Kyrgyzstan,Source,Volume indices of industrial production by economic activity
+418,Lao People's Democratic Republic,Data Supplier,Lao Statistics Bureau Laos Statistical Information Service
+418,Lao People's Democratic Republic,Source,Gross Domestic Product at Constant Prices by Economic Activity
+426,Lesotho,Data Supplier,Lesotho Bureau of Statistics
+426,Lesotho,Source,Quarterly Gross Domestic Product
+428,Latvia,Data Supplier,Central Statistical Bureau of Latvia
+428,Latvia,Note,Data obtained via Eurostat.
+428,Latvia,Source,Index of industrial production
+430,Liberia,Data Supplier,Lisgis Liberia Institute of Statistics and Geo-Information Services
+430,Liberia,Source,Gross Domestic Product at Constant Prices
+440,Lithuania,Data Supplier,State Data Agency (Statistics Lithuania)
+440,Lithuania,Note,Data obtained via Eurostat.
+440,Lithuania,Source,Index of industrial production
+442,Luxembourg,Data Supplier,Service Cetnral de la Statistique et des Etudes economiques
+442,Luxembourg,Note,Data obtained via Eurostat.
+442,Luxembourg,Source,Index of industrial production
+446,"China, Macao SAR",Data Supplier,Government of Macao Special Administrative Region Statistics and Census Service
+446,"China, Macao SAR",Source,Industrial Production Index
+450,Madagascar,Data Supplier,Institut National de Statistique de Madagascar
+450,Madagascar,Source,Gross Value Added at constant prices
+454,Malawi,Data Supplier,National statistical office Malawi
+454,Malawi,Source,GDP by economic activity
+458,Malaysia,Data Supplier,Department of Statistics Malaysia
+458,Malaysia,Source,Industrial Production Index (IPI) and Sector Indices (2015=100)
+462,Maldives,Data Supplier,Maldives Bureau of Statistics
+462,Maldives,Source,Gross domestic product (at constant prices) by kind of activity
+466,Mali,Data Supplier,Institut national de la statistique
+466,Mali,Source,Quarterly GDP with chained prices
+470,Malta,Data Supplier,National Statistics Office
+470,Malta,Note,Data obtained via Eurostat.
+470,Malta,Source,Index of industrial production
+478,Mauritania,Data Supplier,Republique Islamique de Mauritanie office national de la statistique
+478,Mauritania,Source,Indice de la Production industrielle IPI
+480,Mauritius,Data Supplier,Statistics Mauritius
+480,Mauritius,Source,Index of industrial production by main industry group
+484,Mexico,Data Supplier,Instituto Nacional de Estadistica y Geografia
+484,Mexico,Source,Short-term indicators for industrial activity
+496,Mongolia,Data Supplier,National Statistics Office of Mongolia
+496,Mongolia,Source,IPI Industrial Production Indices by divisions 2015=100
+498,Republic of Moldova,Data Supplier,Statistica Moldovei
+498,Republic of Moldova,Source,Volume indices of industrial production
+499,Montenegro,Data Supplier,Statistical Office of Montenegro
+499,Montenegro,Note,Data obtained via Eurostat.
+499,Montenegro,Source,Index of industrial production
+500,Montserrat,Data Supplier,Statistics Department Montserrat
+500,Montserrat,Source,Gross domestic product by economic activity in constant prices
+504,Morocco,Data Supplier,Moroccan High Commission for Planning
+504,Morocco,Source,"Indice de la production industrielle, energetique et miniere"
+512,Oman,Data Supplier,National centre for statistics and information sultanate of Oman
+512,Oman,Source,Gross Domestic Product (GDP) by economic activity at constant prices
+516,Namibia,Data Supplier,Namibia Statistics Agency
+516,Namibia,Note,Index calculated with GDP
+516,Namibia,Source,Gross domestic product by activity Constant 2015 prices
+520,Nauru,Data Supplier,Nauru Bureau of Statistics Ministry of Finance
+520,Nauru,Note,Shifted fiscal year
+520,Nauru,Source,Gross Domestic Product (GDP) by industry at constant prices
+524,Nepal,Data Supplier,Central Bureau of Statistics
+524,Nepal,Note,Diverging fiscal year
+524,Nepal,Source,Manufacturing Production Index
+528,Netherlands (Kingdom of the),Data Supplier,Centraal Bureau voor de Statistiek
+528,Netherlands (Kingdom of the),Note,Data obtained via Eurostat.
+528,Netherlands (Kingdom of the),Source,Index of industrial production
+548,Vanuatu,Data Supplier,Vanuatu National Statistics Office VNSO
+548,Vanuatu,Source,Gross Domestic Product (GDP) by Industry
+554,New Zealand,Data Supplier,Stats NZ Tatauranga Aotearoa
+554,New Zealand,Source,Index of Industrial Production IIP
+558,Nicaragua,Data Supplier,Banco Central de Nicaragua
+558,Nicaragua,Source,Monthly economic activity index IMAE reference 2006
+562,Niger,Data Supplier,Ministere du Plan - Institut national de la statistique
+562,Niger,Source,Indice Harmonise de la production industrielle 2012=100
+566,Nigeria,Data Supplier,NBS National Bureau of Statistics
+566,Nigeria,Source,Nigerian Gross Domestic Product
+578,Norway,Data Supplier,"Statistics Norway (SSB) "
+578,Norway,Note,Data obtained via Eurostat.
+578,Norway,Source,Index of industrial production
+584,Marshall Islands,Data Supplier,"Economic Policy, Planning and Statistics Office"
+584,Marshall Islands,Source,Gross Domestic Product (GDP) by industry
+585,Palau,Data Supplier,Government of Republic of Palau
+585,Palau,Source,Gross Domestic Product by Industry
+586,Pakistan,Data Supplier,Pakistan Bureau of Statistics Government of Pakistan
+586,Pakistan,Source,Quantum Index of Large Scale Manufacturing Industries
+591,Panama,Data Supplier,Institut national de estatistica y censu
+591,Panama,Source,Gross Domestic Product by economic activity
+598,Papua New Guinea,Data Supplier,National Statistical Office
+598,Papua New Guinea,Source,Industry value added at constant prices
+600,Paraguay,Data Supplier,Banco Central del Paraguay
+600,Paraguay,Source,Gross Domestic Product by constant prices
+604,Peru,Data Supplier,INEI PERU National Institute of Statistics and Informatics
+604,Peru,Source,Indice Mensual de la Produccion Nacional
+608,Philippines,Data Supplier,Philippines Statistics Authority
+608,Philippines,Source,Volume of Production Index VoPI Year-on-Year Growth Rates
+616,Poland,Data Supplier,Statistics Poland
+616,Poland,Note,Data obtained via Eurostat.
+616,Poland,Source,Index of industrial production
+620,Portugal,Data Supplier,Instituto Nacional de Estadistica
+620,Portugal,Note,Data obtained via Eurostat.
+620,Portugal,Source,Index of industrial production
+626,Timor-Leste,Data Supplier,Instituto nacional de estatistca Timor-Leste
+626,Timor-Leste,Source,Value added by industry
+634,Qatar,Data Supplier,Planning and Statistics Authority Qatar
+634,Qatar,Source,Index of industrial production base 2018
+642,Romania,Data Supplier,Institutul National de Statistica
+642,Romania,Note,Data obtained via Eurostat.
+642,Romania,Source,Index of industrial production
+643,Russian Federation,Data Supplier,Rosstat Federal State Statistics Service
+643,Russian Federation,Note,Index calculated out of percentages to the corresponding month of the previous year
+643,Russian Federation,Source,Production indices for individual types of economic activity in the Russian Federation
+646,Rwanda,Data Supplier,National Institute of Statistics Rwanda
+646,Rwanda,Source,Index Industrial Production formal activity  2024=100  monthly
+659,Saint Kitts and Nevis,Data Supplier,"Department of Statistics, ministry of sustainable development"
+659,Saint Kitts and Nevis,Source,Gross Domestic Product (GDP) at constant prices
+662,Saint Lucia,Data Supplier,The Central Statistical office of Saint Lucia
+662,Saint Lucia,Source,Gross Domestic Product (GDP) at constant prices
+682,Saudi Arabia,Data Supplier,General Authority for Statistics Kingdom of Saudi Arabia
+682,Saudi Arabia,Source,Industrial Production Index
+686,Senegal,Data Supplier,L’Agence nationale de la Statistique et de la Démographie (ANSD)
+686,Senegal,Source,Indice Harmonise de la Production Industrielle (IHPI) base 2015
+688,Serbia,Data Supplier,Statistical Office of the Republic of Serbia
+688,Serbia,Note,Data obtained via Eurostat.
+688,Serbia,Source,Index of industrial production
+690,Seychelles,Data Supplier,National Bureau of Statistics Seychelles
+690,Seychelles,Source,Industrial Production Index
+694,Sierra Leone,Data Supplier,Statistics Sierra Leone
+694,Sierra Leone,Source,Gross Domestic Product by economic activity
+702,Singapore,Data Supplier,Department of Statistics Singapore
+702,Singapore,Source,Index Of Industrial Production
+703,Slovakia,Data Supplier,Statistical office of the slovak republic
+703,Slovakia,Note,Original data is working day adjusted.
+703,Slovakia,Source,"Industrial production average month of 2021=100 adjusted - monthly "
+704,Viet Nam,Data Supplier,General statistics office of Viet Nam
+704,Viet Nam,Source,Monthly Index of Industrial Production
+705,Slovenia,Data Supplier,Statistical Office of the Republic of Slovenia
+705,Slovenia,Note,Data obtained via Eurostat.
+705,Slovenia,Source,Index of industrial production
+710,South Africa,Data Supplier,STATS SA Statistics South Africa
+710,South Africa,Source,Indices of physical volume production
+716,Zimbabwe,Data Supplier,Zimbabwe National Statistical Agency
+716,Zimbabwe,Source,GDP at Constant Prices
+724,Spain,Data Supplier,Instituto Nacional de Estadistica (INE)
+724,Spain,Note,Data obtained via Eurostat.
+724,Spain,Source,Index of industrial production
+748,Eswatini,Data Supplier,Ministry of economic planning and development
+748,Eswatini,Source,Gross Domestic Product by Economic Activity
+752,Sweden,Data Supplier,Statistics Sweden (SCB)
+752,Sweden,Note,Data obtained via Eurostat.
+752,Sweden,Source,Index of industrial production
+756,Switzerland,Note,Data obtained via Eurostat.
+756,Switzerland,Source,Index of industrial production
+762,Tajikistan,Data Supplier,Agency on statistics under the President of the Republic of Tajikistan
+762,Tajikistan,Source,Industrial output by sector
+764,Thailand,Data Supplier,The Office of Industrial Economics
+764,Thailand,Source,Production Index (Value added Weight)
+768,Togo,Data Supplier,Institut National de la Statistique et des Etudes Economiques et Demographiques Togo
+768,Togo,Source,Indice de la production industrielle (IPI) renove 2015
+776,Tonga,Data Supplier,Tonga Statistics Department
+776,Tonga,Note,Shifted fiscal year.
+776,Tonga,Source,Gross Domestic Product (GDP) at constant prices
+780,Trinidad and Tobago,Data Supplier,CSO Central Statistical Office
+780,Trinidad and Tobago,Source,Index of Domestic Production DPI
+784,United Arab Emirates,Data Supplier,UAE Stat
+784,United Arab Emirates,Source,GDP Quarterly - Constant Prices (Constant Prices 2010)
+788,Tunisia,Data Supplier,Statistiques Tunisie
+788,Tunisia,Source,Industrial Production Index
+792,Türkiye,Data Supplier,Turkish Statistical Institute (TURKSTAT)
+792,Türkiye,Note,Data obtained via Eurostat.
+792,Türkiye,Source,Index of industrial production
+796,Turks and Caicos Islands,Data Supplier,Statistics Authority Turks & Caicos Islands
+796,Turks and Caicos Islands,Source,Gross Domestic Product by economic activity
+800,Uganda,Data Supplier,Uganda Bureau of Statistics
+800,Uganda,Note,Index calculated with VA
+800,Uganda,Source,Value added by activity at constant 2016/17 prices
+804,Ukraine,Data Supplier,National Bank of Ukraine
+804,Ukraine,Note,Index calculated out of percentages to the corresponding month of the previous year
+804,Ukraine,Source,Economic activity Industrial Products Indices
+807,North Macedonia,Data Supplier,State Statistical Office of the Republic of Macedonia
+807,North Macedonia,Note,Data obtained via Eurostat.
+807,North Macedonia,Source,Index of industrial production
+818,Egypt,Data Supplier,Central Agency for Public Mobilization and Statistics or Ministry of Planning
+818,Egypt,Source,Index of Manufacturing and Extractive
+826,United Kingdom,Data Supplier,Office for National Statistics ONS
+826,United Kingdom,Source,Index of Production time series
+834,United Republic of Tanzania,Data Supplier,Tanzania National Bureau of Statistics
+834,United Republic of Tanzania,Note,Index calculated with GDP
+834,United Republic of Tanzania,Source,Gross Domestic Product by Economic Activity at 2015 prices - TZS Million
+840,United States of America,Data Supplier,Federal Reserve System
+840,United States of America,Source,Industrial Production and Capacity Utilization - G.17
+854,Burkina Faso,Data Supplier,Institut Nacional de la Statistique et de la Demographie
+854,Burkina Faso,Source,Indice de la production industrielle
+858,Uruguay,Data Supplier,National Institute of Statistics Uruguay
+858,Uruguay,Source,Indice de Volumen Fisico de la Industria Manufacturera 2018
+860,Uzbekistan,Data Supplier,The state committee of the Republic of Uzbekistan on Statistics
+860,Uzbekistan,Source,Volume of industrial production by type of economic activity
+882,Samoa,Data Supplier,Samoa Bureau of Statistics
+882,Samoa,Source,GDP constant prices
+894,Zambia,Data Supplier,Zambia Statistics Agency
+894,Zambia,Source,Index of Industrial Production

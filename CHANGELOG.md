@@ -2,6 +2,12 @@
 
 ## În dezvoltare
 
+- adaugă un indice public reproductibil al producției manufacturiere reale
+  UNIDO IIP pentru 2005–2025, ponderat fix cu MVA 2020;
+- păstrează un panou echilibrat de 101 economii, cu acoperire de 94,49% din
+  ponderile MVA disponibile, și documentează imputările UNIDO nepublicate;
+- testează IIP prospectiv la originile compatibile 2014 și 2018; selectează
+  aceiași candidați ca World Bank, deci nu promovează o recalibrare;
 - adaugă agregatul mondial UNIDO MVA/locuitor 1990–2025 ca reper industrial
   independent, cu răspunsuri API brute, proveniență și hash-uri reproductibile;
 - compară proxy-urile UNIDO și World Bank fără schimbarea ecuațiilor sau a

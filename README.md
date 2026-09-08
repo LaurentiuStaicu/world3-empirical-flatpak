@@ -90,6 +90,8 @@ auditate în [`data/scenarios`](data/scenarios), iar istoricul versiunilor este
 ## Date folosite
 
 - World Bank WDI — populație și valoare adăugată a industriei;
+- UNIDO — MVA mondială oficială și un diagnostic public IIP de volum
+  manufacturier, ponderat fix cu MVA 2020;
 - FAOSTAT Production Indices — producție alimentară mondială pe locuitor;
 - World Bank/EDGAR — emisii antropice anuale folosite ca proxy observabil;
 - UNDP Human Development Report 2025 — HDI;

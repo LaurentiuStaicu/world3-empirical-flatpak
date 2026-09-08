@@ -55,6 +55,13 @@ aceiași candidați la originile 2009, 2014 și 2018, astfel încât auditul nu 
 un câștig prospectiv pentru recalibrare. Seria este acceptată în registru ca
 diagnostic, iar BAU Hibrid 2026 v0.10.0 rămâne neschimbat.
 
+Un al șaselea audit reconstruiește din date publice UNIDO un indice mondial al
+producției manufacturiere reale. Panoul echilibrat 2005–2025 conține 101
+economii și 94,49% din ponderile MVA 2020 disponibile. IIP este conceptual mai
+apropiat de producția brută World3, dar selectează aceiași candidați ca proxy-ul
+World Bank la originile compatibile 2014 și 2018. Câștigul prospectiv este 0%,
+deci seria este păstrată ca diagnostic, fără schimbarea modelului central.
+
 În stratul BAU2-E2026 pentru aplicație, intervalul Monte Carlo P10–P90 este
 exportat separat de alternativa structurală BAU. Emisiile anuale de CO₂ sunt
 comparate cu rata de generare a poluării World3, flux-la-flux; stocul persistent
@@ -124,12 +131,17 @@ Pentru ingestia și auditul reperului industrial UNIDO:
 ```bash
 PYTHONPATH=src:scripts .venv/bin/python scripts/ingest_unido_national_accounts.py
 PYTHONPATH=src:scripts .venv/bin/python scripts/evaluate_unido_industry_proxy.py
+PYTHONPATH=src:scripts .venv/bin/python scripts/ingest_unido_iip.py
+PYTHONPATH=src:scripts .venv/bin/python scripts/evaluate_unido_iip_volume.py
 ```
 
 Conectorul citește identificatorul datasetului din metadatele curente ale API,
 solicită grupul oficial `WORLD` și păstrează răspunsurile brute, amprentele
 SHA-256 și proveniența. Auditul înlocuiește numai ținta observată pentru
 industrie; ecuațiile, spațiul candidaților și toate celelalte ținte rămân fixe.
+Pentru IIP, API-ul nu publică un grup `WORLD`; al doilea conector reproduce o
+agregare fixă cu ponderi MVA 2020 și panou echilibrat, marcând explicit că
+imputările naționale nepublicate de UNIDO nu pot fi reproduse.
 
 Rezultatele din `outputs/net_energy/` sunt scenarii structurale, nu intervale
 de probabilitate. Ele nu modifică încă traiectoria centrală BAU2-E2026.
