@@ -107,7 +107,7 @@ jobs:
               variable["c"] for variable in na["variables"]
               if "mva" in variable["c"].lower() or variable["c"] == "Pop"
           ]
-          export("national_accounts_2015", na, weight_variables, [], ["2015"])
+          export("national_accounts_2020", na, weight_variables, [], ["2020"])
           PY
 
       - name: Summarize snapshot coverage
@@ -121,7 +121,7 @@ jobs:
           root = Path("unido-source")
           iip = pd.read_csv(root / "iip_annual" / "data.csv", dtype={"CountryCode": str})
           na = pd.read_csv(
-              root / "national_accounts_2015" / "data.csv",
+              root / "national_accounts_2020" / "data.csv",
               dtype={"CountryCode": str},
           )
           summary = {
