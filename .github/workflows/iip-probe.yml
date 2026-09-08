@@ -1,0 +1,60 @@
+name: Probe UNIDO IIP API
+
+on:
+  push:
+    branches:
+      - iip-volume-audit
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch public IIP metadata
+        shell: bash
+        run: |
+          mkdir -p iip-probe
+          curl --fail --silent --show-error --retry 3 \
+            -H 'User-Agent: World3-Empirical-reproducibility/0.10.2' \
+            https://stat.unido.org/portal/dataset/getDataset/IIP \
+            -o iip-probe/iip_metadata.json
+          python3 -m json.tool iip-probe/iip_metadata.json > iip-probe/iip_metadata.pretty.json
+
+      - name: Record a compact schema summary
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          meta = json.loads(Path("iip-probe/iip_metadata.json").read_text())
+          def sample(key, n=30):
+              value = meta.get(key)
+              return value[:n] if isinstance(value, list) else value
+          summary = {
+              "top_level_keys": sorted(meta),
+              "id": meta.get("id"),
+              "name": meta.get("name"),
+              "production_year": meta.get("production_year"),
+              "dat_ins": meta.get("dat_ins"),
+              "period_count": len(meta.get("periods", [])),
+              "periods": meta.get("periods", []),
+              "variables": meta.get("variables", []),
+              "activities": meta.get("activities", []),
+              "groups": meta.get("groups", []),
+              "country_sample": sample("countries"),
+          }
+          Path("iip-probe/schema_summary.json").write_text(
+              json.dumps(summary, indent=2, ensure_ascii=False) + "\n",
+              encoding="utf-8",
+          )
+          PY
+
+      - name: Upload probe result
+        uses: actions/upload-artifact@v4
+        with:
+          name: unido-iip-metadata
+          path: iip-probe/
+          if-no-files-found: error
+          retention-days: 7
