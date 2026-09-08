@@ -64,9 +64,12 @@ jobs:
           )
           raw_prepare = post(f"{base}/dataset/download/csv/prepare", payload)
           (root / "export_prepare_response.txt").write_bytes(raw_prepare)
-          parsed = json.loads(raw_prepare)
+          try:
+              parsed = json.loads(raw_prepare)
+          except json.JSONDecodeError:
+              parsed = raw_prepare.decode().strip()
           if isinstance(parsed, str):
-              filename = parsed
+              filename = parsed.strip('"')
           elif isinstance(parsed, dict):
               filename = (
                   parsed.get("fileName") or parsed.get("filename")
@@ -123,6 +126,7 @@ jobs:
           PY
 
       - name: Upload frozen source result
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: unido-iip-annual-source
