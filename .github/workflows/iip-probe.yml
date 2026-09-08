@@ -12,24 +12,25 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Fetch public UNIDO IIP snapshot
+      - name: Fetch public UNIDO IIP and weighting snapshots
         shell: bash
         run: |
-          mkdir -p iip-probe
+          mkdir -p unido-source
           python3 - <<'PY'
           import json
           from pathlib import Path
           import time
           import urllib.parse
           import urllib.request
+          import zipfile
 
-          root = Path("iip-probe")
+          root = Path("unido-source")
           base = "https://stat.unido.org/portal"
           headers = {"User-Agent": "World3-Empirical-reproducibility/0.10.2"}
 
           def get(url):
               req = urllib.request.Request(url, headers=headers)
-              with urllib.request.urlopen(req, timeout=120) as response:
+              with urllib.request.urlopen(req, timeout=180) as response:
                   return response.read()
 
           def post(url, payload):
@@ -42,94 +43,111 @@ jobs:
               with urllib.request.urlopen(req, timeout=300) as response:
                   return response.read()
 
-          raw_metadata = get(f"{base}/dataset/getDataset/IIP")
-          (root / "iip_metadata.json").write_bytes(raw_metadata)
-          metadata = json.loads(raw_metadata)
-          annual_periods = [
-              str(period) for period in metadata["periods"]
-              if str(period).isdigit()
-          ]
-          payload = {
-              "datasetId": int(metadata["id"]),
-              "countryCodes": [country["c"] for country in metadata["countries"]],
-              "countryGroupsCodes": [],
-              "variableCodes": ["52", "53"],
-              "activityCodes": ["C"],
-              "periods": annual_periods,
-              "valueCurrency": "NA",
-              "includeMetadata": True,
-          }
-          (root / "export_request.json").write_text(
-              json.dumps(payload, indent=2) + "\n", encoding="utf-8"
-          )
-          raw_prepare = post(f"{base}/dataset/download/csv/prepare", payload)
-          (root / "export_prepare_response.txt").write_bytes(raw_prepare)
-          try:
-              parsed = json.loads(raw_prepare)
-          except json.JSONDecodeError:
-              parsed = raw_prepare.decode().strip()
-          if isinstance(parsed, str):
-              filename = parsed.strip('"')
-          elif isinstance(parsed, dict):
-              filename = (
-                  parsed.get("fileName") or parsed.get("filename")
-                  or parsed.get("name") or parsed.get("value")
+          def export(name, metadata, variables, activities, periods):
+              payload = {
+                  "datasetId": int(metadata["id"]),
+                  "countryCodes": [country["c"] for country in metadata["countries"]],
+                  "countryGroupsCodes": [],
+                  "variableCodes": variables,
+                  "activityCodes": activities,
+                  "periods": periods,
+                  "valueCurrency": "NA",
+                  "includeMetadata": True,
+              }
+              (root / f"{name}_request.json").write_text(
+                  json.dumps(payload, indent=2) + "\n", encoding="utf-8"
               )
-          else:
-              filename = None
-          if not filename:
-              raise RuntimeError(f"Unexpected export response: {parsed!r}")
-          quoted = urllib.parse.quote(str(filename), safe="")
-          check_url = f"{base}/dataset/download/check/{quoted}"
-          for _ in range(60):
-              raw_check = get(check_url)
-              (root / "last_check_response.txt").write_bytes(raw_check)
+              raw_prepare = post(f"{base}/dataset/download/csv/prepare", payload)
+              (root / f"{name}_prepare_response.txt").write_bytes(raw_prepare)
               try:
-                  ready = json.loads(raw_check)
+                  parsed = json.loads(raw_prepare)
               except json.JSONDecodeError:
-                  ready = raw_check.decode().strip().lower() == "true"
-              if ready is True:
-                  break
-              time.sleep(5)
-          else:
-              raise RuntimeError("UNIDO export did not become ready")
-          raw_csv = get(f"{base}/dataset/download/{quoted}")
-          if len(raw_csv) < 100:
-              raise RuntimeError("UNIDO export is unexpectedly small")
-          (root / "unido_iip_annual_all_countries.csv").write_bytes(raw_csv)
+                  parsed = raw_prepare.decode().strip()
+              if isinstance(parsed, str):
+                  filename = parsed.strip('"')
+              elif isinstance(parsed, dict):
+                  filename = (
+                      parsed.get("fileName") or parsed.get("filename")
+                      or parsed.get("name") or parsed.get("value")
+                  )
+              else:
+                  filename = None
+              if not filename:
+                  raise RuntimeError(f"Unexpected export response: {parsed!r}")
+              quoted = urllib.parse.quote(str(filename), safe="")
+              for _ in range(90):
+                  raw_check = get(f"{base}/dataset/download/check/{quoted}")
+                  try:
+                      ready = json.loads(raw_check)
+                  except json.JSONDecodeError:
+                      ready = raw_check.decode().strip().lower() == "true"
+                  if ready is True:
+                      break
+                  time.sleep(5)
+              else:
+                  raise RuntimeError(f"UNIDO export {name} did not become ready")
+              raw_zip = get(f"{base}/dataset/download/{quoted}")
+              archive = root / f"{name}.zip"
+              archive.write_bytes(raw_zip)
+              target = root / name
+              target.mkdir()
+              with zipfile.ZipFile(archive) as bundle:
+                  bundle.extractall(target)
+
+          iip_raw = get(f"{base}/dataset/getDataset/IIP")
+          (root / "iip_metadata.json").write_bytes(iip_raw)
+          iip = json.loads(iip_raw)
+          annual = [str(period) for period in iip["periods"] if str(period).isdigit()]
+          export("iip_annual", iip, ["52", "53"], ["C"], annual)
+
+          na_raw = get(f"{base}/dataset/getDataset/NATIONAL_ACCOUNTS")
+          (root / "national_accounts_metadata.json").write_bytes(na_raw)
+          na = json.loads(na_raw)
+          weight_variables = [
+              variable["c"] for variable in na["variables"]
+              if "mva" in variable["c"].lower() or variable["c"] == "Pop"
+          ]
+          export("national_accounts_2015", na, weight_variables, [], ["2015"])
           PY
 
       - name: Summarize snapshot coverage
         shell: bash
         run: |
           python3 - <<'PY'
-          import csv
           import json
           from pathlib import Path
+          import pandas as pd
 
-          root = Path("iip-probe")
-          path = root / "unido_iip_annual_all_countries.csv"
-          text = path.read_text(encoding="utf-8-sig")
-          sample = text[:8000]
-          dialect = csv.Sniffer().sniff(sample, delimiters=",;\t")
-          rows = list(csv.DictReader(text.splitlines(), dialect=dialect))
+          root = Path("unido-source")
+          iip = pd.read_csv(root / "iip_annual" / "data.csv", dtype={"CountryCode": str})
+          na = pd.read_csv(
+              root / "national_accounts_2015" / "data.csv",
+              dtype={"CountryCode": str},
+          )
           summary = {
-              "bytes": path.stat().st_size,
-              "row_count": len(rows),
-              "columns": list(rows[0]) if rows else [],
-              "first_rows": rows[:5],
+              "iip_rows": int(len(iip)),
+              "iip_columns": list(iip),
+              "iip_start": int(iip["Year"].min()),
+              "iip_end": int(iip["Year"].max()),
+              "iip_countries": int(iip["CountryCode"].nunique()),
+              "iip_variables": sorted(iip["VariableCode"].astype(str).unique()),
+              "na_rows": int(len(na)),
+              "na_columns": list(na),
+              "na_variables": sorted(na["VariableCode"].astype(str).unique()),
+              "na_variable_labels": sorted(na["Variable"].astype(str).unique()),
           }
           (root / "coverage_summary.json").write_text(
               json.dumps(summary, indent=2, ensure_ascii=False) + "\n",
               encoding="utf-8",
           )
+          print(json.dumps(summary, indent=2))
           PY
 
       - name: Upload frozen source result
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: unido-iip-annual-source
-          path: iip-probe/
+          name: unido-iip-and-weights-source
+          path: unido-source/
           if-no-files-found: error
           retention-days: 7
