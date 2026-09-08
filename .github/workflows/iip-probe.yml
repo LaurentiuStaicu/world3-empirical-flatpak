@@ -12,63 +12,120 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Fetch public IIP metadata and API schema
+      - name: Fetch public UNIDO IIP snapshot
         shell: bash
         run: |
           mkdir -p iip-probe
-          base=https://stat.unido.org/portal
-          agent='World3-Empirical-reproducibility/0.10.2'
-          curl --fail --silent --show-error --retry 3 -H "User-Agent: $agent" \
-            "$base/dataset/getDataset/IIP" -o iip-probe/iip_metadata.json
-          curl --fail --silent --show-error --retry 3 -H "User-Agent: $agent" \
-            "$base/v3/api-docs/api" -o iip-probe/openapi.json
-          python3 -m json.tool iip-probe/iip_metadata.json > iip-probe/iip_metadata.pretty.json
-
-      - name: Record compact schema summaries
-        shell: bash
-        run: |
           python3 - <<'PY'
           import json
           from pathlib import Path
+          import time
+          import urllib.parse
+          import urllib.request
+
           root = Path("iip-probe")
-          meta = json.loads((root / "iip_metadata.json").read_text())
+          base = "https://stat.unido.org/portal"
+          headers = {"User-Agent": "World3-Empirical-reproducibility/0.10.2"}
+
+          def get(url):
+              req = urllib.request.Request(url, headers=headers)
+              with urllib.request.urlopen(req, timeout=120) as response:
+                  return response.read()
+
+          def post(url, payload):
+              req = urllib.request.Request(
+                  url,
+                  data=json.dumps(payload).encode(),
+                  headers={**headers, "Content-Type": "application/json"},
+                  method="POST",
+              )
+              with urllib.request.urlopen(req, timeout=300) as response:
+                  return response.read()
+
+          raw_metadata = get(f"{base}/dataset/getDataset/IIP")
+          (root / "iip_metadata.json").write_bytes(raw_metadata)
+          metadata = json.loads(raw_metadata)
+          annual_periods = [
+              str(period) for period in metadata["periods"]
+              if str(period).isdigit()
+          ]
+          payload = {
+              "datasetId": int(metadata["id"]),
+              "countryCodes": [country["c"] for country in metadata["countries"]],
+              "countryGroupsCodes": [],
+              "variableCodes": ["52", "53"],
+              "activityCodes": ["C"],
+              "periods": annual_periods,
+              "valueCurrency": "NA",
+              "includeMetadata": True,
+          }
+          (root / "export_request.json").write_text(
+              json.dumps(payload, indent=2) + "\n", encoding="utf-8"
+          )
+          raw_prepare = post(f"{base}/dataset/download/csv/prepare", payload)
+          (root / "export_prepare_response.txt").write_bytes(raw_prepare)
+          parsed = json.loads(raw_prepare)
+          if isinstance(parsed, str):
+              filename = parsed
+          elif isinstance(parsed, dict):
+              filename = (
+                  parsed.get("fileName") or parsed.get("filename")
+                  or parsed.get("name") or parsed.get("value")
+              )
+          else:
+              filename = None
+          if not filename:
+              raise RuntimeError(f"Unexpected export response: {parsed!r}")
+          quoted = urllib.parse.quote(str(filename), safe="")
+          check_url = f"{base}/dataset/download/check/{quoted}"
+          for _ in range(60):
+              raw_check = get(check_url)
+              (root / "last_check_response.txt").write_bytes(raw_check)
+              try:
+                  ready = json.loads(raw_check)
+              except json.JSONDecodeError:
+                  ready = raw_check.decode().strip().lower() == "true"
+              if ready is True:
+                  break
+              time.sleep(5)
+          else:
+              raise RuntimeError("UNIDO export did not become ready")
+          raw_csv = get(f"{base}/dataset/download/{quoted}")
+          if len(raw_csv) < 100:
+              raise RuntimeError("UNIDO export is unexpectedly small")
+          (root / "unido_iip_annual_all_countries.csv").write_bytes(raw_csv)
+          PY
+
+      - name: Summarize snapshot coverage
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import csv
+          import json
+          from pathlib import Path
+
+          root = Path("iip-probe")
+          path = root / "unido_iip_annual_all_countries.csv"
+          text = path.read_text(encoding="utf-8-sig")
+          sample = text[:8000]
+          dialect = csv.Sniffer().sniff(sample, delimiters=",;\t")
+          rows = list(csv.DictReader(text.splitlines(), dialect=dialect))
           summary = {
-              "top_level_keys": sorted(meta),
-              "id": meta.get("id"),
-              "name": meta.get("name"),
-              "production_year": meta.get("production_year"),
-              "dat_ins": meta.get("dat_ins"),
-              "period_count": len(meta.get("periods", [])),
-              "periods": meta.get("periods", []),
-              "variables": meta.get("variables", []),
-              "activities": meta.get("activities", []),
-              "groups": meta.get("groups", []),
-              "country_count": len(meta.get("countries", [])),
-              "countries": meta.get("countries", []),
+              "bytes": path.stat().st_size,
+              "row_count": len(rows),
+              "columns": list(rows[0]) if rows else [],
+              "first_rows": rows[:5],
           }
-          (root / "schema_summary.json").write_text(
+          (root / "coverage_summary.json").write_text(
               json.dumps(summary, indent=2, ensure_ascii=False) + "\n",
-              encoding="utf-8",
-          )
-          spec = json.loads((root / "openapi.json").read_text())
-          paths = {
-              key: value for key, value in spec.get("paths", {}).items()
-              if "dataset" in key.lower() or "data" in key.lower()
-          }
-          schemas = (
-              spec.get("components", {}).get("schemas", {})
-              or spec.get("definitions", {})
-          )
-          (root / "openapi-relevant.json").write_text(
-              json.dumps({"paths": paths, "schemas": schemas}, indent=2) + "\n",
               encoding="utf-8",
           )
           PY
 
-      - name: Upload probe result
+      - name: Upload frozen source result
         uses: actions/upload-artifact@v4
         with:
-          name: unido-iip-schema
+          name: unido-iip-annual-source
           path: iip-probe/
           if-no-files-found: error
           retention-days: 7
