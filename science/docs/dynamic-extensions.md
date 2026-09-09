@@ -78,6 +78,15 @@ umidității solului, păstrați regional înaintea agregării.
 
 ## 3. Minerale și substituție tehnologică — prioritatea 3
 
+Stadiu la 8 septembrie 2026: au fost ingerate serii globale 1900–2025 pentru
+cupru, nichel, litiu, cobalt, pământuri rare și grafit natural, cu 2024–2025
+aduse la ediția USGS MCS 2026. Au fost calculate intervale HHI, ponderile
+producătorilor principali și indicatori separați de producție și rezerve.
+Portofoliul diagnostic este corelat cu industria observată, dar nu cu fluxul
+latent de resurse al modelului. Datele intră în registrul de risc, nu în curba
+centrală. Detaliile sunt în
+`docs/technology-minerals-audit-2026-09-08.md`.
+
 Stocuri: resurse și rezerve pe mineral, stocuri în uz, material recuperabil și
 capacitate de rafinare.
 
@@ -89,8 +98,8 @@ Feedback: cererea de electrificare și AI → investiții miniere și energie �
 declinul concentrației minereului și apă suplimentară → costuri și întârzieri →
 încetinirea instalării noii infrastructuri.
 
-Date necesare: USGS, IEA Critical Minerals, BGS și registre de proiecte cu
-stadii distincte.
+Date încă necesare: IEA Critical Minerals, concentrații ale minereului,
+recuperare, reciclare, rafinare și registre de proiecte cu stadii distincte.
 
 ## 4. Infrastructura AI — prioritatea 4
 

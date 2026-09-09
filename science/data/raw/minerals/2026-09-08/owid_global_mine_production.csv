@@ -1,0 +1,4660 @@
+Entity,Year,Global mine production of different minerals
+Antimony,1900,7710
+Antimony,1901,7890
+Antimony,1902,8550
+Antimony,1903,8140
+Antimony,1904,8000
+Antimony,1905,8000
+Antimony,1906,14500
+Antimony,1907,15000
+Antimony,1908,16000
+Antimony,1909,15000
+Antimony,1910,15000
+Antimony,1911,15500
+Antimony,1912,24200
+Antimony,1913,24500
+Antimony,1914,23600
+Antimony,1915,43200
+Antimony,1916,81600
+Antimony,1917,57200
+Antimony,1918,30800
+Antimony,1919,11800
+Antimony,1920,29000
+Antimony,1921,18300
+Antimony,1922,18900
+Antimony,1923,17600
+Antimony,1924,17500
+Antimony,1925,25500
+Antimony,1926,29000
+Antimony,1927,28000
+Antimony,1928,28500
+Antimony,1929,31600
+Antimony,1930,23600
+Antimony,1931,15600
+Antimony,1932,17300
+Antimony,1933,20200
+Antimony,1934,22600
+Antimony,1935,29800
+Antimony,1936,35300
+Antimony,1937,38600
+Antimony,1938,33900
+Antimony,1939,38800
+Antimony,1940,46300
+Antimony,1941,49000
+Antimony,1942,51400
+Antimony,1943,53200
+Antimony,1944,36000
+Antimony,1945,27000
+Antimony,1946,26000
+Antimony,1947,38000
+Antimony,1948,45000
+Antimony,1949,37000
+Antimony,1950,50000
+Antimony,1951,65000
+Antimony,1952,44500
+Antimony,1953,33600
+Antimony,1954,39900
+Antimony,1955,46300
+Antimony,1956,53500
+Antimony,1957,50800
+Antimony,1958,46300
+Antimony,1959,53300
+Antimony,1960,53300
+Antimony,1961,51900
+Antimony,1962,53700
+Antimony,1963,58000
+Antimony,1964,63000
+Antimony,1965,63000
+Antimony,1966,61400
+Antimony,1967,58400
+Antimony,1968,61500
+Antimony,1969,66200
+Antimony,1970,70000
+Antimony,1971,64100
+Antimony,1972,68100
+Antimony,1973,69300
+Antimony,1974,70500
+Antimony,1975,67900
+Antimony,1976,69200
+Antimony,1977,72200
+Antimony,1978,68800
+Antimony,1979,71900
+Antimony,1980,67200
+Antimony,1981,59200
+Antimony,1982,53800
+Antimony,1983,48400
+Antimony,1984,53400
+Antimony,1985,55000
+Antimony,1986,59900
+Antimony,1987,56100
+Antimony,1988,64400
+Antimony,1989,68400
+Antimony,1990,60400
+Antimony,1991,64700
+Antimony,1992,76000
+Antimony,1993,73000
+Antimony,1994,106000
+Antimony,1995,103000
+Antimony,1996,156000
+Antimony,1997,155000
+Antimony,1998,117000
+Antimony,1999,108000
+Antimony,2000,118000
+Antimony,2001,157000
+Antimony,2002,118000
+Antimony,2003,116000
+Antimony,2004,142000
+Antimony,2005,172000
+Antimony,2006,173000
+Antimony,2007,180000
+Antimony,2008,185000
+Antimony,2009,158000
+Antimony,2010,182000
+Antimony,2011,187000
+Antimony,2012,181000
+Antimony,2013,193000
+Antimony,2014,175000
+Antimony,2015,150000
+Antimony,2016,148000
+Antimony,2017,144000
+Antimony,2018,147000
+Antimony,2019,162000
+Antimony,2020,111000
+Antimony,2021,112000
+Antimony,2022,83100
+Antimony,2023,106000
+Antimony,2024,100000
+Asbestos,1900,31500
+Asbestos,1901,41800
+Asbestos,1902,42100
+Asbestos,1903,44200
+Asbestos,1904,53300
+Asbestos,1905,72500
+Asbestos,1906,85800
+Asbestos,1907,93700
+Asbestos,1908,96800
+Asbestos,1909,97200
+Asbestos,1910,109000
+Asbestos,1911,140000
+Asbestos,1912,148000
+Asbestos,1913,144000
+Asbestos,1914,106000
+Asbestos,1915,117000
+Asbestos,1916,145000
+Asbestos,1917,141000
+Asbestos,1918,144000
+Asbestos,1919,140000
+Asbestos,1920,193000
+Asbestos,1921,91100
+Asbestos,1922,136000
+Asbestos,1923,201000
+Asbestos,1924,198000
+Asbestos,1925,312000
+Asbestos,1926,329000
+Asbestos,1927,342000
+Asbestos,1928,354000
+Asbestos,1929,400000
+Asbestos,1930,338000
+Asbestos,1931,259000
+Asbestos,1932,205000
+Asbestos,1933,274000
+Asbestos,1934,299000
+Asbestos,1935,372000
+Asbestos,1936,507000
+Asbestos,1937,613000
+Asbestos,1938,455000
+Asbestos,1939,563000
+Asbestos,1940,574000
+Asbestos,1941,677000
+Asbestos,1942,657000
+Asbestos,1943,733000
+Asbestos,1944,712000
+Asbestos,1945,752000
+Asbestos,1946,890000
+Asbestos,1947,1060000
+Asbestos,1948,1210000
+Asbestos,1949,975000
+Asbestos,1950,1290000
+Asbestos,1951,1420000
+Asbestos,1952,1420000
+Asbestos,1953,1420000
+Asbestos,1954,1520000
+Asbestos,1955,1770000
+Asbestos,1956,1810000
+Asbestos,1957,1890000
+Asbestos,1958,1860000
+Asbestos,1959,2050000
+Asbestos,1960,2210000
+Asbestos,1961,2510000
+Asbestos,1962,2410000
+Asbestos,1963,2510000
+Asbestos,1964,2770000
+Asbestos,1965,2810000
+Asbestos,1966,2970000
+Asbestos,1967,2910000
+Asbestos,1968,3010000
+Asbestos,1969,3270000
+Asbestos,1970,3490000
+Asbestos,1971,3580000
+Asbestos,1972,3780000
+Asbestos,1973,4190000
+Asbestos,1974,4160000
+Asbestos,1975,4140000
+Asbestos,1976,4770000
+Asbestos,1977,4790000
+Asbestos,1978,4690000
+Asbestos,1979,4760000
+Asbestos,1980,4700000
+Asbestos,1981,4350000
+Asbestos,1982,4560000
+Asbestos,1983,4430000
+Asbestos,1984,4310000
+Asbestos,1985,4250000
+Asbestos,1986,4030000
+Asbestos,1987,4240000
+Asbestos,1988,4310000
+Asbestos,1989,4290000
+Asbestos,1990,4010000
+Asbestos,1991,3490000
+Asbestos,1992,3270000
+Asbestos,1993,2780000
+Asbestos,1994,2250000
+Asbestos,1995,2180000
+Asbestos,1996,2100000
+Asbestos,1997,2150000
+Asbestos,1998,1980000
+Asbestos,1999,1940000
+Asbestos,2000,2110000
+Asbestos,2001,2080000
+Asbestos,2002,2320000
+Asbestos,2003,2400000
+Asbestos,2004,2340000
+Asbestos,2005,2210000
+Asbestos,2006,2150000
+Asbestos,2007,2250000
+Asbestos,2008,2090000
+Asbestos,2009,2110000
+Asbestos,2010,2010000
+Asbestos,2011,2000000
+Asbestos,2012,1900000
+Asbestos,2013,1650000
+Asbestos,2014,1520000
+Asbestos,2015,1290000
+Asbestos,2016,1250000
+Asbestos,2017,1160000
+Asbestos,2018,1180000
+Asbestos,2019,1160000
+Asbestos,2020,1100000
+Asbestos,2021,1240000
+Asbestos,2022,1330000
+Asbestos,2023,1240000
+Asbestos,2024,1200000
+Barite,1913,212000
+Barite,1919,359000
+Barite,1920,453000
+Barite,1921,242000
+Barite,1922,414000
+Barite,1923,445000
+Barite,1924,487000
+Barite,1925,536000
+Barite,1926,527000
+Barite,1927,536000
+Barite,1928,635000
+Barite,1929,677000
+Barite,1930,592000
+Barite,1931,468000
+Barite,1932,368000
+Barite,1933,439000
+Barite,1934,770000
+Barite,1935,726000
+Barite,1936,854000
+Barite,1937,992000
+Barite,1938,975000
+Barite,1939,961000
+Barite,1940,959000
+Barite,1941,1030000
+Barite,1942,1000000
+Barite,1943,1010000
+Barite,1944,1120000
+Barite,1945,964000
+Barite,1946,1110000
+Barite,1947,1360000
+Barite,1948,1210000
+Barite,1949,1340000
+Barite,1950,1450000
+Barite,1951,1670000
+Barite,1952,1780000
+Barite,1953,1960000
+Barite,1954,2080000
+Barite,1955,2420000
+Barite,1956,2700000
+Barite,1957,3340000
+Barite,1958,2480000
+Barite,1959,2700000
+Barite,1960,2710000
+Barite,1961,2820000
+Barite,1962,3080000
+Barite,1963,2880000
+Barite,1964,3170000
+Barite,1965,3540000
+Barite,1966,3690000
+Barite,1967,3570000
+Barite,1968,3420000
+Barite,1969,3850000
+Barite,1970,3940000
+Barite,1971,3730000
+Barite,1972,3960000
+Barite,1973,4750000
+Barite,1974,4870000
+Barite,1975,5010000
+Barite,1976,5360000
+Barite,1977,5960000
+Barite,1978,7000000
+Barite,1979,7170000
+Barite,1980,7600000
+Barite,1981,8310000
+Barite,1982,7400000
+Barite,1983,5470000
+Barite,1984,5910000
+Barite,1985,6160000
+Barite,1986,4790000
+Barite,1987,4810000
+Barite,1988,5660000
+Barite,1989,5820000
+Barite,1990,5870000
+Barite,1991,5570000
+Barite,1992,4840000
+Barite,1993,4470000
+Barite,1994,4470000
+Barite,1995,4830000
+Barite,1996,6060000
+Barite,1997,6690000
+Barite,1998,5750000
+Barite,1999,6160000
+Barite,2000,6560000
+Barite,2001,6740000
+Barite,2002,6160000
+Barite,2003,6780000
+Barite,2004,7670000
+Barite,2005,7870000
+Barite,2006,7910000
+Barite,2007,7960000
+Barite,2008,8720000
+Barite,2009,7050000
+Barite,2010,6820000
+Barite,2011,8370000
+Barite,2012,9490000
+Barite,2013,9000000
+Barite,2014,9670000
+Barite,2015,8930000
+Barite,2016,7880000
+Barite,2017,8730000
+Barite,2018,8470000
+Barite,2019,8530000
+Barite,2020,6840000
+Barite,2021,6730000
+Barite,2022,8260000
+Barite,2023,8080000
+Barite,2024,8200000
+Bauxite,1900,88000
+Bauxite,1901,106000
+Bauxite,1902,136000
+Bauxite,1903,189000
+Bauxite,1904,133000
+Bauxite,1905,159000
+Bauxite,1906,201000
+Bauxite,1907,269000
+Bauxite,1908,243000
+Bauxite,1909,275000
+Bauxite,1910,356000
+Bauxite,1911,425000
+Bauxite,1912,435000
+Bauxite,1913,539000
+Bauxite,1914,236000
+Bauxite,1915,321000
+Bauxite,1916,701000
+Bauxite,1917,1030000
+Bauxite,1918,818000
+Bauxite,1919,569000
+Bauxite,1920,901000
+Bauxite,1921,318000
+Bauxite,1922,701000
+Bauxite,1923,1200000
+Bauxite,1924,1160000
+Bauxite,1925,1380000
+Bauxite,1926,1380000
+Bauxite,1927,1880000
+Bauxite,1928,2030000
+Bauxite,1929,2150000
+Bauxite,1930,1630000
+Bauxite,1931,1150000
+Bauxite,1932,1000000
+Bauxite,1933,1100000
+Bauxite,1934,1330000
+Bauxite,1935,1770000
+Bauxite,1936,2830000
+Bauxite,1937,3750000
+Bauxite,1938,3870000
+Bauxite,1939,4340000
+Bauxite,1940,4390000
+Bauxite,1941,6110000
+Bauxite,1942,8360000
+Bauxite,1943,14000000
+Bauxite,1944,6960000
+Bauxite,1945,3430000
+Bauxite,1946,4360000
+Bauxite,1947,6320000
+Bauxite,1948,8360000
+Bauxite,1949,8230000
+Bauxite,1950,8180000
+Bauxite,1951,10900000
+Bauxite,1952,12800000
+Bauxite,1953,13800000
+Bauxite,1954,16200000
+Bauxite,1955,17800000
+Bauxite,1956,18800000
+Bauxite,1957,20500000
+Bauxite,1958,21400000
+Bauxite,1959,23100000
+Bauxite,1960,27600000
+Bauxite,1961,29400000
+Bauxite,1962,31100000
+Bauxite,1963,30700000
+Bauxite,1964,33400000
+Bauxite,1965,37400000
+Bauxite,1966,40700000
+Bauxite,1967,44600000
+Bauxite,1968,46000000
+Bauxite,1969,51800000
+Bauxite,1970,57800000
+Bauxite,1971,62100000
+Bauxite,1972,64900000
+Bauxite,1973,70400000
+Bauxite,1974,79600000
+Bauxite,1975,74800000
+Bauxite,1976,77400000
+Bauxite,1977,81900000
+Bauxite,1978,81000000
+Bauxite,1979,85500000
+Bauxite,1980,89200000
+Bauxite,1981,85300000
+Bauxite,1982,79300000
+Bauxite,1983,78700000
+Bauxite,1984,87200000
+Bauxite,1985,84200000
+Bauxite,1986,88200000
+Bauxite,1987,91600000
+Bauxite,1988,97400000
+Bauxite,1989,103000000
+Bauxite,1990,113000000
+Bauxite,1991,111000000
+Bauxite,1992,105000000
+Bauxite,1993,110000000
+Bauxite,1994,106000000
+Bauxite,1995,112000000
+Bauxite,1996,117000000
+Bauxite,1997,122000000
+Bauxite,1998,123000000
+Bauxite,1999,129000000
+Bauxite,2000,136000000
+Bauxite,2001,137000000
+Bauxite,2002,144000000
+Bauxite,2003,153000000
+Bauxite,2004,164000000
+Bauxite,2005,178000000
+Bauxite,2006,193000000
+Bauxite,2007,221000000
+Bauxite,2008,224000000
+Bauxite,2009,209000000
+Bauxite,2010,239000000
+Bauxite,2011,254000000
+Bauxite,2012,253000000
+Bauxite,2013,296000000
+Bauxite,2014,258000000
+Bauxite,2015,294000000
+Bauxite,2016,286000000
+Bauxite,2017,308000000
+Bauxite,2018,341000000
+Bauxite,2019,388000000
+Bauxite,2020,391000000
+Bauxite,2021,384000000
+Bauxite,2022,400000000
+Bauxite,2023,438000000
+Bauxite,2024,450000000
+Beryllium,1935,16
+Beryllium,1936,17
+Beryllium,1937,15
+Beryllium,1938,42
+Beryllium,1939,36
+Beryllium,1940,87
+Beryllium,1941,164
+Beryllium,1942,120
+Beryllium,1943,218
+Beryllium,1944,118
+Beryllium,1945,39
+Beryllium,1946,68
+Beryllium,1947,57
+Beryllium,1948,99
+Beryllium,1949,183
+Beryllium,1950,269
+Beryllium,1951,243
+Beryllium,1952,301
+Beryllium,1953,298
+Beryllium,1954,279
+Beryllium,1955,323
+Beryllium,1956,468
+Beryllium,1957,410
+Beryllium,1958,279
+Beryllium,1959,406
+Beryllium,1960,446
+Beryllium,1961,468
+Beryllium,1962,399
+Beryllium,1963,265
+Beryllium,1964,178
+Beryllium,1965,222
+Beryllium,1966,165
+Beryllium,1967,197
+Beryllium,1968,263
+Beryllium,1969,322
+Beryllium,1970,249
+Beryllium,1971,210
+Beryllium,1972,157
+Beryllium,1973,144
+Beryllium,1974,126
+Beryllium,1975,119
+Beryllium,1976,93
+Beryllium,1977,103
+Beryllium,1978,105
+Beryllium,1979,96
+Beryllium,1980,373
+Beryllium,1981,385
+Beryllium,1982,327
+Beryllium,1983,366
+Beryllium,1984,359
+Beryllium,1985,326
+Beryllium,1986,356
+Beryllium,1987,345
+Beryllium,1988,332
+Beryllium,1989,301
+Beryllium,1990,284
+Beryllium,1991,263
+Beryllium,1992,278
+Beryllium,1993,243
+Beryllium,1994,218
+Beryllium,1995,247
+Beryllium,1996,255
+Beryllium,1997,276
+Beryllium,1998,289
+Beryllium,1999,248
+Beryllium,2000,226
+Beryllium,2001,120
+Beryllium,2002,101
+Beryllium,2003,107
+Beryllium,2004,111
+Beryllium,2005,138
+Beryllium,2006,174
+Beryllium,2007,174
+Beryllium,2008,197
+Beryllium,2009,144
+Beryllium,2010,204
+Beryllium,2011,262
+Beryllium,2012,296
+Beryllium,2013,296
+Beryllium,2014,338
+Beryllium,2015,263
+Beryllium,2016,215
+Beryllium,2017,210
+Beryllium,2018,256
+Beryllium,2019,238
+Beryllium,2020,250
+Beryllium,2021,272
+Beryllium,2022,313
+Beryllium,2023,325
+Beryllium,2024,360
+Bismuth,1912,722
+Bismuth,1913,922
+Bismuth,1914,1050
+Bismuth,1915,1770
+Bismuth,1916,1670
+Bismuth,1917,907
+Bismuth,1918,992
+Bismuth,1919,833
+Bismuth,1920,817
+Bismuth,1921,274
+Bismuth,1937,700
+Bismuth,1938,1000
+Bismuth,1939,1300
+Bismuth,1940,1400
+Bismuth,1941,1400
+Bismuth,1942,1700
+Bismuth,1943,1400
+Bismuth,1944,1200
+Bismuth,1945,1100
+Bismuth,1946,940
+Bismuth,1947,1500
+Bismuth,1948,1500
+Bismuth,1949,1500
+Bismuth,1950,1400
+Bismuth,1951,1770
+Bismuth,1952,1770
+Bismuth,1953,2090
+Bismuth,1954,1680
+Bismuth,1955,1910
+Bismuth,1956,2400
+Bismuth,1957,2270
+Bismuth,1958,2090
+Bismuth,1959,2270
+Bismuth,1960,2400
+Bismuth,1961,2590
+Bismuth,1962,3040
+Bismuth,1963,2530
+Bismuth,1964,2890
+Bismuth,1965,2960
+Bismuth,1966,3110
+Bismuth,1967,3380
+Bismuth,1968,3770
+Bismuth,1969,3760
+Bismuth,1970,3720
+Bismuth,1971,3830
+Bismuth,1972,4000
+Bismuth,1973,3720
+Bismuth,1974,4820
+Bismuth,1975,3980
+Bismuth,1976,3940
+Bismuth,1977,4480
+Bismuth,1978,4250
+Bismuth,1979,3420
+Bismuth,1980,3610
+Bismuth,1981,3750
+Bismuth,1982,4110
+Bismuth,1983,3980
+Bismuth,1984,3480
+Bismuth,1985,4410
+Bismuth,1986,3660
+Bismuth,1987,3170
+Bismuth,1988,3220
+Bismuth,1989,3650
+Bismuth,1990,3440
+Bismuth,1991,3230
+Bismuth,1992,2870
+Bismuth,1993,3550
+Bismuth,1994,3410
+Bismuth,1995,3430
+Bismuth,1996,3600
+Bismuth,1997,4360
+Bismuth,1998,3930
+Bismuth,1999,4860
+Bismuth,2000,3790
+Bismuth,2001,5100
+Bismuth,2002,4600
+Bismuth,2003,5100
+Bismuth,2004,5600
+Bismuth,2005,5400
+Bismuth,2006,5800
+Bismuth,2007,6400
+Bismuth,2008,7500
+Bismuth,2009,7500
+Bismuth,2010,7700
+Bismuth,2011,8170
+Bismuth,2012,6960
+Bismuth,2013,8480
+Boron,1900,46900
+Boron,1901,42900
+Boron,1902,41300
+Boron,1903,54700
+Boron,1904,65200
+Boron,1905,65800
+Boron,1906,87400
+Boron,1907,95300
+Boron,1908,74800
+Boron,1909,86800
+Boron,1910,67100
+Boron,1911,99000
+Boron,1912,86000
+Boron,1913,55100
+Boron,1976,2340000
+Boron,1977,2730000
+Boron,1978,2660000
+Boron,1979,2520000
+Boron,1980,2610000
+Boron,1981,2560000
+Boron,1982,2270000
+Boron,1983,2240000
+Boron,1984,2510000
+Boron,1985,2510000
+Boron,1986,2510000
+Boron,1987,2690000
+Boron,1988,2990000
+Boron,1989,2990000
+Boron,1990,2910000
+Boron,1991,2960000
+Boron,1992,2670000
+Boron,1993,2640000
+Boron,1994,3810000
+Boron,1995,4020000
+Boron,1996,4330000
+Boron,1997,4580000
+Boron,1998,4570000
+Boron,1999,4460000
+Boron,2000,4600000
+Boron,2001,4740000
+Boron,2002,4580000
+Boron,2003,4750000
+Boron,2004,4960000
+Boron,2005,4950000
+Chromium,1900,16500
+Chromium,1901,27900
+Chromium,1902,26400
+Chromium,1903,29500
+Chromium,1904,36600
+Chromium,1905,44500
+Chromium,1906,49700
+Chromium,1907,34700
+Chromium,1908,20700
+Chromium,1909,33300
+Chromium,1910,33600
+Chromium,1911,25100
+Chromium,1912,38000
+Chromium,1913,45500
+Chromium,1914,48500
+Chromium,1915,57400
+Chromium,1916,87000
+Chromium,1917,81300
+Chromium,1918,96500
+Chromium,1919,52900
+Chromium,1920,53200
+Chromium,1921,41400
+Chromium,1922,43300
+Chromium,1923,63500
+Chromium,1924,90200
+Chromium,1925,95300
+Chromium,1926,112000
+Chromium,1927,124000
+Chromium,1928,140000
+Chromium,1929,197000
+Chromium,1930,173000
+Chromium,1931,127000
+Chromium,1932,101000
+Chromium,1933,123000
+Chromium,1934,183000
+Chromium,1935,241000
+Chromium,1936,317000
+Chromium,1937,392000
+Chromium,1938,362000
+Chromium,1939,347000
+Chromium,1940,457000
+Chromium,1941,509000
+Chromium,1942,637000
+Chromium,1943,542000
+Chromium,1944,411000
+Chromium,1945,318000
+Chromium,1946,352000
+Chromium,1947,521000
+Chromium,1948,644000
+Chromium,1949,650000
+Chromium,1950,720000
+Chromium,1951,823000
+Chromium,1952,963000
+Chromium,1953,1130000
+Chromium,1954,924000
+Chromium,1955,1040000
+Chromium,1956,1200000
+Chromium,1957,1370000
+Chromium,1958,1130000
+Chromium,1959,1150000
+Chromium,1960,1250000
+Chromium,1961,1220000
+Chromium,1962,1280000
+Chromium,1963,1170000
+Chromium,1964,1290000
+Chromium,1965,1490000
+Chromium,1966,1360000
+Chromium,1967,1430000
+Chromium,1968,1560000
+Chromium,1969,1670000
+Chromium,1970,1910000
+Chromium,1971,2000000
+Chromium,1972,1970000
+Chromium,1973,2030000
+Chromium,1974,2230000
+Chromium,1975,2530000
+Chromium,1976,2430000
+Chromium,1977,2600000
+Chromium,1978,2990000
+Chromium,1979,2590000
+Chromium,1980,2830000
+Chromium,1981,2550000
+Chromium,1982,2390000
+Chromium,1983,2540000
+Chromium,1984,2950000
+Chromium,1985,3180000
+Chromium,1986,3530000
+Chromium,1987,3450000
+Chromium,1988,3870000
+Chromium,1989,4320000
+Chromium,1990,3950000
+Chromium,1991,4060000
+Chromium,1992,3420000
+Chromium,1993,3080000
+Chromium,1994,3090000
+Chromium,1995,4530000
+Chromium,1996,3660000
+Chromium,1997,4330000
+Chromium,1998,4460000
+Chromium,1999,4810000
+Chromium,2000,4750000
+Chromium,2001,3740000
+Chromium,2002,4510000
+Chromium,2003,4770000
+Chromium,2004,5010000
+Chromium,2005,5920000
+Chromium,2006,6080000
+Chromium,2007,6930000
+Chromium,2008,7320000
+Chromium,2009,6010000
+Chromium,2010,7510000
+Chromium,2011,8350000
+Chromium,2012,8310000
+Chromium,2013,11500000
+Chromium,2014,11800000
+Chromium,2015,11400000
+Chromium,2016,10900000
+Chromium,2017,12600000
+Chromium,2018,14900000
+Chromium,2019,14200000
+Chromium,2020,10900000
+Chromium,2021,13200000
+Chromium,2022,12900000
+Coal,1970,2793587000
+Coal,1971,2799453700
+Coal,1972,2869926100
+Coal,1973,2891016700
+Coal,1974,2998665200
+Coal,1975,3125380600
+Coal,1976,3227056600
+Coal,1977,3389220600
+Coal,1978,3436366800
+Coal,1979,3598773500
+Coal,1980,3678407400
+Coal,1981,3843616800
+Coal,1982,3995611100
+Coal,1983,4017601300
+Coal,1984,4230769000
+Coal,1985,4455579600
+Coal,1986,4458508300
+Coal,1987,4668996000
+Coal,1988,4783060500
+Coal,1989,4864746500
+Coal,1990,4710623000
+Coal,1991,4382547000
+Coal,1992,4201403100
+Coal,1993,4404125700
+Coal,1994,4466721300
+Coal,1995,4613598000
+Coal,1996,4699204000
+Coal,1997,4692177400
+Coal,1998,4602005000
+Coal,1999,4324023000
+Coal,2000,4309879300
+Coal,2001,4638975000
+Coal,2002,4814984000
+Coal,2003,5210507300
+Coal,2004,5711137300
+Coal,2005,6045690400
+Coal,2006,6350178000
+Coal,2007,6582670300
+Coal,2008,6812842500
+Coal,2009,6888037400
+Coal,2010,7449600500
+Coal,2011,7919750700
+Coal,2012,8186299400
+Coal,2013,8217517600
+Coal,2014,8153411600
+Coal,2015,7934567000
+Coal,2016,7476610000
+Coal,2017,7689777000
+Coal,2018,7592127000
+Coal,2019,7692051500
+Coal,2020,7332273700
+Coal,2021,7736602000
+Coal,2022,8376574000
+Coal,2023,9098093000
+Cobalt,1901,180
+Cobalt,1902,540
+Cobalt,1903,640
+Cobalt,1904,540
+Cobalt,1905,450
+Cobalt,1906,450
+Cobalt,1907,910
+Cobalt,1908,1360
+Cobalt,1909,1450
+Cobalt,1910,1000
+Cobalt,1911,820
+Cobalt,1912,860
+Cobalt,1913,820
+Cobalt,1914,360
+Cobalt,1915,230
+Cobalt,1916,410
+Cobalt,1917,360
+Cobalt,1918,450
+Cobalt,1919,360
+Cobalt,1920,360
+Cobalt,1921,180
+Cobalt,1922,820
+Cobalt,1923,640
+Cobalt,1924,1090
+Cobalt,1925,1090
+Cobalt,1926,820
+Cobalt,1927,1180
+Cobalt,1928,1180
+Cobalt,1929,1360
+Cobalt,1930,1270
+Cobalt,1931,910
+Cobalt,1932,1090
+Cobalt,1933,1270
+Cobalt,1934,1450
+Cobalt,1935,2000
+Cobalt,1936,2720
+Cobalt,1937,3800
+Cobalt,1938,4500
+Cobalt,1939,4500
+Cobalt,1940,5000
+Cobalt,1941,4000
+Cobalt,1942,3500
+Cobalt,1943,4200
+Cobalt,1944,3900
+Cobalt,1945,4700
+Cobalt,1946,3500
+Cobalt,1947,5000
+Cobalt,1948,6100
+Cobalt,1949,5900
+Cobalt,1950,7170
+Cobalt,1951,8440
+Cobalt,1952,10100
+Cobalt,1953,11300
+Cobalt,1954,13100
+Cobalt,1955,13300
+Cobalt,1956,14400
+Cobalt,1957,14400
+Cobalt,1958,12600
+Cobalt,1959,14800
+Cobalt,1960,14200
+Cobalt,1961,14400
+Cobalt,1962,17100
+Cobalt,1963,14500
+Cobalt,1964,17800
+Cobalt,1965,19000
+Cobalt,1966,21800
+Cobalt,1967,20500
+Cobalt,1968,19600
+Cobalt,1969,20200
+Cobalt,1970,24200
+Cobalt,1971,25100
+Cobalt,1972,24800
+Cobalt,1973,29400
+Cobalt,1974,30900
+Cobalt,1975,30800
+Cobalt,1976,21400
+Cobalt,1977,21500
+Cobalt,1978,26800
+Cobalt,1979,29900
+Cobalt,1980,31300
+Cobalt,1981,30700
+Cobalt,1982,24600
+Cobalt,1983,37900
+Cobalt,1984,40900
+Cobalt,1985,47400
+Cobalt,1986,50200
+Cobalt,1987,41200
+Cobalt,1988,43800
+Cobalt,1989,42900
+Cobalt,1990,42300
+Cobalt,1991,33300
+Cobalt,1992,28000
+Cobalt,1993,21900
+Cobalt,1994,18000
+Cobalt,1995,24500
+Cobalt,1996,26200
+Cobalt,1997,27400
+Cobalt,1998,36300
+Cobalt,1999,33900
+Cobalt,2000,39000
+Cobalt,2001,46000
+Cobalt,2002,53400
+Cobalt,2003,54600
+Cobalt,2004,60300
+Cobalt,2005,65200
+Cobalt,2006,70000
+Cobalt,2007,73700
+Cobalt,2008,79900
+Cobalt,2009,81200
+Cobalt,2010,110000
+Cobalt,2011,102000
+Cobalt,2012,96800
+Cobalt,2013,103000
+Cobalt,2014,115000
+Cobalt,2015,122000
+Cobalt,2016,115000
+Cobalt,2017,128000
+Cobalt,2018,149000
+Cobalt,2019,155000
+Cobalt,2020,142000
+Cobalt,2021,165000
+Cobalt,2022,197000
+Cobalt,2023,238000
+Cobalt,2024,290000
+Copper,1900,495000
+Copper,1901,526000
+Copper,1902,555000
+Copper,1903,596000
+Copper,1904,660000
+Copper,1905,713000
+Copper,1906,724000
+Copper,1907,721000
+Copper,1908,744000
+Copper,1909,828000
+Copper,1910,858000
+Copper,1911,890000
+Copper,1912,1000000
+Copper,1913,996000
+Copper,1914,938000
+Copper,1915,1060000
+Copper,1916,1420000
+Copper,1917,1430000
+Copper,1918,1430000
+Copper,1919,994000
+Copper,1920,959000
+Copper,1921,558000
+Copper,1922,884000
+Copper,1923,1270000
+Copper,1924,1360000
+Copper,1925,1530000
+Copper,1926,1510000
+Copper,1927,1520000
+Copper,1928,1730000
+Copper,1929,1950000
+Copper,1930,1610000
+Copper,1931,1400000
+Copper,1932,909000
+Copper,1933,1050000
+Copper,1934,1280000
+Copper,1935,1500000
+Copper,1936,1720000
+Copper,1937,2290000
+Copper,1938,1990000
+Copper,1939,2130000
+Copper,1940,2400000
+Copper,1941,2480000
+Copper,1942,2590000
+Copper,1943,2620000
+Copper,1944,2460000
+Copper,1945,2110000
+Copper,1946,1780000
+Copper,1947,2130000
+Copper,1948,2210000
+Copper,1949,2140000
+Copper,1950,2380000
+Copper,1951,2490000
+Copper,1952,2570000
+Copper,1953,2600000
+Copper,1954,2640000
+Copper,1955,2900000
+Copper,1956,3200000
+Copper,1957,3300000
+Copper,1958,3190000
+Copper,1959,3430000
+Copper,1960,3940000
+Copper,1961,4090000
+Copper,1962,4220000
+Copper,1963,4290000
+Copper,1964,4450000
+Copper,1965,4660000
+Copper,1966,4580000
+Copper,1967,4630000
+Copper,1968,5010000
+Copper,1969,5520000
+Copper,1970,5900000
+Copper,1971,5940000
+Copper,1972,6540000
+Copper,1973,6920000
+Copper,1974,7100000
+Copper,1975,6740000
+Copper,1976,7260000
+Copper,1977,7420000
+Copper,1978,7280000
+Copper,1979,7350000
+Copper,1980,7200000
+Copper,1981,7690000
+Copper,1982,7580000
+Copper,1983,7610000
+Copper,1984,7810000
+Copper,1985,7990000
+Copper,1986,7940000
+Copper,1987,8240000
+Copper,1988,8720000
+Copper,1989,9040000
+Copper,1990,9200000
+Copper,1991,9330000
+Copper,1992,9470000
+Copper,1993,9490000
+Copper,1994,9500000
+Copper,1995,10000000
+Copper,1996,11000000
+Copper,1997,11500000
+Copper,1998,12100000
+Copper,1999,12800000
+Copper,2000,13300000
+Copper,2001,13700000
+Copper,2002,13600000
+Copper,2003,13800000
+Copper,2004,14700000
+Copper,2005,15000000
+Copper,2006,15100000
+Copper,2007,15500000
+Copper,2008,15600000
+Copper,2009,16000000
+Copper,2010,16100000
+Copper,2011,16100000
+Copper,2012,16700000
+Copper,2013,18400000
+Copper,2014,18600000
+Copper,2015,19300000
+Copper,2016,20500000
+Copper,2017,20100000
+Copper,2018,20600000
+Copper,2019,20400000
+Copper,2020,20600000
+Copper,2021,21200000
+Copper,2022,21900000
+Copper,2023,22600000
+Copper,2024,23000000
+Diamond (industrial),2020,9
+Diamond (industrial),2021,9.2
+Diamond (industrial),2022,9
+Diamond (industrial),2023,8.2
+Diamond (industrial),2024,8.2
+Diamond and synthetic (industrial),1938,2.2
+Diamond and synthetic (industrial),1939,2.2
+Diamond and synthetic (industrial),1940,2.85
+Diamond and synthetic (industrial),1941,1.87
+Diamond and synthetic (industrial),1942,1.94
+Diamond and synthetic (industrial),1943,2.01
+Diamond and synthetic (industrial),1944,2.09
+Diamond and synthetic (industrial),1945,2.16
+Diamond and synthetic (industrial),1946,2.23
+Diamond and synthetic (industrial),1947,2.3
+Diamond and synthetic (industrial),1948,2.38
+Diamond and synthetic (industrial),1949,2.45
+Diamond and synthetic (industrial),1950,2.52
+Diamond and synthetic (industrial),1951,2.82
+Diamond and synthetic (industrial),1952,3.16
+Diamond and synthetic (industrial),1953,3.28
+Diamond and synthetic (industrial),1954,3.36
+Diamond and synthetic (industrial),1955,3.5
+Diamond and synthetic (industrial),1956,3.66
+Diamond and synthetic (industrial),1957,4.16
+Diamond and synthetic (industrial),1958,4.48
+Diamond and synthetic (industrial),1959,4.18
+Diamond and synthetic (industrial),1960,4.2
+Diamond and synthetic (industrial),1961,5.44
+Diamond and synthetic (industrial),1962,5.53
+Diamond and synthetic (industrial),1963,6.05
+Diamond and synthetic (industrial),1964,6.02
+Diamond and synthetic (industrial),1965,5.86
+Diamond and synthetic (industrial),1966,6.21
+Diamond and synthetic (industrial),1967,6.25
+Diamond and synthetic (industrial),1968,5.18
+Diamond and synthetic (industrial),1969,5.42
+Diamond and synthetic (industrial),1970,5.84
+Diamond and synthetic (industrial),1971,5.78
+Diamond and synthetic (industrial),1972,6.25
+Diamond and synthetic (industrial),1973,6.12
+Diamond and synthetic (industrial),1974,6.57
+Diamond and synthetic (industrial),1975,6.12
+Diamond and synthetic (industrial),1976,5.92
+Diamond and synthetic (industrial),1977,6.08
+Diamond and synthetic (industrial),1978,6.03
+Diamond and synthetic (industrial),1979,5.84
+Diamond and synthetic (industrial),1980,6.51
+Diamond and synthetic (industrial),1981,5.92
+Diamond and synthetic (industrial),1982,6.04
+Diamond and synthetic (industrial),1983,6.47
+Diamond and synthetic (industrial),1984,7.47
+Diamond and synthetic (industrial),1985,7.96
+Diamond and synthetic (industrial),1986,10.7
+Diamond and synthetic (industrial),1987,10.1
+Diamond and synthetic (industrial),1988,59.3
+Diamond and synthetic (industrial),1989,76.1
+Diamond and synthetic (industrial),1990,77.5
+Diamond and synthetic (industrial),1991,95.6
+Diamond and synthetic (industrial),1992,93.4
+Diamond and synthetic (industrial),1993,100
+Diamond and synthetic (industrial),1994,98.9
+Diamond and synthetic (industrial),1995,100
+Diamond and synthetic (industrial),1996,101
+Diamond and synthetic (industrial),1997,103
+Diamond and synthetic (industrial),1998,106
+Diamond and synthetic (industrial),1999,96.2
+Diamond and synthetic (industrial),2000,96.9
+Diamond and synthetic (industrial),2001,113
+Diamond and synthetic (industrial),2002,119
+Diamond and synthetic (industrial),2003,117
+Diamond and synthetic (industrial),2004,901
+Diamond and synthetic (industrial),2005,861
+Diamond and synthetic (industrial),2006,880
+Diamond and synthetic (industrial),2007,900
+Diamond and synthetic (industrial),2008,897
+Diamond and synthetic (industrial),2009,886
+Diamond and synthetic (industrial),2010,887
+Diamond and synthetic (industrial),2011,887
+Diamond and synthetic (industrial),2012,889
+Diamond and synthetic (industrial),2013,3490
+Diamond and synthetic (industrial),2014,3490
+Diamond and synthetic (industrial),2015,3110
+Diamond and synthetic (industrial),2016,2870
+Diamond and synthetic (industrial),2017,2930
+Diamond and synthetic (industrial),2018,2940
+Diamond and synthetic (industrial),2019,2930
+Diamond and synthetic (industrial),2020,3090
+Diamond and synthetic (industrial),2021,3090
+Feldspar,1908,155000
+Feldspar,1909,168000
+Feldspar,1910,179000
+Feldspar,1911,210000
+Feldspar,1912,206000
+Feldspar,1913,156000
+Feldspar,1914,193000
+Feldspar,1915,155000
+Feldspar,1916,168000
+Feldspar,1917,174000
+Feldspar,1918,136000
+Feldspar,1919,108000
+Feldspar,1920,207000
+Feldspar,1921,167000
+Feldspar,1922,208000
+Feldspar,1923,250000
+Feldspar,1924,362000
+Feldspar,1925,314000
+Feldspar,1926,345000
+Feldspar,1927,340000
+Feldspar,1928,366000
+Feldspar,1929,331000
+Feldspar,1930,284000
+Feldspar,1931,239000
+Feldspar,1932,189000
+Feldspar,1933,258000
+Feldspar,1934,280000
+Feldspar,1935,316000
+Feldspar,1936,381000
+Feldspar,1937,426000
+Feldspar,1938,320000
+Feldspar,1939,390000
+Feldspar,1940,400000
+Feldspar,1941,475000
+Feldspar,1942,440000
+Feldspar,1943,440000
+Feldspar,1944,465000
+Feldspar,1945,500000
+Feldspar,1946,675000
+Feldspar,1947,700000
+Feldspar,1948,770000
+Feldspar,1949,660000
+Feldspar,1950,721000
+Feldspar,1951,793000
+Feldspar,1952,803000
+Feldspar,1953,793000
+Feldspar,1954,945000
+Feldspar,1955,1070000
+Feldspar,1956,1130000
+Feldspar,1957,1260000
+Feldspar,1958,1210000
+Feldspar,1959,1370000
+Feldspar,1960,1570000
+Feldspar,1961,1630000
+Feldspar,1962,1630000
+Feldspar,1963,1710000
+Feldspar,1964,1890000
+Feldspar,1965,2010000
+Feldspar,1966,2150000
+Feldspar,1967,2040000
+Feldspar,1968,2240000
+Feldspar,1969,2450000
+Feldspar,1970,2530000
+Feldspar,1971,2550000
+Feldspar,1972,2720000
+Feldspar,1973,2770000
+Feldspar,1974,3010000
+Feldspar,1975,2630000
+Feldspar,1976,2800000
+Feldspar,1977,2940000
+Feldspar,1978,3030000
+Feldspar,1979,3110000
+Feldspar,1980,3200000
+Feldspar,1981,3230000
+Feldspar,1982,3520000
+Feldspar,1983,3590000
+Feldspar,1984,3790000
+Feldspar,1985,4030000
+Feldspar,1986,4120000
+Feldspar,1987,4380000
+Feldspar,1988,4840000
+Feldspar,1989,5180000
+Feldspar,1990,5990000
+Feldspar,1991,5670000
+Feldspar,1992,5990000
+Feldspar,1993,6170000
+Feldspar,1994,6490000
+Feldspar,1995,7910000
+Feldspar,1996,8290000
+Feldspar,1997,8650000
+Feldspar,1998,9330000
+Feldspar,1999,9980000
+Feldspar,2000,9540000
+Feldspar,2001,11800000
+Feldspar,2002,14100000
+Feldspar,2003,13600000
+Feldspar,2004,15100000
+Feldspar,2005,16800000
+Feldspar,2006,20600000
+Feldspar,2007,21600000
+Feldspar,2008,22300000
+Feldspar,2009,19000000
+Feldspar,2010,21600000
+Feldspar,2011,21200000
+Feldspar,2012,22100000
+Feldspar,2013,22400000
+Feldspar,2014,23200000
+Feldspar,2015,24900000
+Feldspar,2016,26600000
+Feldspar,2017,26700000
+Feldspar,2018,23200000
+Feldspar,2019,23000000
+Feldspar,2020,24400000
+Feldspar,2021,27600000
+Feldspar,2022,26600000
+Feldspar,2023,33400000
+Feldspar,2024,33000000
+Fluorspar,1913,171000
+Fluorspar,1914,121000
+Fluorspar,1915,163000
+Fluorspar,1916,201000
+Fluorspar,1917,279000
+Fluorspar,1918,313000
+Fluorspar,1919,196000
+Fluorspar,1920,264000
+Fluorspar,1921,92500
+Fluorspar,1922,208000
+Fluorspar,1923,215000
+Fluorspar,1924,255000
+Fluorspar,1925,263000
+Fluorspar,1926,310000
+Fluorspar,1927,317000
+Fluorspar,1928,345000
+Fluorspar,1929,376000
+Fluorspar,1930,291000
+Fluorspar,1931,166000
+Fluorspar,1932,128000
+Fluorspar,1933,229000
+Fluorspar,1934,286000
+Fluorspar,1935,340000
+Fluorspar,1936,455000
+Fluorspar,1937,519000
+Fluorspar,1938,456000
+Fluorspar,1939,577000
+Fluorspar,1940,616000
+Fluorspar,1941,698000
+Fluorspar,1942,883000
+Fluorspar,1943,1040000
+Fluorspar,1944,1040000
+Fluorspar,1945,674000
+Fluorspar,1946,524000
+Fluorspar,1947,655000
+Fluorspar,1948,795000
+Fluorspar,1949,710000
+Fluorspar,1950,844000
+Fluorspar,1951,1030000
+Fluorspar,1952,1180000
+Fluorspar,1953,1210000
+Fluorspar,1954,1220000
+Fluorspar,1955,1410000
+Fluorspar,1956,1700000
+Fluorspar,1957,1830000
+Fluorspar,1958,1840000
+Fluorspar,1959,1720000
+Fluorspar,1960,2020000
+Fluorspar,1961,2060000
+Fluorspar,1962,2150000
+Fluorspar,1963,2150000
+Fluorspar,1964,2460000
+Fluorspar,1965,2770000
+Fluorspar,1966,2840000
+Fluorspar,1967,3170000
+Fluorspar,1968,3640000
+Fluorspar,1969,3890000
+Fluorspar,1970,4190000
+Fluorspar,1971,4760000
+Fluorspar,1972,4530000
+Fluorspar,1973,4580000
+Fluorspar,1974,4860000
+Fluorspar,1975,4520000
+Fluorspar,1976,4320000
+Fluorspar,1977,4380000
+Fluorspar,1978,4670000
+Fluorspar,1979,4610000
+Fluorspar,1980,5010000
+Fluorspar,1981,5100000
+Fluorspar,1982,4530000
+Fluorspar,1983,4230000
+Fluorspar,1984,4830000
+Fluorspar,1985,4980000
+Fluorspar,1986,4850000
+Fluorspar,1987,4600000
+Fluorspar,1988,5280000
+Fluorspar,1989,5560000
+Fluorspar,1990,5120000
+Fluorspar,1991,4300000
+Fluorspar,1992,4120000
+Fluorspar,1993,4180000
+Fluorspar,1994,3750000
+Fluorspar,1995,4040000
+Fluorspar,1996,4180000
+Fluorspar,1997,4180000
+Fluorspar,1998,4430000
+Fluorspar,1999,4300000
+Fluorspar,2000,4450000
+Fluorspar,2001,4590000
+Fluorspar,2002,4450000
+Fluorspar,2003,4850000
+Fluorspar,2004,5220000
+Fluorspar,2005,5360000
+Fluorspar,2006,5660000
+Fluorspar,2007,5720000
+Fluorspar,2008,6920000
+Fluorspar,2009,6290000
+Fluorspar,2010,7000000
+Fluorspar,2011,9080000
+Fluorspar,2012,7930000
+Fluorspar,2013,7100000
+Fluorspar,2014,6730000
+Fluorspar,2015,6140000
+Fluorspar,2016,5640000
+Fluorspar,2017,6710000
+Fluorspar,2018,7890000
+Fluorspar,2019,8580000
+Fluorspar,2020,8240000
+Fluorspar,2021,8680000
+Fluorspar,2022,8320000
+Fluorspar,2023,9530000
+Fluorspar,2024,9500000
+Garnet,1913,4820
+Garnet,1914,3840
+Garnet,1915,3900
+Garnet,1916,5600
+Garnet,1917,4530
+Garnet,1918,4260
+Garnet,1919,5290
+Garnet,1920,5170
+Garnet,1921,2770
+Garnet,1922,9800
+Garnet,1923,13900
+Garnet,1924,12500
+Garnet,1925,11400
+Garnet,1926,5800
+Garnet,1960,11800
+Garnet,1961,13400
+Garnet,1962,15300
+Garnet,1963,15700
+Garnet,1964,17200
+Garnet,1965,20000
+Garnet,1966,20700
+Garnet,1967,19600
+Garnet,1968,20900
+Garnet,1969,21100
+Garnet,1970,19000
+Garnet,1971,18900
+Garnet,1972,20900
+Garnet,1973,24000
+Garnet,1974,26600
+Garnet,1975,19800
+Garnet,1976,26500
+Garnet,1977,21900
+Garnet,1978,24900
+Garnet,1979,29900
+Garnet,1980,30900
+Garnet,1981,32100
+Garnet,1982,32200
+Garnet,1983,36400
+Garnet,1984,39700
+Garnet,1985,49100
+Garnet,1986,45100
+Garnet,1987,79700
+Garnet,1988,94800
+Garnet,1989,92100
+Garnet,1990,108000
+Garnet,1991,108000
+Garnet,1992,106000
+Garnet,1993,120000
+Garnet,1994,101000
+Garnet,1995,133000
+Garnet,1996,173000
+Garnet,1997,215000
+Garnet,1998,300000
+Garnet,1999,354000
+Garnet,2000,456000
+Garnet,2001,608000
+Garnet,2002,781000
+Garnet,2003,893000
+Garnet,2004,1080000
+Garnet,2005,1190000
+Garnet,2006,1370000
+Garnet,2007,1380000
+Garnet,2008,1310000
+Garnet,2009,1390000
+Garnet,2010,1410000
+Garnet,2011,1350000
+Garnet,2012,1225000
+Garnet,2013,1160000
+Garnet,2014,1100000
+Garnet,2015,1010000
+Garnet,2016,1130000
+Garnet,2017,960000
+Garnet,2018,1250000
+Garnet,2019,1010000
+Garnet,2020,1100000
+Garnet,2021,925000
+Garnet,2022,971000
+Garnet,2023,970000
+Gemstones,1944,0.471
+Gemstones,1945,0.513
+Gemstones,1946,0.557
+Gemstones,1947,0.508
+Gemstones,1948,0.449
+Gemstones,1955,0.8
+Gemstones,1956,0.972
+Gemstones,1957,0.652
+Gemstones,1958,1.19
+Gemstones,1959,1.18
+Gemstones,1960,1.34
+Gemstones,1961,1.4
+Gemstones,1962,1.27
+Gemstones,1963,1.28
+Gemstones,1964,1.55
+Gemstones,1965,1.55
+Gemstones,1966,1.78
+Gemstones,1967,1.87
+Gemstones,1968,2.13
+Gemstones,1969,2.61
+Gemstones,1970,2.66
+Gemstones,1971,2.49
+Gemstones,1972,2.54
+Gemstones,1973,2.49
+Gemstones,1974,2.34
+Gemstones,1975,2.05
+Gemstones,1976,1.86
+Gemstones,1977,1.86
+Gemstones,1978,1.89
+Gemstones,1979,2.05
+Gemstones,1980,2.09
+Gemstones,1981,2.03
+Gemstones,1982,2.05
+Gemstones,1983,4.61
+Gemstones,1984,5.22
+Gemstones,1985,5.25
+Gemstones,1986,8.41
+Gemstones,1987,8.2
+Gemstones,1988,9.84
+Gemstones,1989,10.1
+Gemstones,1990,10.5
+Gemstones,1991,10.2
+Gemstones,1992,11.4
+Gemstones,1993,9.48
+Gemstones,1994,10.6
+Gemstones,1995,11.1
+Gemstones,1996,11
+Gemstones,1997,11.4
+Gemstones,1998,12.1
+Gemstones,1999,12.1
+Gemstones,2000,13.4
+Gemstones,2001,14.6
+Gemstones,2002,15.3
+Gemstones,2003,17.6
+Gemstones,2004,17.7
+Gemstones,2005,18.6
+Gemstones,2006,18.8
+Gemstones,2007,18.5
+Gemstones,2008,17.3
+Gemstones,2009,15.1
+Gemstones,2010,14
+Gemstones,2011,13.4
+Gemstones,2012,13.4
+Gemstones,2013,14.1
+Gemstones,2014,13.9
+Gemstones,2015,13.7
+Gemstones,2016,13.8
+Gemstones,2017,16.9
+Gemstones,2018,17
+Gemstones,2019,16.1
+Gemstones,2020,12.46
+Gemstones,2021,14.78
+Gemstones,2022,15.04
+Gemstones,2023,14.36
+Gemstones,2024,14.4
+Gold,1900,386
+Gold,1901,395
+Gold,1902,451
+Gold,1903,496
+Gold,1904,526
+Gold,1905,575
+Gold,1906,608
+Gold,1907,623
+Gold,1908,668
+Gold,1909,687
+Gold,1910,689
+Gold,1911,699
+Gold,1912,705
+Gold,1913,694
+Gold,1914,663
+Gold,1915,704
+Gold,1916,685
+Gold,1917,631
+Gold,1918,578
+Gold,1919,550
+Gold,1920,507
+Gold,1921,498
+Gold,1922,481
+Gold,1923,554
+Gold,1924,592
+Gold,1925,591
+Gold,1926,602
+Gold,1927,597
+Gold,1928,603
+Gold,1929,609
+Gold,1930,648
+Gold,1931,695
+Gold,1932,754
+Gold,1933,793
+Gold,1934,841
+Gold,1935,924
+Gold,1936,1030
+Gold,1937,1100
+Gold,1938,1170
+Gold,1939,1230
+Gold,1940,1310
+Gold,1941,1080
+Gold,1942,1120
+Gold,1943,896
+Gold,1944,813
+Gold,1945,762
+Gold,1946,860
+Gold,1947,900
+Gold,1948,932
+Gold,1949,964
+Gold,1950,879
+Gold,1951,883
+Gold,1952,868
+Gold,1953,864
+Gold,1954,965
+Gold,1955,947
+Gold,1956,978
+Gold,1957,1020
+Gold,1958,1050
+Gold,1959,1130
+Gold,1960,1190
+Gold,1961,1230
+Gold,1962,1290
+Gold,1963,1340
+Gold,1964,1390
+Gold,1965,1440
+Gold,1966,1450
+Gold,1967,1420
+Gold,1968,1440
+Gold,1969,1450
+Gold,1970,1480
+Gold,1971,1450
+Gold,1972,1390
+Gold,1973,1350
+Gold,1974,1250
+Gold,1975,1200
+Gold,1976,1210
+Gold,1977,1210
+Gold,1978,1210
+Gold,1979,1210
+Gold,1980,1220
+Gold,1981,1280
+Gold,1982,1340
+Gold,1983,1400
+Gold,1984,1460
+Gold,1985,1530
+Gold,1986,1610
+Gold,1987,1660
+Gold,1988,1870
+Gold,1989,2010
+Gold,1990,2180
+Gold,1991,2160
+Gold,1992,2260
+Gold,1993,2280
+Gold,1994,2260
+Gold,1995,2230
+Gold,1996,2290
+Gold,1997,2450
+Gold,1998,2500
+Gold,1999,2570
+Gold,2000,2590
+Gold,2001,2600
+Gold,2002,2550
+Gold,2003,2540
+Gold,2004,2420
+Gold,2005,2470
+Gold,2006,2370
+Gold,2007,2350
+Gold,2008,2300
+Gold,2009,2490
+Gold,2010,2590
+Gold,2011,2680
+Gold,2012,2740
+Gold,2013,2960
+Gold,2014,3040
+Gold,2015,3100
+Gold,2016,3180
+Gold,2017,3260
+Gold,2018,3310
+Gold,2019,3260
+Gold,2020,3030
+Gold,2021,3090
+Gold,2022,3060
+Gold,2023,3250
+Gold,2024,3300
+Graphite,1900,81600
+Graphite,1901,77100
+Graphite,1902,81600
+Graphite,1903,77100
+Graphite,1904,77100
+Graphite,1905,90700
+Graphite,1906,104000
+Graphite,1907,109000
+Graphite,1908,95300
+Graphite,1909,95300
+Graphite,1910,95300
+Graphite,1911,109000
+Graphite,1912,118000
+Graphite,1913,136000
+Graphite,1914,104000
+Graphite,1915,113000
+Graphite,1916,172000
+Graphite,1917,209000
+Graphite,1918,181000
+Graphite,1919,122000
+Graphite,1920,118000
+Graphite,1921,90700
+Graphite,1922,104000
+Graphite,1923,95300
+Graphite,1924,95300
+Graphite,1925,122000
+Graphite,1926,136000
+Graphite,1927,154000
+Graphite,1928,150000
+Graphite,1929,150000
+Graphite,1930,118000
+Graphite,1931,77100
+Graphite,1932,72600
+Graphite,1933,86200
+Graphite,1934,109000
+Graphite,1935,145000
+Graphite,1936,150000
+Graphite,1937,159000
+Graphite,1938,177000
+Graphite,1939,222000
+Graphite,1940,254000
+Graphite,1941,231000
+Graphite,1942,272000
+Graphite,1943,277000
+Graphite,1944,263000
+Graphite,1945,136000
+Graphite,1946,95300
+Graphite,1947,122000
+Graphite,1948,163000
+Graphite,1949,168000
+Graphite,1950,159000
+Graphite,1951,195000
+Graphite,1952,177000
+Graphite,1953,168000
+Graphite,1954,168000
+Graphite,1955,272000
+Graphite,1956,263000
+Graphite,1957,372000
+Graphite,1958,318000
+Graphite,1959,372000
+Graphite,1960,435000
+Graphite,1961,413000
+Graphite,1962,535000
+Graphite,1963,679000
+Graphite,1964,620000
+Graphite,1965,607000
+Graphite,1966,484000
+Graphite,1967,358000
+Graphite,1968,437000
+Graphite,1969,376000
+Graphite,1970,393000
+Graphite,1971,394000
+Graphite,1972,361000
+Graphite,1973,395000
+Graphite,1974,497000
+Graphite,1975,451000
+Graphite,1976,449000
+Graphite,1977,493000
+Graphite,1978,534000
+Graphite,1979,626000
+Graphite,1980,597000
+Graphite,1981,589000
+Graphite,1982,562000
+Graphite,1983,604000
+Graphite,1984,625000
+Graphite,1985,584000
+Graphite,1986,625000
+Graphite,1987,643000
+Graphite,1988,575000
+Graphite,1989,1010000
+Graphite,1990,946000
+Graphite,1991,771000
+Graphite,1992,670000
+Graphite,1993,648000
+Graphite,1994,517000
+Graphite,1995,584000
+Graphite,1996,555000
+Graphite,1997,685000
+Graphite,1998,651000
+Graphite,1999,692000
+Graphite,2000,846000
+Graphite,2001,816000
+Graphite,2002,932000
+Graphite,2003,999000
+Graphite,2004,1010000
+Graphite,2005,1030000
+Graphite,2006,1020000
+Graphite,2007,1120000
+Graphite,2008,1050000
+Graphite,2009,746000
+Graphite,2010,1040000
+Graphite,2011,1190000
+Graphite,2012,1210000
+Graphite,2013,699000
+Graphite,2014,905000
+Graphite,2015,917000
+Graphite,2016,917000
+Graphite,2017,1270000
+Graphite,2018,1490000
+Graphite,2019,1520000
+Graphite,2020,966000
+Graphite,2021,1130000
+Graphite,2022,1680000
+Graphite,2023,1530000
+Graphite,2024,1600000
+Gypsum,1924,9700000
+Gypsum,1925,10700000
+Gypsum,1926,11300000
+Gypsum,1927,11200000
+Gypsum,1928,11800000
+Gypsum,1929,12500000
+Gypsum,1930,11900000
+Gypsum,1931,9400000
+Gypsum,1932,7800000
+Gypsum,1933,7400000
+Gypsum,1934,7900000
+Gypsum,1935,8300000
+Gypsum,1936,9400000
+Gypsum,1937,7790000
+Gypsum,1938,6030000
+Gypsum,1939,8030000
+Gypsum,1940,7940000
+Gypsum,1941,8960000
+Gypsum,1942,9350000
+Gypsum,1943,8480000
+Gypsum,1944,8400000
+Gypsum,1945,9800000
+Gypsum,1946,14400000
+Gypsum,1947,16500000
+Gypsum,1948,21200000
+Gypsum,1949,19000000
+Gypsum,1950,22600000
+Gypsum,1951,18400000
+Gypsum,1952,24100000
+Gypsum,1953,25400000
+Gypsum,1954,28000000
+Gypsum,1955,32100000
+Gypsum,1956,33500000
+Gypsum,1957,34200000
+Gypsum,1958,37800000
+Gypsum,1959,43100000
+Gypsum,1960,40000000
+Gypsum,1961,40500000
+Gypsum,1962,43500000
+Gypsum,1963,45500000
+Gypsum,1964,46800000
+Gypsum,1965,48000000
+Gypsum,1966,48700000
+Gypsum,1967,46200000
+Gypsum,1968,49400000
+Gypsum,1969,52200000
+Gypsum,1970,51600000
+Gypsum,1971,53100000
+Gypsum,1972,57600000
+Gypsum,1973,61500000
+Gypsum,1974,61400000
+Gypsum,1975,59200000
+Gypsum,1976,66100000
+Gypsum,1977,74500000
+Gypsum,1978,77800000
+Gypsum,1979,80400000
+Gypsum,1980,78400000
+Gypsum,1981,76200000
+Gypsum,1982,72500000
+Gypsum,1983,80700000
+Gypsum,1984,85800000
+Gypsum,1985,87000000
+Gypsum,1986,88200000
+Gypsum,1987,93100000
+Gypsum,1988,101000000
+Gypsum,1989,104000000
+Gypsum,1990,104000000
+Gypsum,1991,100000000
+Gypsum,1992,98800000
+Gypsum,1993,97200000
+Gypsum,1994,96300000
+Gypsum,1995,98400000
+Gypsum,1996,104000000
+Gypsum,1997,107000000
+Gypsum,1998,104000000
+Gypsum,1999,109000000
+Gypsum,2000,108000000
+Gypsum,2001,105000000
+Gypsum,2002,111000000
+Gypsum,2003,114000000
+Gypsum,2004,145000000
+Gypsum,2005,147000000
+Gypsum,2006,160000000
+Gypsum,2007,167000000
+Gypsum,2008,157000000
+Gypsum,2009,232000000
+Gypsum,2010,241000000
+Gypsum,2011,241000000
+Gypsum,2012,243000000
+Gypsum,2013,158000000
+Gypsum,2014,150000000
+Gypsum,2015,145000000
+Gypsum,2016,146000000
+Gypsum,2017,141000000
+Gypsum,2018,149000000
+Gypsum,2019,149000000
+Gypsum,2020,144000000
+Gypsum,2021,153000000
+Gypsum,2022,155000000
+Gypsum,2023,157000000
+Gypsum,2024,160000000
+Helium,1935,49
+Helium,1936,22.4
+Helium,1937,23.1
+Helium,1938,29.2
+Helium,1939,30.1
+Helium,1940,45.3
+Helium,1941,77.5
+Helium,1942,159
+Helium,1943,558
+Helium,1944,608
+Helium,1945,454
+Helium,1946,279
+Helium,1947,337
+Helium,1948,303
+Helium,1949,264
+Helium,1950,390
+Helium,1951,537
+Helium,1952,693
+Helium,1953,772
+Helium,1954,914
+Helium,1955,1060
+Helium,1956,1170
+Helium,1957,1400
+Helium,1958,1600
+Helium,1959,2290
+Helium,1960,3080
+Helium,1961,3490
+Helium,1962,3420
+Helium,1963,10800
+Helium,1964,19400
+Helium,1965,21000
+Helium,1966,22100
+Helium,1967,22700
+Helium,1968,22500
+Helium,1969,22500
+Helium,1970,22200
+Helium,1971,22400
+Helium,1972,20200
+Helium,1973,16000
+Helium,1974,4900
+Helium,1975,5870
+Helium,1976,7120
+Helium,1977,7830
+Helium,1978,8400
+Helium,1979,8890
+Helium,1980,7560
+Helium,1981,5580
+Helium,1982,1830
+Helium,1983,3480
+Helium,1984,8570
+Helium,1985,9750
+Helium,1986,10000
+Helium,1987,11600
+Helium,1988,13300
+Helium,1989,14800
+Helium,1991,15900
+Helium,1992,16900
+Helium,1993,16900
+Helium,1995,18800
+Helium,1996,18800
+Helium,1997,23400
+Helium,1998,22700
+Helium,1999,22900
+Helium,2000,19800
+Helium,2001,17900
+Helium,2002,18500
+Helium,2003,24400
+Helium,2004,26100
+Helium,2005,27100
+Helium,2006,28100
+Helium,2007,28900
+Helium,2008,29600
+Helium,2009,24900
+Helium,2010,28400
+Helium,2011,29100
+Helium,2012,29500
+Helium,2013,28900
+Helium,2014,27800
+Helium,2015,26400
+Helium,2016,27100
+Helium,2017,28900
+Helium,2018,27100
+Helium,2019,26700
+Helium,2020,28560
+Helium,2021,29274
+Helium,2022,28203
+Helium,2023,30345
+Iodine,1960,3030
+Iodine,1961,3360
+Iodine,1962,3410
+Iodine,1963,3580
+Iodine,1964,4190
+Iodine,1965,4480
+Iodine,1966,5560
+Iodine,1967,5250
+Iodine,1968,5290
+Iodine,1969,7070
+Iodine,1970,8260
+Iodine,1971,9360
+Iodine,1972,9740
+Iodine,1973,10900
+Iodine,1974,10400
+Iodine,1975,10800
+Iodine,1976,11000
+Iodine,1977,10300
+Iodine,1978,10400
+Iodine,1979,11100
+Iodine,1980,11600
+Iodine,1981,12000
+Iodine,1982,12300
+Iodine,1983,12500
+Iodine,1984,12400
+Iodine,1985,12800
+Iodine,1986,13000
+Iodine,1987,12700
+Iodine,1988,14900
+Iodine,1989,16300
+Iodine,1990,16000
+Iodine,1991,17300
+Iodine,1992,16500
+Iodine,1993,16100
+Iodine,1994,14300
+Iodine,1995,13400
+Iodine,1996,14100
+Iodine,1997,15700
+Iodine,1998,18600
+Iodine,1999,18400
+Iodine,2000,19500
+Iodine,2001,20700
+Iodine,2002,21000
+Iodine,2003,24600
+Iodine,2004,24800
+Iodine,2005,26500
+Iodine,2006,26700
+Iodine,2007,26300
+Iodine,2008,26000
+Iodine,2009,26500
+Iodine,2010,26000
+Iodine,2011,26200
+Iodine,2012,27800
+Iodine,2013,30800
+Iodine,2014,29600
+Iodine,2015,32600
+Iodine,2016,29200
+Iodine,2017,28000
+Iodine,2018,30500
+Iodine,2019,31500
+Iodine,2020,29900
+Iodine,2021,30100
+Iodine,2022,30100
+Iodine,2023,32600
+Iodine,2024,33000
+Iron ore (crude ore),1904,95500000
+Iron ore (crude ore),1905,116000000
+Iron ore (crude ore),1906,100000000
+Iron ore (crude ore),1907,135000000
+Iron ore (crude ore),1908,109000000
+Iron ore (crude ore),1909,126000000
+Iron ore (crude ore),1910,142000000
+Iron ore (crude ore),1911,133000000
+Iron ore (crude ore),1912,151000000
+Iron ore (crude ore),1913,177000000
+Iron ore (crude ore),1914,118000000
+Iron ore (crude ore),1915,116000000
+Iron ore (crude ore),1916,139000000
+Iron ore (crude ore),1917,142000000
+Iron ore (crude ore),1918,127000000
+Iron ore (crude ore),1919,110000000
+Iron ore (crude ore),1920,124000000
+Iron ore (crude ore),1921,73000000
+Iron ore (crude ore),1922,104000000
+Iron ore (crude ore),1923,136000000
+Iron ore (crude ore),1924,130000000
+Iron ore (crude ore),1925,151000000
+Iron ore (crude ore),1926,155000000
+Iron ore (crude ore),1927,171000000
+Iron ore (crude ore),1928,174000000
+Iron ore (crude ore),1929,201000000
+Iron ore (crude ore),1930,179000000
+Iron ore (crude ore),1931,119000000
+Iron ore (crude ore),1932,76200000
+Iron ore (crude ore),1933,91200000
+Iron ore (crude ore),1934,120000000
+Iron ore (crude ore),1935,138000000
+Iron ore (crude ore),1936,170000000
+Iron ore (crude ore),1937,212000000
+Iron ore (crude ore),1938,162000000
+Iron ore (crude ore),1939,200000000
+Iron ore (crude ore),1940,212000000
+Iron ore (crude ore),1941,233000000
+Iron ore (crude ore),1942,235000000
+Iron ore (crude ore),1943,227000000
+Iron ore (crude ore),1944,199000000
+Iron ore (crude ore),1945,159000000
+Iron ore (crude ore),1946,154000000
+Iron ore (crude ore),1947,184000000
+Iron ore (crude ore),1948,211000000
+Iron ore (crude ore),1949,223000000
+Iron ore (crude ore),1950,250000000
+Iron ore (crude ore),1951,294000000
+Iron ore (crude ore),1952,298000000
+Iron ore (crude ore),1953,331000000
+Iron ore (crude ore),1954,301000000
+Iron ore (crude ore),1955,364000000
+Iron ore (crude ore),1956,389000000
+Iron ore (crude ore),1957,423000000
+Iron ore (crude ore),1958,397000000
+Iron ore (crude ore),1959,432000000
+Iron ore (crude ore),1960,514000000
+Iron ore (crude ore),1961,495000000
+Iron ore (crude ore),1962,499000000
+Iron ore (crude ore),1963,510000000
+Iron ore (crude ore),1964,573000000
+Iron ore (crude ore),1965,611000000
+Iron ore (crude ore),1966,626000000
+Iron ore (crude ore),1967,616000000
+Iron ore (crude ore),1968,668000000
+Iron ore (crude ore),1969,701000000
+Iron ore (crude ore),1970,757000000
+Iron ore (crude ore),1971,767000000
+Iron ore (crude ore),1972,757000000
+Iron ore (crude ore),1973,832000000
+Iron ore (crude ore),1974,881000000
+Iron ore (crude ore),1975,888000000
+Iron ore (crude ore),1976,886000000
+Iron ore (crude ore),1977,844000000
+Iron ore (crude ore),1978,833000000
+Iron ore (crude ore),1979,898000000
+Iron ore (crude ore),1980,884000000
+Iron ore (crude ore),1981,843000000
+Iron ore (crude ore),1982,783000000
+Iron ore (crude ore),1983,728000000
+Iron ore (crude ore),1984,823000000
+Iron ore (crude ore),1985,845000000
+Iron ore (crude ore),1986,855000000
+Iron ore (crude ore),1987,869000000
+Iron ore (crude ore),1988,967000000
+Iron ore (crude ore),1989,999000000
+Iron ore (crude ore),1990,982000000
+Iron ore (crude ore),1991,956000000
+Iron ore (crude ore),1992,930000000
+Iron ore (crude ore),1993,953000000
+Iron ore (crude ore),1994,982000000
+Iron ore (crude ore),1995,1020000000
+Iron ore (crude ore),1996,1020000000
+Iron ore (crude ore),1997,1040000000
+Iron ore (crude ore),1998,1050000000
+Iron ore (crude ore),1999,1020000000
+Iron ore (crude ore),2000,969000000
+Iron ore (crude ore),2001,937000000
+Iron ore (crude ore),2002,982000000
+Iron ore (crude ore),2003,1080000000
+Iron ore (crude ore),2004,1200000000
+Iron ore (crude ore),2005,1320000000
+Iron ore (crude ore),2006,1470000000
+Iron ore (crude ore),2007,1680000000
+Iron ore (crude ore),2008,1730000000
+Iron ore (crude ore),2009,1710000000
+Iron ore (crude ore),2010,1870000000
+Iron ore (crude ore),2011,2030000000
+Iron ore (crude ore),2012,2070000000
+Iron ore (crude ore),2013,2230000000
+Iron ore (crude ore),2014,2370000000
+Iron ore (crude ore),2015,2370000000
+Iron ore (crude ore),2016,2370000000
+Iron ore (crude ore),2017,2440000000
+Iron ore (crude ore),2018,2460000000
+Iron ore (crude ore),2019,2450000000
+Iron ore (crude ore),2020,2470000000
+Iron ore (crude ore),2021,2680000000
+Iron ore (crude ore),2022,2500000000
+Iron ore (crude ore),2023,2530000000
+Iron ore (crude ore),2024,2500000000
+Iron ore (iron content),2020,1520000000
+Iron ore (iron content),2021,1630000000
+Iron ore (iron content),2022,1540000000
+Iron ore (iron content),2023,1560000000
+Iron ore (iron content),2024,1600000000
+Lead,1900,749000
+Lead,1906,1040000
+Lead,1907,993000
+Lead,1908,1280000
+Lead,1909,1060000
+Lead,1910,1100000
+Lead,1911,1110000
+Lead,1912,1160000
+Lead,1913,1150000
+Lead,1919,764000
+Lead,1920,804000
+Lead,1921,783000
+Lead,1922,972000
+Lead,1923,1080000
+Lead,1924,1220000
+Lead,1925,1410000
+Lead,1927,1540000
+Lead,1928,1680000
+Lead,1929,1610000
+Lead,1930,1520000
+Lead,1931,1260000
+Lead,1932,1050000
+Lead,1933,1040000
+Lead,1934,1200000
+Lead,1935,1380000
+Lead,1936,1470000
+Lead,1938,1700000
+Lead,1939,1740000
+Lead,1945,1250000
+Lead,1946,1030000
+Lead,1947,1310000
+Lead,1948,1380000
+Lead,1949,1370000
+Lead,1950,1640000
+Lead,1951,1600000
+Lead,1952,1810000
+Lead,1953,1870000
+Lead,1954,2000000
+Lead,1955,2010000
+Lead,1956,2400000
+Lead,1957,2380000
+Lead,1958,2350000
+Lead,1959,2320000
+Lead,1960,2390000
+Lead,1961,2390000
+Lead,1962,2510000
+Lead,1963,2560000
+Lead,1964,2530000
+Lead,1965,2700000
+Lead,1966,2850000
+Lead,1967,2870000
+Lead,1968,3010000
+Lead,1969,3240000
+Lead,1970,3390000
+Lead,1971,3490000
+Lead,1972,3450000
+Lead,1973,3490000
+Lead,1974,3490000
+Lead,1975,3440000
+Lead,1976,3690000
+Lead,1977,3410000
+Lead,1978,3460000
+Lead,1979,3510000
+Lead,1980,3520000
+Lead,1981,3350000
+Lead,1982,3450000
+Lead,1983,3350000
+Lead,1984,3200000
+Lead,1985,3390000
+Lead,1986,3240000
+Lead,1987,3430000
+Lead,1988,3420000
+Lead,1989,3400000
+Lead,1990,3370000
+Lead,1991,3260000
+Lead,1992,3200000
+Lead,1993,2900000
+Lead,1994,2800000
+Lead,1995,2710000
+Lead,1996,2920000
+Lead,1997,3100000
+Lead,1998,3060000
+Lead,1999,3080000
+Lead,2000,3200000
+Lead,2001,3120000
+Lead,2002,2850000
+Lead,2003,3200000
+Lead,2004,3150000
+Lead,2005,3470000
+Lead,2006,3630000
+Lead,2007,3710000
+Lead,2008,3880000
+Lead,2009,3780000
+Lead,2010,4160000
+Lead,2011,4750000
+Lead,2012,5080000
+Lead,2013,4930000
+Lead,2014,4630000
+Lead,2015,4940000
+Lead,2016,4670000
+Lead,2017,4570000
+Lead,2018,4520000
+Lead,2019,4650000
+Lead,2020,4380000
+Lead,2021,4550000
+Lead,2022,4460000
+Lead,2023,4370000
+Lead,2024,4300000
+Lithium,2000,14100
+Lithium,2001,13100
+Lithium,2002,14100
+Lithium,2003,16600
+Lithium,2004,17700
+Lithium,2005,20300
+Lithium,2006,22400
+Lithium,2007,23300
+Lithium,2008,24700
+Lithium,2009,17500
+Lithium,2010,24400
+Lithium,2011,31000
+Lithium,2012,32700
+Lithium,2013,30300
+Lithium,2014,31600
+Lithium,2015,32200
+Lithium,2016,40200
+Lithium,2017,76400
+Lithium,2018,91800
+Lithium,2019,83800
+Lithium,2020,82500
+Lithium,2021,107000
+Lithium,2022,146000
+Lithium,2023,204000
+Lithium,2024,240000
+Magnesium compounds,1913,556000
+Magnesium compounds,1914,434000
+Magnesium compounds,1915,307000
+Magnesium compounds,1916,599000
+Magnesium compounds,1917,753000
+Magnesium compounds,1918,364000
+Magnesium compounds,1919,284000
+Magnesium compounds,1920,576000
+Magnesium compounds,1921,384000
+Magnesium compounds,1922,536000
+Magnesium compounds,1923,514000
+Magnesium compounds,1924,491000
+Magnesium compounds,1925,716000
+Magnesium compounds,1926,716000
+Magnesium compounds,1927,833000
+Magnesium compounds,1928,827000
+Magnesium compounds,1929,1060000
+Magnesium compounds,1930,834000
+Magnesium compounds,1931,691000
+Magnesium compounds,1932,697000
+Magnesium compounds,1933,883000
+Magnesium compounds,1934,1160000
+Magnesium compounds,1935,1440000
+Magnesium compounds,1936,1590000
+Magnesium compounds,1937,2000000
+Magnesium compounds,1938,1700000
+Magnesium compounds,1939,2000000
+Magnesium compounds,1940,2000000
+Magnesium compounds,1941,2000000
+Magnesium compounds,1942,2300000
+Magnesium compounds,1943,2400000
+Magnesium compounds,1944,2000000
+Magnesium compounds,1945,1200000
+Magnesium compounds,1946,1200000
+Magnesium compounds,1947,1600000
+Magnesium compounds,1948,2400000
+Magnesium compounds,1949,2700000
+Magnesium compounds,1950,1330000
+Magnesium compounds,1951,1650000
+Magnesium compounds,1952,1520000
+Magnesium compounds,1953,1780000
+Magnesium compounds,1954,1650000
+Magnesium compounds,1955,1930000
+Magnesium compounds,1956,2360000
+Magnesium compounds,1957,2470000
+Magnesium compounds,1958,2330000
+Magnesium compounds,1959,3740000
+Magnesium compounds,1960,6820000
+Magnesium compounds,1961,7250000
+Magnesium compounds,1962,7440000
+Magnesium compounds,1963,8980000
+Magnesium compounds,1964,9540000
+Magnesium compounds,1965,10000000
+Magnesium compounds,1966,10100000
+Magnesium compounds,1967,10200000
+Magnesium compounds,1968,10700000
+Magnesium compounds,1969,9630000
+Magnesium compounds,1970,8720000
+Magnesium compounds,1971,8970000
+Magnesium compounds,1972,8830000
+Magnesium compounds,1973,9070000
+Magnesium compounds,1974,9870000
+Magnesium compounds,1975,9640000
+Magnesium compounds,1976,9070000
+Magnesium compounds,1977,9960000
+Magnesium compounds,1978,10200000
+Magnesium compounds,1979,10900000
+Magnesium compounds,1980,11500000
+Magnesium compounds,1981,11300000
+Magnesium compounds,1982,11400000
+Magnesium compounds,1983,11300000
+Magnesium compounds,1984,11800000
+Magnesium compounds,1985,12200000
+Magnesium compounds,1986,12300000
+Magnesium compounds,1987,12000000
+Magnesium compounds,1988,12000000
+Magnesium compounds,1989,12000000
+Magnesium compounds,1990,10500000
+Magnesium compounds,1991,9790000
+Magnesium compounds,1992,10200000
+Magnesium compounds,1993,8280000
+Magnesium compounds,1994,9020000
+Magnesium compounds,1995,10600000
+Magnesium compounds,1996,11000000
+Magnesium compounds,1997,10100000
+Magnesium compounds,1998,11400000
+Magnesium compounds,1999,9830000
+Magnesium compounds,2000,12700000
+Magnesium compounds,2001,11100000
+Magnesium compounds,2002,14100000
+Magnesium compounds,2003,14100000
+Magnesium compounds,2004,16500000
+Magnesium compounds,2005,15600000
+Magnesium compounds,2006,14400000
+Magnesium compounds,2007,20300000
+Magnesium compounds,2008,21200000
+Magnesium compounds,2009,18300000
+Magnesium compounds,2010,21600000
+Magnesium compounds,2011,27700000
+Magnesium compounds,2012,24400000
+Magnesium compounds,2013,25900000
+Magnesium compounds,2014,25000000
+Magnesium compounds,2015,28000000
+Magnesium compounds,2016,28700000
+Magnesium compounds,2017,28600000
+Magnesium compounds,2018,27900000
+Magnesium compounds,2019,18400000
+Magnesium compounds,2020,27000000
+Magnesium compounds,2021,23300000
+Magnesium compounds,2022,21900000
+Magnesium compounds,2023,22200000
+Magnesium compounds,2024,22000000
+Manganese,1900,592000
+Manganese,1901,429000
+Manganese,1902,441000
+Manganese,1903,411000
+Manganese,1904,416000
+Manganese,1905,481000
+Manganese,1906,868000
+Manganese,1907,1080000
+Manganese,1908,641000
+Manganese,1909,811000
+Manganese,1910,888000
+Manganese,1911,719000
+Manganese,1912,856000
+Manganese,1913,1040000
+Manganese,1914,840000
+Manganese,1915,636000
+Manganese,1916,850000
+Manganese,1917,864000
+Manganese,1918,934000
+Manganese,1919,550000
+Manganese,1920,754000
+Manganese,1921,523000
+Manganese,1922,535000
+Manganese,1923,731000
+Manganese,1924,919000
+Manganese,1925,1170000
+Manganese,1926,1370000
+Manganese,1927,1430000
+Manganese,1928,1280000
+Manganese,1929,1580000
+Manganese,1930,1590000
+Manganese,1931,982000
+Manganese,1932,559000
+Manganese,1933,779000
+Manganese,1934,1310000
+Manganese,1935,1800000
+Manganese,1936,2340000
+Manganese,1937,2740000
+Manganese,1938,2380000
+Manganese,1939,1110000
+Manganese,1940,2540000
+Manganese,1941,2450000
+Manganese,1942,2290000
+Manganese,1943,1800000
+Manganese,1944,1270000
+Manganese,1945,1900000
+Manganese,1946,1650000
+Manganese,1947,1750000
+Manganese,1948,1830000
+Manganese,1949,2160000
+Manganese,1950,2530000
+Manganese,1951,3180000
+Manganese,1952,4440000
+Manganese,1953,4940000
+Manganese,1954,4500000
+Manganese,1955,4870000
+Manganese,1956,5310000
+Manganese,1957,5820000
+Manganese,1958,5580000
+Manganese,1959,5830000
+Manganese,1960,6120000
+Manganese,1961,6110000
+Manganese,1962,6400000
+Manganese,1963,6630000
+Manganese,1964,7240000
+Manganese,1965,7980000
+Manganese,1966,8150000
+Manganese,1967,7510000
+Manganese,1968,7800000
+Manganese,1969,8420000
+Manganese,1970,8200000
+Manganese,1971,9070000
+Manganese,1972,9080000
+Manganese,1973,9740000
+Manganese,1974,9270000
+Manganese,1975,9810000
+Manganese,1976,10000000
+Manganese,1977,8690000
+Manganese,1978,8690000
+Manganese,1979,9800000
+Manganese,1980,9670000
+Manganese,1981,8400000
+Manganese,1982,8580000
+Manganese,1983,7780000
+Manganese,1984,8600000
+Manganese,1985,8690000
+Manganese,1986,8830000
+Manganese,1987,8340000
+Manganese,1988,8650000
+Manganese,1989,9250000
+Manganese,1990,9080000
+Manganese,1991,7600000
+Manganese,1992,7260000
+Manganese,1993,7070000
+Manganese,1994,6530000
+Manganese,1995,7970000
+Manganese,1996,8180000
+Manganese,1997,7520000
+Manganese,1998,7330000
+Manganese,1999,6390000
+Manganese,2000,6960000
+Manganese,2001,7580000
+Manganese,2002,7800000
+Manganese,2003,8790000
+Manganese,2004,9900000
+Manganese,2005,11000000
+Manganese,2006,11500000
+Manganese,2007,12000000
+Manganese,2008,13400000
+Manganese,2009,11300000
+Manganese,2010,14700000
+Manganese,2011,15400000
+Manganese,2012,16200000
+Manganese,2013,17200000
+Manganese,2014,18300000
+Manganese,2015,15300000
+Manganese,2016,14900000
+Manganese,2017,18700000
+Manganese,2018,19600000
+Manganese,2019,20700000
+Manganese,2020,18900000
+Manganese,2021,20100000
+Manganese,2022,19800000
+Manganese,2023,19600000
+Manganese,2024,20000000
+Mercury,1900,3150
+Mercury,1901,2960
+Mercury,1902,3800
+Mercury,1903,3640
+Mercury,1904,3350
+Mercury,1905,3340
+Mercury,1906,3860
+Mercury,1907,3310
+Mercury,1908,3300
+Mercury,1909,3230
+Mercury,1910,3690
+Mercury,1911,4250
+Mercury,1912,4160
+Mercury,1913,4050
+Mercury,1914,3740
+Mercury,1915,3890
+Mercury,1916,3500
+Mercury,1917,3970
+Mercury,1918,3420
+Mercury,1919,3100
+Mercury,1920,2910
+Mercury,1921,2130
+Mercury,1922,3170
+Mercury,1923,3210
+Mercury,1924,3070
+Mercury,1925,3560
+Mercury,1926,4000
+Mercury,1927,5170
+Mercury,1928,5140
+Mercury,1929,5610
+Mercury,1930,3760
+Mercury,1931,3420
+Mercury,1932,2850
+Mercury,1933,2060
+Mercury,1934,2650
+Mercury,1935,3460
+Mercury,1936,4270
+Mercury,1937,4590
+Mercury,1938,5170
+Mercury,1939,4830
+Mercury,1940,7130
+Mercury,1941,9170
+Mercury,1942,8990
+Mercury,1943,7870
+Mercury,1944,5330
+Mercury,1945,4180
+Mercury,1946,4960
+Mercury,1947,5360
+Mercury,1948,3260
+Mercury,1949,4160
+Mercury,1950,4940
+Mercury,1951,5060
+Mercury,1952,5190
+Mercury,1953,5510
+Mercury,1954,6180
+Mercury,1955,6380
+Mercury,1956,7620
+Mercury,1957,8260
+Mercury,1958,8490
+Mercury,1959,7710
+Mercury,1960,8340
+Mercury,1961,8260
+Mercury,1962,8430
+Mercury,1963,8260
+Mercury,1964,8800
+Mercury,1965,9230
+Mercury,1966,9140
+Mercury,1967,8000
+Mercury,1968,8950
+Mercury,1969,9970
+Mercury,1970,9790
+Mercury,1971,10400
+Mercury,1972,9620
+Mercury,1973,9250
+Mercury,1974,8880
+Mercury,1975,8700
+Mercury,1976,8090
+Mercury,1977,6580
+Mercury,1978,6250
+Mercury,1979,6010
+Mercury,1980,6810
+Mercury,1981,7270
+Mercury,1982,6820
+Mercury,1983,6230
+Mercury,1984,6740
+Mercury,1985,6140
+Mercury,1986,7780
+Mercury,1987,5530
+Mercury,1988,6840
+Mercury,1989,6750
+Mercury,1990,4100
+Mercury,1991,2540
+Mercury,1992,1960
+Mercury,1993,1730
+Mercury,1994,1960
+Mercury,1995,3190
+Mercury,1996,2560
+Mercury,1997,2410
+Mercury,1998,1580
+Mercury,1999,1320
+Mercury,2000,1360
+Mercury,2001,1500
+Mercury,2002,1490
+Mercury,2003,1730
+Mercury,2004,1900
+Mercury,2005,1520
+Mercury,2006,1150
+Mercury,2007,1200
+Mercury,2008,1820
+Mercury,2009,1880
+Mercury,2010,2180
+Mercury,2011,1970
+Mercury,2012,1830
+Mercury,2013,2320
+Mercury,2014,2770
+Mercury,2015,3330
+Mercury,2016,4000
+Mercury,2017,4010
+Mercury,2018,2780
+Mercury,2019,2500
+Mercury,2020,2490
+Mercury,2021,2200
+Mercury,2022,1160
+Mercury,2023,1130
+Mercury,2024,1200
+Mica (scrap and flake),1906,14800
+Mica (scrap and flake),1907,19600
+Mica (scrap and flake),1908,25500
+Mica (scrap and flake),1909,29500
+Mica (scrap and flake),1910,27500
+Mica (scrap and flake),1911,30600
+Mica (scrap and flake),1912,35000
+Mica (scrap and flake),1913,40600
+Mica (scrap and flake),1925,15900
+Mica (scrap and flake),1926,12100
+Mica (scrap and flake),1927,12500
+Mica (scrap and flake),1928,18900
+Mica (scrap and flake),1929,18800
+Mica (scrap and flake),1930,10100
+Mica (scrap and flake),1931,10600
+Mica (scrap and flake),1932,10300
+Mica (scrap and flake),1933,13500
+Mica (scrap and flake),1934,12000
+Mica (scrap and flake),1935,18200
+Mica (scrap and flake),1936,23100
+Mica (scrap and flake),1937,31300
+Mica (scrap and flake),1939,28500
+Mica (scrap and flake),1942,45700
+Mica (scrap and flake),1943,48900
+Mica (scrap and flake),1944,51500
+Mica (scrap and flake),1946,57300
+Mica (scrap and flake),1948,60200
+Mica (scrap and flake),1950,71800
+Mica (scrap and flake),1951,80400
+Mica (scrap and flake),1952,82200
+Mica (scrap and flake),1953,76400
+Mica (scrap and flake),1954,89300
+Mica (scrap and flake),1955,105000
+Mica (scrap and flake),1956,96700
+Mica (scrap and flake),1957,102000
+Mica (scrap and flake),1958,101000
+Mica (scrap and flake),1959,111000
+Mica (scrap and flake),1960,116000
+Mica (scrap and flake),1969,153000
+Mica (scrap and flake),1970,149000
+Mica (scrap and flake),1971,156000
+Mica (scrap and flake),1972,189000
+Mica (scrap and flake),1973,249000
+Mica (scrap and flake),1974,218000
+Mica (scrap and flake),1975,215000
+Mica (scrap and flake),1976,206000
+Mica (scrap and flake),1977,244000
+Mica (scrap and flake),1978,256000
+Mica (scrap and flake),1979,236000
+Mica (scrap and flake),1980,214000
+Mica (scrap and flake),1981,142000
+Mica (scrap and flake),1982,122000
+Mica (scrap and flake),1983,237000
+Mica (scrap and flake),1984,255000
+Mica (scrap and flake),1985,238000
+Mica (scrap and flake),1986,252000
+Mica (scrap and flake),1987,288000
+Mica (scrap and flake),1988,254000
+Mica (scrap and flake),1989,253000
+Mica (scrap and flake),1990,207000
+Mica (scrap and flake),1991,192000
+Mica (scrap and flake),1992,180000
+Mica (scrap and flake),1993,180000
+Mica (scrap and flake),1994,214000
+Mica (scrap and flake),1995,242000
+Mica (scrap and flake),1996,225000
+Mica (scrap and flake),1997,315000
+Mica (scrap and flake),1998,289000
+Mica (scrap and flake),1999,278000
+Mica (scrap and flake),2000,328000
+Mica (scrap and flake),2001,369000
+Mica (scrap and flake),2002,278000
+Mica (scrap and flake),2003,279000
+Mica (scrap and flake),2004,400000
+Mica (scrap and flake),2005,359000
+Mica (scrap and flake),2006,1090000
+Mica (scrap and flake),2007,1120000
+Mica (scrap and flake),2008,1200000
+Mica (scrap and flake),2009,1060000
+Mica (scrap and flake),2010,1110000
+Mica (scrap and flake),2011,1100000
+Mica (scrap and flake),2012,1080000
+Mica (scrap and flake),2013,382000
+Mica (scrap and flake),2014,341000
+Mica (scrap and flake),2015,341000
+Mica (scrap and flake),2016,341000
+Mica (scrap and flake),2017,337000
+Mica (scrap and flake),2018,362000
+Mica (scrap and flake),2019,367000
+Mica (scrap and flake),2020,353000
+Mica (scrap and flake),2021,384000
+Mica (scrap and flake),2022,318000
+Mica (scrap and flake),2023,318000
+Mica (scrap and flake),2024,330000
+Mica (sheet),1900,1140
+Mica (sheet),1901,1320
+Mica (sheet),1902,1280
+Mica (sheet),1903,1410
+Mica (sheet),1904,1320
+Mica (sheet),1905,1600
+Mica (sheet),1906,3330
+Mica (sheet),1907,3250
+Mica (sheet),1908,3180
+Mica (sheet),1909,2590
+Mica (sheet),1910,2650
+Mica (sheet),1911,2850
+Mica (sheet),1912,2830
+Mica (sheet),1913,3520
+Mica (sheet),1914,2380
+Mica (sheet),1915,1720
+Mica (sheet),1916,3220
+Mica (sheet),1917,3380
+Mica (sheet),1918,3860
+Mica (sheet),1925,6710
+Mica (sheet),1926,6360
+Mica (sheet),1927,5780
+Mica (sheet),1928,6910
+Mica (sheet),1929,7660
+Mica (sheet),1930,5650
+Mica (sheet),1931,3620
+Mica (sheet),1932,2880
+Mica (sheet),1933,3460
+Mica (sheet),1934,5850
+Mica (sheet),1935,8760
+Mica (sheet),1936,7940
+Mica (sheet),1937,11400
+Mica (sheet),1938,8070
+Mica (sheet),1939,8610
+Mica (sheet),1940,9690
+Mica (sheet),1941,14100
+Mica (sheet),1942,12200
+Mica (sheet),1943,11300
+Mica (sheet),1944,8360
+Mica (sheet),1945,8810
+Mica (sheet),1946,11900
+Mica (sheet),1947,10900
+Mica (sheet),1948,14700
+Mica (sheet),1949,12700
+Mica (sheet),1950,16200
+Mica (sheet),1951,19200
+Mica (sheet),1952,11300
+Mica (sheet),1953,11000
+Mica (sheet),1954,9560
+Mica (sheet),1955,11900
+Mica (sheet),1956,12000
+Mica (sheet),1957,12600
+Mica (sheet),1958,11900
+Mica (sheet),1959,12900
+Mica (sheet),1960,13100
+Mica (sheet),1968,9250
+Mica (sheet),1969,11400
+Mica (sheet),1970,8850
+Mica (sheet),1971,10200
+Mica (sheet),1972,11400
+Mica (sheet),1973,13400
+Mica (sheet),1974,18600
+Mica (sheet),1975,51300
+Mica (sheet),1976,20100
+Mica (sheet),1977,22600
+Mica (sheet),1978,8300
+Mica (sheet),1979,7760
+Mica (sheet),1980,9370
+Mica (sheet),1981,6240
+Mica (sheet),1982,7510
+Mica (sheet),1983,6210
+Mica (sheet),1984,6210
+Mica (sheet),1985,6170
+Mica (sheet),1986,7390
+Mica (sheet),1987,7390
+Mica (sheet),1988,12200
+Mica (sheet),1989,12500
+Mica (sheet),1990,7300
+Mica (sheet),1991,6600
+Mica (sheet),1992,6200
+Mica (sheet),1993,5400
+Mica (sheet),1994,5400
+Mica (sheet),1995,3800
+Mica (sheet),1996,3800
+Mica (sheet),1997,3800
+Mica (sheet),1998,3700
+Mica (sheet),1999,5200
+Mica (sheet),2000,5200
+Mica (sheet),2001,5200
+Mica (sheet),2002,5200
+Mica (sheet),2003,5200
+Mica (sheet),2004,5200
+Mica (sheet),2005,5200
+Mica (sheet),2006,5200
+Mica (sheet),2007,5200
+Mica (sheet),2008,5200
+Mica (sheet),2009,5200
+Mica (sheet),2010,5200
+Mica (sheet),2011,5200
+Mica (sheet),2012,5700
+Mica (sheet),2013,3700
+Mica (sheet),2014,2960
+Mica (sheet),2015,2300
+Mica (sheet),2016,1200
+Mica (sheet),2017,1200
+Molybdenum,1900,10
+Molybdenum,1901,22
+Molybdenum,1902,46
+Molybdenum,1903,148
+Molybdenum,1904,62
+Molybdenum,1905,90.8
+Molybdenum,1906,90.8
+Molybdenum,1907,90.8
+Molybdenum,1908,136
+Molybdenum,1909,91
+Molybdenum,1910,91
+Molybdenum,1911,91
+Molybdenum,1912,181
+Molybdenum,1913,91
+Molybdenum,1914,136
+Molybdenum,1915,272
+Molybdenum,1916,454
+Molybdenum,1917,590
+Molybdenum,1918,816
+Molybdenum,1919,408
+Molybdenum,1920,181
+Molybdenum,1921,45
+Molybdenum,1922,45
+Molybdenum,1923,136
+Molybdenum,1924,272
+Molybdenum,1925,680
+Molybdenum,1926,816
+Molybdenum,1927,1220
+Molybdenum,1928,1720
+Molybdenum,1929,2000
+Molybdenum,1930,1910
+Molybdenum,1931,1590
+Molybdenum,1932,1320
+Molybdenum,1933,2990
+Molybdenum,1934,5130
+Molybdenum,1935,6530
+Molybdenum,1936,9030
+Molybdenum,1937,14800
+Molybdenum,1938,16400
+Molybdenum,1939,15600
+Molybdenum,1940,17400
+Molybdenum,1941,20300
+Molybdenum,1942,29000
+Molybdenum,1943,31600
+Molybdenum,1944,21500
+Molybdenum,1945,16300
+Molybdenum,1946,10800
+Molybdenum,1947,14000
+Molybdenum,1948,13600
+Molybdenum,1949,11400
+Molybdenum,1950,14500
+Molybdenum,1951,20300
+Molybdenum,1952,22600
+Molybdenum,1953,28400
+Molybdenum,1954,29700
+Molybdenum,1955,34000
+Molybdenum,1956,31900
+Molybdenum,1957,34600
+Molybdenum,1958,26200
+Molybdenum,1959,32400
+Molybdenum,1960,40400
+Molybdenum,1961,33600
+Molybdenum,1962,26900
+Molybdenum,1963,34000
+Molybdenum,1964,35300
+Molybdenum,1965,44700
+Molybdenum,1966,56700
+Molybdenum,1967,64300
+Molybdenum,1968,65700
+Molybdenum,1969,72300
+Molybdenum,1970,82300
+Molybdenum,1971,77600
+Molybdenum,1972,79300
+Molybdenum,1973,81700
+Molybdenum,1974,84200
+Molybdenum,1975,81800
+Molybdenum,1976,88700
+Molybdenum,1977,95100
+Molybdenum,1978,100000
+Molybdenum,1979,104000
+Molybdenum,1980,111000
+Molybdenum,1981,109000
+Molybdenum,1982,95000
+Molybdenum,1983,63800
+Molybdenum,1984,97700
+Molybdenum,1985,98400
+Molybdenum,1986,93200
+Molybdenum,1987,99500
+Molybdenum,1988,113000
+Molybdenum,1989,136000
+Molybdenum,1990,127000
+Molybdenum,1991,115000
+Molybdenum,1992,114000
+Molybdenum,1993,99200
+Molybdenum,1994,108000
+Molybdenum,1995,136000
+Molybdenum,1996,127000
+Molybdenum,1997,138000
+Molybdenum,1998,135000
+Molybdenum,1999,129000
+Molybdenum,2000,135000
+Molybdenum,2001,132000
+Molybdenum,2002,122000
+Molybdenum,2003,131000
+Molybdenum,2004,159000
+Molybdenum,2005,186000
+Molybdenum,2006,186000
+Molybdenum,2007,212000
+Molybdenum,2008,221000
+Molybdenum,2009,221000
+Molybdenum,2010,246000
+Molybdenum,2011,264000
+Molybdenum,2012,272000
+Molybdenum,2013,281000
+Molybdenum,2014,305000
+Molybdenum,2015,289000
+Molybdenum,2016,279000
+Molybdenum,2017,285000
+Molybdenum,2018,279000
+Molybdenum,2019,279000
+Molybdenum,2020,298000
+Molybdenum,2021,255000
+Molybdenum,2022,253000
+Molybdenum,2023,260000
+Nickel,1900,9290
+Nickel,1901,11400
+Nickel,1902,12200
+Nickel,1903,10200
+Nickel,1904,10500
+Nickel,1905,15600
+Nickel,1906,16000
+Nickel,1907,16300
+Nickel,1908,14900
+Nickel,1909,17000
+Nickel,1910,23100
+Nickel,1911,25200
+Nickel,1912,27900
+Nickel,1913,32200
+Nickel,1914,30000
+Nickel,1915,39100
+Nickel,1916,45500
+Nickel,1917,46200
+Nickel,1918,47600
+Nickel,1919,23100
+Nickel,1920,35700
+Nickel,1921,10400
+Nickel,1922,11800
+Nickel,1923,31100
+Nickel,1924,35300
+Nickel,1925,37100
+Nickel,1926,33900
+Nickel,1927,34500
+Nickel,1928,50300
+Nickel,1929,56300
+Nickel,1930,54200
+Nickel,1931,36300
+Nickel,1932,21800
+Nickel,1933,46300
+Nickel,1934,71600
+Nickel,1935,77400
+Nickel,1936,93400
+Nickel,1937,120000
+Nickel,1938,115000
+Nickel,1939,122000
+Nickel,1940,140000
+Nickel,1941,162000
+Nickel,1942,158000
+Nickel,1943,167000
+Nickel,1944,157000
+Nickel,1945,145000
+Nickel,1946,123000
+Nickel,1947,140000
+Nickel,1948,151000
+Nickel,1949,146000
+Nickel,1950,145000
+Nickel,1951,132000
+Nickel,1952,146000
+Nickel,1953,198000
+Nickel,1954,216000
+Nickel,1955,239000
+Nickel,1956,259000
+Nickel,1957,286000
+Nickel,1958,224000
+Nickel,1959,285000
+Nickel,1960,320000
+Nickel,1961,361000
+Nickel,1962,357000
+Nickel,1963,339000
+Nickel,1964,371000
+Nickel,1965,425000
+Nickel,1966,412000
+Nickel,1967,449000
+Nickel,1968,497000
+Nickel,1969,487000
+Nickel,1970,628000
+Nickel,1971,637000
+Nickel,1972,611000
+Nickel,1973,710000
+Nickel,1974,770000
+Nickel,1975,802000
+Nickel,1976,792000
+Nickel,1977,828000
+Nickel,1978,658000
+Nickel,1979,686000
+Nickel,1980,779000
+Nickel,1981,726000
+Nickel,1982,621000
+Nickel,1983,673000
+Nickel,1984,773000
+Nickel,1985,813000
+Nickel,1986,852000
+Nickel,1987,891000
+Nickel,1988,952000
+Nickel,1989,987000
+Nickel,1990,974000
+Nickel,1991,1010000
+Nickel,1992,1010000
+Nickel,1993,928000
+Nickel,1994,932000
+Nickel,1995,1040000
+Nickel,1996,1060000
+Nickel,1997,1140000
+Nickel,1998,1180000
+Nickel,1999,1170000
+Nickel,2000,1290000
+Nickel,2001,1350000
+Nickel,2002,1350000
+Nickel,2003,1370000
+Nickel,2004,1350000
+Nickel,2005,1460000
+Nickel,2006,1570000
+Nickel,2007,1740000
+Nickel,2008,1630000
+Nickel,2009,1410000
+Nickel,2010,1710000
+Nickel,2011,2340000
+Nickel,2012,2570000
+Nickel,2013,2610000
+Nickel,2014,2130000
+Nickel,2015,2110000
+Nickel,2016,2000000
+Nickel,2017,2190000
+Nickel,2018,2380000
+Nickel,2019,2590000
+Nickel,2020,2510000
+Nickel,2021,2730000
+Nickel,2022,3270000
+Nickel,2023,3750000
+Nickel,2024,3700000
+Niobium,1964,2480
+Niobium,1965,3120
+Niobium,1966,5060
+Niobium,1967,5150
+Niobium,1968,4950
+Niobium,1969,6610
+Niobium,1970,8460
+Niobium,1971,3740
+Niobium,1972,5950
+Niobium,1973,14700
+Niobium,1974,9340
+Niobium,1975,7860
+Niobium,1976,9470
+Niobium,1977,8800
+Niobium,1978,9670
+Niobium,1979,14400
+Niobium,1980,15100
+Niobium,1981,14800
+Niobium,1982,10600
+Niobium,1983,8580
+Niobium,1984,13900
+Niobium,1985,14800
+Niobium,1986,14600
+Niobium,1987,9360
+Niobium,1988,16900
+Niobium,1989,14100
+Niobium,1990,15300
+Niobium,1991,15700
+Niobium,1992,15300
+Niobium,1993,12400
+Niobium,1994,15700
+Niobium,1995,15600
+Niobium,1996,16200
+Niobium,1997,20500
+Niobium,1998,26200
+Niobium,1999,24600
+Niobium,2000,24800
+Niobium,2001,31100
+Niobium,2002,33300
+Niobium,2003,40400
+Niobium,2004,27600
+Niobium,2005,43100
+Niobium,2006,52800
+Niobium,2007,62200
+Niobium,2008,106000
+Niobium,2009,67100
+Niobium,2010,49100
+Niobium,2011,50200
+Niobium,2012,62700
+Niobium,2013,59700
+Niobium,2014,69200
+Niobium,2015,65700
+Niobium,2016,58400
+Niobium,2017,66800
+Niobium,2018,78700
+Niobium,2019,96900
+Niobium,2020,67700
+Niobium,2021,87600
+Niobium,2022,83700
+Niobium,2023,110000
+Niobium,2024,110000
+Phosphate rock,1900,3150000
+Phosphate rock,1901,3000000
+Phosphate rock,1902,3120000
+Phosphate rock,1903,3450000
+Phosphate rock,1904,3870000
+Phosphate rock,1905,3850000
+Phosphate rock,1906,4190000
+Phosphate rock,1907,4720000
+Phosphate rock,1908,5380000
+Phosphate rock,1909,4950000
+Phosphate rock,1910,5430000
+Phosphate rock,1911,5940000
+Phosphate rock,1912,6730000
+Phosphate rock,1913,7230000
+Phosphate rock,1914,5420000
+Phosphate rock,1915,4120000
+Phosphate rock,1916,4830000
+Phosphate rock,1917,4710000
+Phosphate rock,1918,4190000
+Phosphate rock,1919,4150000
+Phosphate rock,1920,6870000
+Phosphate rock,1921,5430000
+Phosphate rock,1922,5940000
+Phosphate rock,1923,7120000
+Phosphate rock,1924,7780000
+Phosphate rock,1925,8900000
+Phosphate rock,1926,9380000
+Phosphate rock,1927,9990000
+Phosphate rock,1928,10100000
+Phosphate rock,1929,10400000
+Phosphate rock,1930,11800000
+Phosphate rock,1931,7860000
+Phosphate rock,1932,7110000
+Phosphate rock,1933,8900000
+Phosphate rock,1934,9510000
+Phosphate rock,1935,10500000
+Phosphate rock,1936,11300000
+Phosphate rock,1937,12900000
+Phosphate rock,1938,12900000
+Phosphate rock,1939,12800000
+Phosphate rock,1940,10300000
+Phosphate rock,1941,10800000
+Phosphate rock,1942,8800000
+Phosphate rock,1943,9250000
+Phosphate rock,1944,9330000
+Phosphate rock,1945,10900000
+Phosphate rock,1946,15300000
+Phosphate rock,1947,18300000
+Phosphate rock,1948,19400000
+Phosphate rock,1949,19700000
+Phosphate rock,1950,23400000
+Phosphate rock,1951,24600000
+Phosphate rock,1952,26400000
+Phosphate rock,1953,27200000
+Phosphate rock,1954,30500000
+Phosphate rock,1955,30500000
+Phosphate rock,1956,34200000
+Phosphate rock,1957,33200000
+Phosphate rock,1958,33700000
+Phosphate rock,1959,38400000
+Phosphate rock,1960,41800000
+Phosphate rock,1961,45500000
+Phosphate rock,1962,63300000
+Phosphate rock,1963,54600000
+Phosphate rock,1964,63700000
+Phosphate rock,1965,71400000
+Phosphate rock,1966,84500000
+Phosphate rock,1967,87300000
+Phosphate rock,1968,94100000
+Phosphate rock,1969,92100000
+Phosphate rock,1970,95100000
+Phosphate rock,1971,94000000
+Phosphate rock,1972,101000000
+Phosphate rock,1973,111000000
+Phosphate rock,1974,123000000
+Phosphate rock,1975,109000000
+Phosphate rock,1976,109000000
+Phosphate rock,1977,121000000
+Phosphate rock,1978,127000000
+Phosphate rock,1979,134000000
+Phosphate rock,1980,147000000
+Phosphate rock,1981,145000000
+Phosphate rock,1982,129000000
+Phosphate rock,1983,143000000
+Phosphate rock,1984,154000000
+Phosphate rock,1985,151000000
+Phosphate rock,1986,141000000
+Phosphate rock,1987,147000000
+Phosphate rock,1988,166000000
+Phosphate rock,1989,163000000
+Phosphate rock,1990,162000000
+Phosphate rock,1991,150000000
+Phosphate rock,1992,139000000
+Phosphate rock,1993,119000000
+Phosphate rock,1994,127000000
+Phosphate rock,1995,130000000
+Phosphate rock,1996,135000000
+Phosphate rock,1997,143000000
+Phosphate rock,1998,144000000
+Phosphate rock,1999,137000000
+Phosphate rock,2000,132000000
+Phosphate rock,2001,126000000
+Phosphate rock,2002,136000000
+Phosphate rock,2003,138000000
+Phosphate rock,2004,142000000
+Phosphate rock,2005,152000000
+Phosphate rock,2006,151000000
+Phosphate rock,2007,160000000
+Phosphate rock,2008,166000000
+Phosphate rock,2009,162000000
+Phosphate rock,2010,183000000
+Phosphate rock,2011,200000000
+Phosphate rock,2012,216000000
+Phosphate rock,2013,232000000
+Phosphate rock,2014,235000000
+Phosphate rock,2015,261000000
+Phosphate rock,2016,265000000
+Phosphate rock,2017,252000000
+Phosphate rock,2018,224000000
+Phosphate rock,2019,224000000
+Phosphate rock,2020,219000000
+Phosphate rock,2021,226000000
+Phosphate rock,2022,228000000
+Phosphate rock,2023,220000000
+Platinum group metals (palladium),2020,217
+Platinum group metals (palladium),2021,214
+Platinum group metals (palladium),2022,203
+Platinum group metals (palladium),2023,208
+Platinum group metals (palladium),2024,190
+Platinum group metals (platinum),2020,166
+Platinum group metals (platinum),2021,192
+Platinum group metals (platinum),2022,174
+Platinum group metals (platinum),2023,179
+Platinum group metals (platinum),2024,170
+Potash,1919,122000
+Potash,1920,224000
+Potash,1921,994000
+Potash,1922,1400000
+Potash,1923,1250000
+Potash,1924,1100000
+Potash,1925,1590000
+Potash,1926,1710000
+Potash,1927,2000000
+Potash,1928,2030000
+Potash,1929,2200000
+Potash,1930,2050000
+Potash,1931,1400000
+Potash,1932,1250000
+Potash,1933,1670000
+Potash,1934,1980000
+Potash,1935,2270000
+Potash,1936,2310000
+Potash,1937,2820000
+Potash,1938,3010000
+Potash,1939,2730000
+Potash,1940,2810000
+Potash,1941,3210000
+Potash,1942,3170000
+Potash,1943,3270000
+Potash,1944,3040000
+Potash,1945,1910000
+Potash,1946,2310000
+Potash,1947,2620000
+Potash,1948,2940000
+Potash,1949,2540000
+Potash,1950,3130000
+Potash,1951,5080000
+Potash,1952,5620000
+Potash,1953,5900000
+Potash,1954,6620000
+Potash,1955,7260000
+Potash,1956,7530000
+Potash,1957,7890000
+Potash,1958,7980000
+Potash,1959,8530000
+Potash,1960,9070000
+Potash,1961,9710000
+Potash,1962,9800000
+Potash,1963,11300000
+Potash,1964,12300000
+Potash,1965,13700000
+Potash,1966,14600000
+Potash,1967,15700000
+Potash,1968,16200000
+Potash,1969,17400000
+Potash,1970,18200000
+Potash,1971,19900000
+Potash,1972,20000000
+Potash,1973,18900000
+Potash,1974,21100000
+Potash,1975,24700000
+Potash,1976,24300000
+Potash,1977,25200000
+Potash,1978,26100000
+Potash,1979,25700000
+Potash,1980,27900000
+Potash,1981,27100000
+Potash,1982,24500000
+Potash,1983,27400000
+Potash,1984,29300000
+Potash,1985,29200000
+Potash,1986,28800000
+Potash,1987,30500000
+Potash,1988,31800000
+Potash,1989,29300000
+Potash,1990,27500000
+Potash,1991,26100000
+Potash,1992,23900000
+Potash,1993,20400000
+Potash,1994,23100000
+Potash,1995,24700000
+Potash,1996,23900000
+Potash,1997,25500000
+Potash,1998,26000000
+Potash,1999,27200000
+Potash,2000,27000000
+Potash,2001,26400000
+Potash,2002,27100000
+Potash,2003,28600000
+Potash,2004,32100000
+Potash,2005,33800000
+Potash,2006,30400000
+Potash,2007,34900000
+Potash,2008,33700000
+Potash,2009,20800000
+Potash,2010,33900000
+Potash,2011,35800000
+Potash,2012,32800000
+Potash,2013,35600000
+Potash,2014,40800000
+Potash,2015,40400000
+Potash,2016,38700000
+Potash,2017,42100000
+Potash,2018,43500000
+Potash,2019,42100000
+Potash,2020,44000000
+Potash,2021,46300000
+Potash,2022,40900000
+Potash,2023,43300000
+Potash,2024,48000000
+Rare earths,1900,1040
+Rare earths,1901,1090
+Rare earths,1902,863
+Rare earths,1903,2030
+Rare earths,1904,2860
+Rare earths,1905,2780
+Rare earths,1906,2600
+Rare earths,1907,2580
+Rare earths,1908,2840
+Rare earths,1909,3690
+Rare earths,1910,3020
+Rare earths,1911,2490
+Rare earths,1912,2500
+Rare earths,1913,1480
+Rare earths,1914,992
+Rare earths,1915,870
+Rare earths,1916,731
+Rare earths,1917,1730
+Rare earths,1918,1470
+Rare earths,1919,1210
+Rare earths,1920,1590
+Rare earths,1921,929
+Rare earths,1922,189
+Rare earths,1923,138
+Rare earths,1924,348
+Rare earths,1925,12
+Rare earths,1926,146
+Rare earths,1927,352
+Rare earths,1928,180
+Rare earths,1929,197
+Rare earths,1930,17
+Rare earths,1931,50
+Rare earths,1932,530
+Rare earths,1933,302
+Rare earths,1934,564
+Rare earths,1935,2130
+Rare earths,1936,1840
+Rare earths,1937,2150
+Rare earths,1938,3310
+Rare earths,1939,2510
+Rare earths,1940,2370
+Rare earths,1941,2380
+Rare earths,1942,1500
+Rare earths,1943,1900
+Rare earths,1944,3200
+Rare earths,1945,1440
+Rare earths,1946,721
+Rare earths,1947,1300
+Rare earths,1948,2720
+Rare earths,1949,1290
+Rare earths,1950,470
+Rare earths,1951,1240
+Rare earths,1952,1820
+Rare earths,1953,3960
+Rare earths,1954,7840
+Rare earths,1955,5760
+Rare earths,1956,5230
+Rare earths,1957,5980
+Rare earths,1958,8060
+Rare earths,1959,2810
+Rare earths,1960,2270
+Rare earths,1961,3690
+Rare earths,1962,8020
+Rare earths,1963,6060
+Rare earths,1964,3680
+Rare earths,1965,6960
+Rare earths,1966,16200
+Rare earths,1967,16900
+Rare earths,1968,16200
+Rare earths,1969,18100
+Rare earths,1970,15900
+Rare earths,1971,16400
+Rare earths,1972,18200
+Rare earths,1973,24000
+Rare earths,1974,25600
+Rare earths,1975,22100
+Rare earths,1976,19700
+Rare earths,1977,24500
+Rare earths,1978,26500
+Rare earths,1979,28800
+Rare earths,1980,27300
+Rare earths,1981,30600
+Rare earths,1982,26600
+Rare earths,1983,31400
+Rare earths,1984,41400
+Rare earths,1985,43500
+Rare earths,1986,39900
+Rare earths,1987,46900
+Rare earths,1988,55300
+Rare earths,1989,60700
+Rare earths,1990,52900
+Rare earths,1991,41700
+Rare earths,1992,50100
+Rare earths,1993,46700
+Rare earths,1994,55100
+Rare earths,1995,74300
+Rare earths,1996,79700
+Rare earths,1997,68300
+Rare earths,1998,77100
+Rare earths,1999,86600
+Rare earths,2000,90900
+Rare earths,2001,94500
+Rare earths,2002,98200
+Rare earths,2003,97100
+Rare earths,2004,102000
+Rare earths,2005,122000
+Rare earths,2006,137000
+Rare earths,2007,124000
+Rare earths,2008,132000
+Rare earths,2009,135000
+Rare earths,2010,101000
+Rare earths,2011,104000
+Rare earths,2012,106000
+Rare earths,2013,107000
+Rare earths,2014,125000
+Rare earths,2015,129000
+Rare earths,2016,133000
+Rare earths,2017,147000
+Rare earths,2018,190000
+Rare earths,2019,219000
+Rare earths,2020,240000
+Rare earths,2021,290000
+Rare earths,2022,300000
+Rare earths,2023,376000
+Rare earths,2024,390000
+Salt,1900,12200000
+Salt,1901,12300000
+Salt,1902,12600000
+Salt,1903,12400000
+Salt,1904,13200000
+Salt,1905,13700000
+Salt,1906,13900000
+Salt,1913,17600000
+Salt,1914,16900000
+Salt,1915,15300000
+Salt,1916,17100000
+Salt,1917,17600000
+Salt,1918,17800000
+Salt,1919,19800000
+Salt,1920,21900000
+Salt,1921,17600000
+Salt,1922,23400000
+Salt,1923,23300000
+Salt,1924,23700000
+Salt,1925,25000000
+Salt,1926,26200000
+Salt,1927,26100000
+Salt,1928,27100000
+Salt,1929,25700000
+Salt,1930,28100000
+Salt,1931,24400000
+Salt,1932,26200000
+Salt,1933,28500000
+Salt,1934,30200000
+Salt,1935,30700000
+Salt,1936,31800000
+Salt,1937,30200000
+Salt,1938,27900000
+Salt,1939,32000000
+Salt,1940,33200000
+Salt,1941,36700000
+Salt,1942,38600000
+Salt,1943,41200000
+Salt,1944,40400000
+Salt,1945,36000000
+Salt,1946,38300000
+Salt,1947,40500000
+Salt,1948,44000000
+Salt,1949,43000000
+Salt,1950,48100000
+Salt,1951,55900000
+Salt,1952,54200000
+Salt,1953,59300000
+Salt,1954,60500000
+Salt,1955,65000000
+Salt,1956,68200000
+Salt,1957,71900000
+Salt,1958,74800000
+Salt,1959,79700000
+Salt,1960,84800000
+Salt,1961,85000000
+Salt,1962,91500000
+Salt,1963,96100000
+Salt,1964,98600000
+Salt,1965,109000000
+Salt,1966,111000000
+Salt,1967,119000000
+Salt,1968,126000000
+Salt,1969,137000000
+Salt,1970,146000000
+Salt,1971,144000000
+Salt,1972,146000000
+Salt,1973,155000000
+Salt,1974,166000000
+Salt,1975,162000000
+Salt,1976,161000000
+Salt,1977,157000000
+Salt,1978,168000000
+Salt,1979,173000000
+Salt,1980,169000000
+Salt,1981,171000000
+Salt,1982,164000000
+Salt,1983,159000000
+Salt,1984,173000000
+Salt,1985,173000000
+Salt,1986,175000000
+Salt,1987,179000000
+Salt,1988,186000000
+Salt,1989,192000000
+Salt,1990,183000000
+Salt,1991,202000000
+Salt,1992,185000000
+Salt,1993,187000000
+Salt,1994,191000000
+Salt,1995,199000000
+Salt,1996,204000000
+Salt,1997,221000000
+Salt,1998,200000000
+Salt,1999,210000000
+Salt,2000,195000000
+Salt,2001,199000000
+Salt,2002,214000000
+Salt,2003,225000000
+Salt,2004,235000000
+Salt,2005,249000000
+Salt,2006,261000000
+Salt,2007,261000000
+Salt,2008,261000000
+Salt,2009,265000000
+Salt,2010,269000000
+Salt,2011,272000000
+Salt,2012,259000000
+Salt,2013,296000000
+Salt,2014,287000000
+Salt,2015,288000000
+Salt,2016,278000000
+Salt,2017,281000000
+Salt,2018,301000000
+Salt,2019,310000000
+Salt,2020,280000000
+Salt,2021,294000000
+Salt,2022,270000000
+Salt,2023,270000000
+Salt,2024,280000000
+Sand and gravel (construction),1968,6090000000
+Sand and gravel (construction),1969,6640000000
+Sand and gravel (construction),1970,6700000000
+Sand and gravel (construction),1971,6690000000
+Sand and gravel (construction),1972,7860000000
+Sand and gravel (construction),1974,6880000000
+Sand and gravel (construction),1975,6760000000
+Sand and gravel (industrial),1985,115000000
+Sand and gravel (industrial),1986,113000000
+Sand and gravel (industrial),1987,113000000
+Sand and gravel (industrial),1988,120000000
+Sand and gravel (industrial),1989,118000000
+Sand and gravel (industrial),1990,110000000
+Sand and gravel (industrial),1991,111000000
+Sand and gravel (industrial),1992,112000000
+Sand and gravel (industrial),1993,104000000
+Sand and gravel (industrial),1994,117000000
+Sand and gravel (industrial),1995,121000000
+Sand and gravel (industrial),1996,96000000
+Sand and gravel (industrial),1997,94600000
+Sand and gravel (industrial),1998,93900000
+Sand and gravel (industrial),1999,111000000
+Sand and gravel (industrial),2000,114000000
+Sand and gravel (industrial),2001,114000000
+Sand and gravel (industrial),2002,113000000
+Sand and gravel (industrial),2003,115000000
+Sand and gravel (industrial),2004,119000000
+Sand and gravel (industrial),2005,113000000
+Sand and gravel (industrial),2006,116000000
+Sand and gravel (industrial),2007,129000000
+Sand and gravel (industrial),2008,118000000
+Sand and gravel (industrial),2009,111000000
+Sand and gravel (industrial),2010,113000000
+Sand and gravel (industrial),2011,126000000
+Sand and gravel (industrial),2012,146000000
+Sand and gravel (industrial),2013,231000000
+Sand and gravel (industrial),2014,373000000
+Sand and gravel (industrial),2015,329000000
+Sand and gravel (industrial),2016,252000000
+Sand and gravel (industrial),2017,379000000
+Sand and gravel (industrial),2018,357000000
+Sand and gravel (industrial),2019,341000000
+Sand and gravel (industrial),2020,235000000
+Sand and gravel (industrial),2021,353000000
+Sand and gravel (industrial),2022,359000000
+Sand and gravel (industrial),2023,446000000
+Sand and gravel (industrial),2024,440000000
+Silver,1900,5400
+Silver,1901,5380
+Silver,1902,5060
+Silver,1903,5220
+Silver,1904,5110
+Silver,1905,5360
+Silver,1906,5130
+Silver,1907,5730
+Silver,1908,6320
+Silver,1909,6600
+Silver,1910,6900
+Silver,1911,7040
+Silver,1912,6980
+Silver,1913,7010
+Silver,1914,5240
+Silver,1915,5730
+Silver,1916,5250
+Silver,1917,5420
+Silver,1918,6140
+Silver,1919,5490
+Silver,1920,5390
+Silver,1921,5330
+Silver,1922,6530
+Silver,1923,7650
+Silver,1924,7450
+Silver,1925,7650
+Silver,1926,7890
+Silver,1927,7900
+Silver,1928,8020
+Silver,1929,8120
+Silver,1930,7740
+Silver,1931,6080
+Silver,1932,5130
+Silver,1933,5340
+Silver,1934,5990
+Silver,1935,6890
+Silver,1936,7920
+Silver,1937,8640
+Silver,1938,8320
+Silver,1939,8300
+Silver,1940,8570
+Silver,1941,8140
+Silver,1942,7780
+Silver,1943,6380
+Silver,1944,5740
+Silver,1945,5040
+Silver,1946,3970
+Silver,1947,5220
+Silver,1948,5440
+Silver,1949,5570
+Silver,1950,6320
+Silver,1951,6210
+Silver,1952,6700
+Silver,1953,6900
+Silver,1954,6670
+Silver,1955,7000
+Silver,1956,7020
+Silver,1957,7190
+Silver,1958,7430
+Silver,1959,6910
+Silver,1960,7320
+Silver,1961,7370
+Silver,1962,7650
+Silver,1963,7780
+Silver,1964,7730
+Silver,1965,8010
+Silver,1966,8300
+Silver,1967,8030
+Silver,1968,8560
+Silver,1969,9200
+Silver,1970,9360
+Silver,1971,9170
+Silver,1972,9380
+Silver,1973,9700
+Silver,1974,9260
+Silver,1975,9430
+Silver,1976,9840
+Silver,1977,10300
+Silver,1978,10700
+Silver,1979,10800
+Silver,1980,10700
+Silver,1981,11200
+Silver,1982,11500
+Silver,1983,12100
+Silver,1984,13100
+Silver,1985,13100
+Silver,1986,13000
+Silver,1987,14000
+Silver,1988,15500
+Silver,1989,16400
+Silver,1990,16600
+Silver,1991,15600
+Silver,1992,14900
+Silver,1993,14100
+Silver,1994,14000
+Silver,1995,14900
+Silver,1996,15100
+Silver,1997,16500
+Silver,1998,17200
+Silver,1999,17600
+Silver,2000,18100
+Silver,2001,18700
+Silver,2002,18800
+Silver,2003,18800
+Silver,2004,20000
+Silver,2005,20800
+Silver,2006,20100
+Silver,2007,20800
+Silver,2008,21300
+Silver,2009,22300
+Silver,2010,23300
+Silver,2011,23300
+Silver,2012,24300
+Silver,2013,26700
+Silver,2014,28000
+Silver,2015,27600
+Silver,2016,28600
+Silver,2017,26500
+Silver,2018,25900
+Silver,2019,25800
+Silver,2020,23500
+Silver,2021,25000
+Silver,2022,25600
+Silver,2023,25476
+Silver,2024,25200
+Strontium,1951,19100
+Strontium,1952,9950
+Strontium,1953,6140
+Strontium,1954,4230
+Strontium,1955,7380
+Strontium,1956,16100
+Strontium,1957,11800
+Strontium,1958,10100
+Strontium,1959,9710
+Strontium,1960,11500
+Strontium,1961,12600
+Strontium,1962,11700
+Strontium,1963,17000
+Strontium,1964,23800
+Strontium,1965,14000
+Strontium,1966,16700
+Strontium,1967,10400
+Strontium,1968,12800
+Strontium,1969,47000
+Strontium,1970,59900
+Strontium,1971,112000
+Strontium,1972,100000
+Strontium,1973,93300
+Strontium,1974,98400
+Strontium,1975,53100
+Strontium,1976,69400
+Strontium,1977,95300
+Strontium,1978,92600
+Strontium,1979,95800
+Strontium,1980,95000
+Strontium,1981,125000
+Strontium,1982,139000
+Strontium,1983,152000
+Strontium,1984,140000
+Strontium,1985,163000
+Strontium,1986,153000
+Strontium,1987,183000
+Strontium,1988,226000
+Strontium,1989,275000
+Strontium,1990,240000
+Strontium,1991,199000
+Strontium,1992,195000
+Strontium,1993,201000
+Strontium,1994,274000
+Strontium,1995,311000
+Strontium,1996,306000
+Strontium,1997,264000
+Strontium,1998,264000
+Strontium,1999,358000
+Strontium,2000,396000
+Strontium,2001,399000
+Strontium,2002,444000
+Strontium,2003,492000
+Strontium,2004,525000
+Strontium,2005,509000
+Strontium,2006,524000
+Strontium,2007,518000
+Strontium,2008,390000
+Strontium,2009,369000
+Strontium,2010,325000
+Strontium,2011,379000
+Strontium,2012,282000
+Strontium,2013,286000
+Strontium,2014,285000
+Strontium,2015,286000
+Strontium,2016,384000
+Strontium,2017,289000
+Strontium,2018,274000
+Strontium,2019,394000
+Strontium,2020,350000
+Strontium,2021,340000
+Strontium,2022,514000
+Strontium,2023,509000
+Strontium,2024,510000
+Talc and pyrophyllite,1904,118000
+Talc and pyrophyllite,1905,124000
+Talc and pyrophyllite,1906,151000
+Talc and pyrophyllite,1907,191000
+Talc and pyrophyllite,1908,160000
+Talc and pyrophyllite,1909,178000
+Talc and pyrophyllite,1910,202000
+Talc and pyrophyllite,1911,208000
+Talc and pyrophyllite,1912,171000
+Talc and pyrophyllite,1913,279000
+Talc and pyrophyllite,1914,213000
+Talc and pyrophyllite,1915,224000
+Talc and pyrophyllite,1916,257000
+Talc and pyrophyllite,1917,266000
+Talc and pyrophyllite,1918,252000
+Talc and pyrophyllite,1919,255000
+Talc and pyrophyllite,1920,322000
+Talc and pyrophyllite,1921,207000
+Talc and pyrophyllite,1922,353000
+Talc and pyrophyllite,1923,336000
+Talc and pyrophyllite,1924,375000
+Talc and pyrophyllite,1925,398000
+Talc and pyrophyllite,1926,344000
+Talc and pyrophyllite,1927,431000
+Talc and pyrophyllite,1928,389000
+Talc and pyrophyllite,1929,421000
+Talc and pyrophyllite,1930,364000
+Talc and pyrophyllite,1931,384000
+Talc and pyrophyllite,1932,331000
+Talc and pyrophyllite,1933,430000
+Talc and pyrophyllite,1934,399000
+Talc and pyrophyllite,1935,424000
+Talc and pyrophyllite,1936,472000
+Talc and pyrophyllite,1937,515000
+Talc and pyrophyllite,1938,420000
+Talc and pyrophyllite,1939,488000
+Talc and pyrophyllite,1940,664000
+Talc and pyrophyllite,1941,840000
+Talc and pyrophyllite,1942,1170000
+Talc and pyrophyllite,1943,1120000
+Talc and pyrophyllite,1944,1010000
+Talc and pyrophyllite,1945,840000
+Talc and pyrophyllite,1946,950000
+Talc and pyrophyllite,1947,1060000
+Talc and pyrophyllite,1948,1300000
+Talc and pyrophyllite,1949,1280000
+Talc and pyrophyllite,1950,1430000
+Talc and pyrophyllite,1951,1570000
+Talc and pyrophyllite,1952,1410000
+Talc and pyrophyllite,1953,1480000
+Talc and pyrophyllite,1954,1470000
+Talc and pyrophyllite,1955,1620000
+Talc and pyrophyllite,1956,1750000
+Talc and pyrophyllite,1957,2010000
+Talc and pyrophyllite,1958,1910000
+Talc and pyrophyllite,1959,2350000
+Talc and pyrophyllite,1960,2520000
+Talc and pyrophyllite,1961,2710000
+Talc and pyrophyllite,1962,2670000
+Talc and pyrophyllite,1963,2990000
+Talc and pyrophyllite,1964,3520000
+Talc and pyrophyllite,1965,3570000
+Talc and pyrophyllite,1966,3710000
+Talc and pyrophyllite,1967,3960000
+Talc and pyrophyllite,1968,4350000
+Talc and pyrophyllite,1969,4680000
+Talc and pyrophyllite,1970,4820000
+Talc and pyrophyllite,1971,4740000
+Talc and pyrophyllite,1972,4830000
+Talc and pyrophyllite,1973,5400000
+Talc and pyrophyllite,1974,5810000
+Talc and pyrophyllite,1975,4900000
+Talc and pyrophyllite,1976,5270000
+Talc and pyrophyllite,1977,6090000
+Talc and pyrophyllite,1978,6400000
+Talc and pyrophyllite,1979,6870000
+Talc and pyrophyllite,1980,7540000
+Talc and pyrophyllite,1981,7270000
+Talc and pyrophyllite,1982,7060000
+Talc and pyrophyllite,1983,7060000
+Talc and pyrophyllite,1984,7570000
+Talc and pyrophyllite,1985,7830000
+Talc and pyrophyllite,1986,7760000
+Talc and pyrophyllite,1987,8470000
+Talc and pyrophyllite,1988,8810000
+Talc and pyrophyllite,1989,9240000
+Talc and pyrophyllite,1990,9370000
+Talc and pyrophyllite,1991,9060000
+Talc and pyrophyllite,1992,8500000
+Talc and pyrophyllite,1993,8420000
+Talc and pyrophyllite,1994,8260000
+Talc and pyrophyllite,1995,8490000
+Talc and pyrophyllite,1996,9880000
+Talc and pyrophyllite,1997,10400000
+Talc and pyrophyllite,1998,9410000
+Talc and pyrophyllite,1999,9470000
+Talc and pyrophyllite,2000,8730000
+Talc and pyrophyllite,2001,9060000
+Talc and pyrophyllite,2002,8030000
+Talc and pyrophyllite,2003,7800000
+Talc and pyrophyllite,2004,7850000
+Talc and pyrophyllite,2005,7950000
+Talc and pyrophyllite,2006,7770000
+Talc and pyrophyllite,2007,7730000
+Talc and pyrophyllite,2008,7800000
+Talc and pyrophyllite,2009,6870000
+Talc and pyrophyllite,2010,7280000
+Talc and pyrophyllite,2011,7780000
+Talc and pyrophyllite,2012,7620000
+Talc and pyrophyllite,2013,8080000
+Talc and pyrophyllite,2014,7930000
+Talc and pyrophyllite,2015,6740000
+Talc and pyrophyllite,2016,7310000
+Talc and pyrophyllite,2017,7870000
+Talc and pyrophyllite,2018,7210000
+Talc and pyrophyllite,2019,6780000
+Talc and pyrophyllite,2020,6320000
+Talc and pyrophyllite,2021,7240000
+Talc and pyrophyllite,2022,7130000
+Tantalum,1969,388
+Tantalum,1970,318
+Tantalum,1971,496
+Tantalum,1972,371
+Tantalum,1973,384
+Tantalum,1974,436
+Tantalum,1975,411
+Tantalum,1976,339
+Tantalum,1977,409
+Tantalum,1978,362
+Tantalum,1979,476
+Tantalum,1980,544
+Tantalum,1981,403
+Tantalum,1982,284
+Tantalum,1983,313
+Tantalum,1984,315
+Tantalum,1985,315
+Tantalum,1986,215
+Tantalum,1987,275
+Tantalum,1988,292
+Tantalum,1989,395
+Tantalum,1990,396
+Tantalum,1991,477
+Tantalum,1992,399
+Tantalum,1993,292
+Tantalum,1994,333
+Tantalum,1995,361
+Tantalum,1996,436
+Tantalum,1997,562
+Tantalum,1998,779
+Tantalum,1999,656
+Tantalum,2000,1070
+Tantalum,2001,1180
+Tantalum,2002,1340
+Tantalum,2003,1390
+Tantalum,2004,1430
+Tantalum,2005,1380
+Tantalum,2006,859
+Tantalum,2007,1060
+Tantalum,2008,1500
+Tantalum,2009,956
+Tantalum,2010,922
+Tantalum,2011,1000
+Tantalum,2012,1100
+Tantalum,2013,1300
+Tantalum,2014,1610
+Tantalum,2015,1660
+Tantalum,2016,1680
+Tantalum,2017,1910
+Tantalum,2018,2100
+Tantalum,2019,1920
+Tantalum,2020,2100
+Tantalum,2021,1840
+Tantalum,2022,1990
+Tantalum,2023,2040
+Tantalum,2024,2100
+Tin,1905,93600
+Tin,1906,98400
+Tin,1907,93800
+Tin,1908,106000
+Tin,1909,106000
+Tin,1910,105000
+Tin,1911,112000
+Tin,1912,122000
+Tin,1913,136000
+Tin,1914,128000
+Tin,1915,129000
+Tin,1916,128000
+Tin,1917,135000
+Tin,1918,128000
+Tin,1919,123000
+Tin,1920,126000
+Tin,1921,110000
+Tin,1922,127000
+Tin,1923,130000
+Tin,1924,142000
+Tin,1925,147000
+Tin,1926,146000
+Tin,1927,161000
+Tin,1928,180000
+Tin,1929,196000
+Tin,1930,179000
+Tin,1931,149000
+Tin,1932,96500
+Tin,1933,90400
+Tin,1934,122000
+Tin,1935,137000
+Tin,1936,182000
+Tin,1937,213000
+Tin,1938,166000
+Tin,1939,180000
+Tin,1940,240000
+Tin,1941,244000
+Tin,1942,124000
+Tin,1943,146000
+Tin,1944,102000
+Tin,1945,88400
+Tin,1946,89400
+Tin,1947,115000
+Tin,1948,156000
+Tin,1949,164000
+Tin,1950,172000
+Tin,1951,172000
+Tin,1952,177000
+Tin,1953,193000
+Tin,1954,192000
+Tin,1955,200000
+Tin,1956,203000
+Tin,1957,204000
+Tin,1958,156000
+Tin,1959,164000
+Tin,1960,183000
+Tin,1961,187000
+Tin,1962,190000
+Tin,1963,194000
+Tin,1964,197000
+Tin,1965,204000
+Tin,1966,211000
+Tin,1967,218000
+Tin,1968,232000
+Tin,1969,229000
+Tin,1970,232000
+Tin,1971,235000
+Tin,1972,244000
+Tin,1973,238000
+Tin,1974,233000
+Tin,1975,222000
+Tin,1976,218000
+Tin,1977,231000
+Tin,1978,241000
+Tin,1979,245000
+Tin,1980,245000
+Tin,1981,238000
+Tin,1982,219000
+Tin,1983,197000
+Tin,1984,188000
+Tin,1985,181000
+Tin,1986,173000
+Tin,1987,180000
+Tin,1988,205000
+Tin,1989,233000
+Tin,1990,221000
+Tin,1991,201000
+Tin,1992,191000
+Tin,1993,190000
+Tin,1994,178000
+Tin,1995,201000
+Tin,1996,220000
+Tin,1997,241000
+Tin,1998,231000
+Tin,1999,245000
+Tin,2000,278000
+Tin,2001,246000
+Tin,2002,233000
+Tin,2003,258000
+Tin,2004,298000
+Tin,2005,296000
+Tin,2006,293000
+Tin,2007,301000
+Tin,2008,258000
+Tin,2009,237000
+Tin,2010,266000
+Tin,2011,268000
+Tin,2012,254000
+Tin,2013,322000
+Tin,2014,322000
+Tin,2015,307000
+Tin,2016,309000
+Tin,2017,341000
+Tin,2018,327000
+Tin,2019,294000
+Tin,2020,264000
+Tin,2021,305000
+Tin,2022,307000
+Tin,2023,305000
+Tin,2024,300000
+Titanium (ilmenite),2020,8000000
+Titanium (ilmenite),2021,8900000
+Titanium (ilmenite),2022,8800000
+Titanium (ilmenite),2023,8840000
+Titanium (ilmenite),2024,8900000
+Titanium (rutile),2020,605000
+Titanium (rutile),2021,618000
+Titanium (rutile),2022,640000
+Titanium (rutile),2023,590000
+Titanium (rutile),2024,450000
+Tungsten,1905,1700
+Tungsten,1906,1900
+Tungsten,1907,2600
+Tungsten,1908,1800
+Tungsten,1909,2500
+Tungsten,1910,3300
+Tungsten,1911,3200
+Tungsten,1912,4200
+Tungsten,1913,3900
+Tungsten,1914,3500
+Tungsten,1915,5200
+Tungsten,1916,10000
+Tungsten,1917,12300
+Tungsten,1918,15200
+Tungsten,1919,7000
+Tungsten,1920,5500
+Tungsten,1921,2300
+Tungsten,1922,3000
+Tungsten,1923,3300
+Tungsten,1924,2900
+Tungsten,1925,4900
+Tungsten,1926,5800
+Tungsten,1927,4400
+Tungsten,1928,5500
+Tungsten,1929,7500
+Tungsten,1930,7900
+Tungsten,1931,6400
+Tungsten,1932,3200
+Tungsten,1933,5900
+Tungsten,1934,7800
+Tungsten,1935,10700
+Tungsten,1936,11800
+Tungsten,1937,18500
+Tungsten,1938,17800
+Tungsten,1939,20100
+Tungsten,1940,20700
+Tungsten,1941,23900
+Tungsten,1942,24100
+Tungsten,1943,28600
+Tungsten,1944,23400
+Tungsten,1945,10900
+Tungsten,1946,9040
+Tungsten,1947,13700
+Tungsten,1948,17800
+Tungsten,1949,15800
+Tungsten,1950,18300
+Tungsten,1951,24800
+Tungsten,1952,32700
+Tungsten,1953,34400
+Tungsten,1954,33800
+Tungsten,1955,35700
+Tungsten,1956,35800
+Tungsten,1957,29100
+Tungsten,1958,24200
+Tungsten,1959,26400
+Tungsten,1960,31200
+Tungsten,1961,33000
+Tungsten,1962,31300
+Tungsten,1963,27100
+Tungsten,1964,28100
+Tungsten,1965,27000
+Tungsten,1966,28600
+Tungsten,1967,28500
+Tungsten,1968,31000
+Tungsten,1969,32500
+Tungsten,1970,32400
+Tungsten,1971,35400
+Tungsten,1972,38500
+Tungsten,1973,37900
+Tungsten,1974,37600
+Tungsten,1975,38300
+Tungsten,1976,38000
+Tungsten,1977,41100
+Tungsten,1978,46100
+Tungsten,1979,48600
+Tungsten,1980,52000
+Tungsten,1981,50300
+Tungsten,1982,47000
+Tungsten,1983,40900
+Tungsten,1984,46200
+Tungsten,1985,46600
+Tungsten,1986,43500
+Tungsten,1987,42500
+Tungsten,1988,50900
+Tungsten,1989,51000
+Tungsten,1990,51900
+Tungsten,1991,48200
+Tungsten,1992,42900
+Tungsten,1993,34300
+Tungsten,1994,34000
+Tungsten,1995,38500
+Tungsten,1996,34700
+Tungsten,1997,33200
+Tungsten,1998,37000
+Tungsten,1999,37700
+Tungsten,2000,44000
+Tungsten,2001,50800
+Tungsten,2002,47000
+Tungsten,2003,47200
+Tungsten,2004,66300
+Tungsten,2005,59500
+Tungsten,2006,56600
+Tungsten,2007,53600
+Tungsten,2008,61900
+Tungsten,2009,61200
+Tungsten,2010,68400
+Tungsten,2011,73900
+Tungsten,2012,77700
+Tungsten,2013,79400
+Tungsten,2014,82100
+Tungsten,2015,83700
+Tungsten,2016,78400
+Tungsten,2017,81400
+Tungsten,2018,82200
+Tungsten,2019,83800
+Tungsten,2020,78400
+Tungsten,2021,83800
+Tungsten,2022,79800
+Tungsten,2023,79500
+Tungsten,2024,81000
+Uranium,1970,18061
+Uranium,1971,18696
+Uranium,1972,19599
+Uranium,1973,19834
+Uranium,1974,19061
+Uranium,1975,20383
+Uranium,1976,23714
+Uranium,1977,28064
+Uranium,1978,34652
+Uranium,1979,39482
+Uranium,1980,43978
+Uranium,1981,43891
+Uranium,1982,41280
+Uranium,1983,36384
+Uranium,1984,37899
+Uranium,1985,34740
+Uranium,1986,37250
+Uranium,1987,36659
+Uranium,1988,36772
+Uranium,1989,35390
+Uranium,1990,41963
+Uranium,1991,40439
+Uranium,1992,35789
+Uranium,1993,32266
+Uranium,1994,31268
+Uranium,1995,32636
+Uranium,1996,34669
+Uranium,1997,35414
+Uranium,1998,33399
+Uranium,1999,30711
+Uranium,2000,34547
+Uranium,2001,36066
+Uranium,2002,37064
+Uranium,2003,36183
+Uranium,2004,40432
+Uranium,2005,42037
+Uranium,2006,39457
+Uranium,2007,41372
+Uranium,2008,43856
+Uranium,2009,50571
+Uranium,2010,53445
+Uranium,2011,53715
+Uranium,2012,59251
+Uranium,2013,59269
+Uranium,2014,56190
+Uranium,2015,60362
+Uranium,2016,62949
+Uranium,2017,60094
+Uranium,2018,54759
+Uranium,2019,54623
+Uranium,2020,47335
+Uranium,2021,47525
+Uranium,2022,49530
+Uranium,2023,54437
+Vanadium,1912,1040
+Vanadium,1915,1360
+Vanadium,1916,1190
+Vanadium,1917,1260
+Vanadium,1918,484
+Vanadium,1919,578
+Vanadium,1920,1640
+Vanadium,1925,1170
+Vanadium,1926,1700
+Vanadium,1932,480
+Vanadium,1933,300
+Vanadium,1934,118
+Vanadium,1935,416
+Vanadium,1936,975
+Vanadium,1937,1950
+Vanadium,1938,2590
+Vanadium,1939,2910
+Vanadium,1940,3020
+Vanadium,1941,2770
+Vanadium,1942,3870
+Vanadium,1943,4380
+Vanadium,1944,3500
+Vanadium,1945,2670
+Vanadium,1946,1390
+Vanadium,1947,1740
+Vanadium,1960,5040
+Vanadium,1961,7850
+Vanadium,1962,6080
+Vanadium,1963,6500
+Vanadium,1964,7170
+Vanadium,1965,8300
+Vanadium,1966,8440
+Vanadium,1967,9610
+Vanadium,1968,11400
+Vanadium,1969,10300
+Vanadium,1970,14900
+Vanadium,1971,15800
+Vanadium,1972,15500
+Vanadium,1973,16000
+Vanadium,1974,20400
+Vanadium,1975,21600
+Vanadium,1976,29200
+Vanadium,1977,29000
+Vanadium,1978,29400
+Vanadium,1979,37700
+Vanadium,1980,35900
+Vanadium,1981,35300
+Vanadium,1982,27200
+Vanadium,1983,27200
+Vanadium,1984,31100
+Vanadium,1985,31000
+Vanadium,1986,32000
+Vanadium,1987,32000
+Vanadium,1988,33000
+Vanadium,1989,33000
+Vanadium,1990,33200
+Vanadium,1991,26400
+Vanadium,1992,26700
+Vanadium,1993,25000
+Vanadium,1994,32000
+Vanadium,1995,36000
+Vanadium,1996,35100
+Vanadium,2000,41000
+Vanadium,2001,41800
+Vanadium,2002,51000
+Vanadium,2003,47900
+Vanadium,2004,51900
+Vanadium,2005,56400
+Vanadium,2006,57900
+Vanadium,2007,58500
+Vanadium,2008,61600
+Vanadium,2009,58800
+Vanadium,2010,71700
+Vanadium,2011,71500
+Vanadium,2012,74900
+Vanadium,2013,81400
+Vanadium,2014,91800
+Vanadium,2015,85700
+Vanadium,2016,78200
+Vanadium,2017,87700
+Vanadium,2018,89800
+Vanadium,2019,92800
+Vanadium,2020,105000
+Vanadium,2021,105000
+Vanadium,2022,102000
+Vanadium,2023,104000
+Vanadium,2024,100000
+Zinc,1900,479000
+Zinc,1901,510000
+Zinc,1902,547000
+Zinc,1903,574000
+Zinc,1904,629000
+Zinc,1905,660000
+Zinc,1906,704000
+Zinc,1907,738000
+Zinc,1908,723000
+Zinc,1909,775000
+Zinc,1910,810000
+Zinc,1911,895000
+Zinc,1912,971000
+Zinc,1913,939000
+Zinc,1914,795000
+Zinc,1915,760000
+Zinc,1916,882000
+Zinc,1917,901000
+Zinc,1918,849000
+Zinc,1919,719000
+Zinc,1920,682000
+Zinc,1921,464000
+Zinc,1922,730000
+Zinc,1923,889000
+Zinc,1924,986000
+Zinc,1925,1190000
+Zinc,1926,1410000
+Zinc,1927,1420000
+Zinc,1928,1360000
+Zinc,1929,1320000
+Zinc,1930,1260000
+Zinc,1931,904000
+Zinc,1932,709000
+Zinc,1933,892000
+Zinc,1934,1060000
+Zinc,1935,1210000
+Zinc,1936,1330000
+Zinc,1937,1470000
+Zinc,1938,1420000
+Zinc,1939,1500000
+Zinc,1940,1470000
+Zinc,1941,1590000
+Zinc,1942,1630000
+Zinc,1943,1830000
+Zinc,1944,1870000
+Zinc,1945,1470000
+Zinc,1946,1440000
+Zinc,1947,1600000
+Zinc,1948,1690000
+Zinc,1949,1730000
+Zinc,1950,2150000
+Zinc,1951,2360000
+Zinc,1952,2590000
+Zinc,1953,2670000
+Zinc,1954,2660000
+Zinc,1955,2900000
+Zinc,1956,3110000
+Zinc,1957,3150000
+Zinc,1958,2950000
+Zinc,1959,3020000
+Zinc,1960,3090000
+Zinc,1961,3490000
+Zinc,1962,3570000
+Zinc,1963,3660000
+Zinc,1964,4030000
+Zinc,1965,4310000
+Zinc,1966,4500000
+Zinc,1967,4840000
+Zinc,1968,4970000
+Zinc,1969,5340000
+Zinc,1970,5460000
+Zinc,1971,5520000
+Zinc,1972,5440000
+Zinc,1973,5710000
+Zinc,1974,5780000
+Zinc,1975,5850000
+Zinc,1976,5690000
+Zinc,1977,5920000
+Zinc,1978,5850000
+Zinc,1979,5990000
+Zinc,1980,5950000
+Zinc,1981,5950000
+Zinc,1982,6130000
+Zinc,1983,6280000
+Zinc,1984,6520000
+Zinc,1985,6760000
+Zinc,1986,6840000
+Zinc,1987,7190000
+Zinc,1988,6770000
+Zinc,1989,6820000
+Zinc,1990,7150000
+Zinc,1991,7270000
+Zinc,1992,7250000
+Zinc,1993,6910000
+Zinc,1994,7050000
+Zinc,1995,7280000
+Zinc,1996,7480000
+Zinc,1997,7540000
+Zinc,1998,7570000
+Zinc,1999,7960000
+Zinc,2000,8770000
+Zinc,2001,8910000
+Zinc,2002,8880000
+Zinc,2003,9520000
+Zinc,2004,9600000
+Zinc,2005,10000000
+Zinc,2006,10300000
+Zinc,2007,11100000
+Zinc,2008,11900000
+Zinc,2009,11600000
+Zinc,2010,12300000
+Zinc,2011,12500000
+Zinc,2012,13300000
+Zinc,2013,13200000
+Zinc,2014,13500000
+Zinc,2015,13300000
+Zinc,2016,13800000
+Zinc,2017,13700000
+Zinc,2018,13100000
+Zinc,2019,13600000
+Zinc,2020,12000000
+Zinc,2021,12700000
+Zinc,2022,12500000
+Zinc,2023,12100000
+Zinc,2024,12000000
+Zirconium and hafnium,2020,1200000
+Zirconium and hafnium,2021,1300000
+Zirconium and hafnium,2022,1440000
+Zirconium and hafnium,2023,1440000
+Zirconium and hafnium,2024,1500000

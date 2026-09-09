@@ -2,6 +2,12 @@
 
 ## În dezvoltare
 
+- adaugă un registru global 1900–2025 pentru cupru, nichel, litiu, cobalt,
+  pământuri rare și grafit natural, cu capetele 2024–2025 din USGS MCS 2026;
+- calculează separat indicii de producție, intervalele HHI și diagnosticele de
+  rezerve, păstrând vizibil conflictul versiunilor pentru pământurile rare;
+- respinge calibrarea directă a stocului World3 pe fluxurile miniere și păstrează
+  datele minerale drept registru observat de risc;
 - adaugă un indice public reproductibil al producției manufacturiere reale
   UNIDO IIP pentru 2005–2025, ponderat fix cu MVA 2020;
 - păstrează un panou echilibrat de 101 economii, cu acoperire de 94,49% din

@@ -1,0 +1,37 @@
+{
+  "snapshot_date": "2026-09-08",
+  "commodities": [
+    "cobalt",
+    "copper",
+    "graphite",
+    "lithium",
+    "nickel",
+    "rare_earths"
+  ],
+  "historical_observation_range": [
+    1900,
+    2023
+  ],
+  "current_endpoint_range": [
+    2024,
+    2025
+  ],
+  "historical_source": "USGS - Mineral Commodity Summaries (2025); USGS - Historical Statistics for Mineral and Material Commodities (2024); BGS - World Mineral Statistics (2025)",
+  "historical_source_url": "https://ourworldindata.org/grapher/global-mine-production-minerals",
+  "historical_source_sha256": "5d98a45b4c721ea22fa30cdf4fd6e00cd00be043e828bf5ad77f7e5f864b474d",
+  "historical_processing": "OWID prioritizes USGS and supplements with BGS; 2024 is replaced by the newer MCS 2026 vintage together with the 2025 estimate.",
+  "current_source": "USGS Mineral Commodity Summaries 2026 data release",
+  "current_source_doi": "10.5066/P1WKQ63T",
+  "current_report_doi": "10.3133/mcs2026",
+  "current_source_archive_sha256": "054304d2d379137985b02df2d6121c997c10616d4c091446b329a88dbe68f42f",
+  "current_source_normalized_lf_sha256": "1498aa3ec71745d63d9ed02c3a171fd77e288e0403adb738e83a4ba3dc882f9b",
+  "current_source_official_crlf_md5": "36185ff3742087e1dd90c52fe634fe12",
+  "current_source_official_crlf_sha256": "582a0aa231aea53d8a97dc8d1cd3dfa5f885cf3760353e3d029d7f0ae4fbaaf5",
+  "line_ending_normalization": "The committed MCS CSV is the official cp1252 file normalized from CRLF to LF and deterministically gzip-compressed. Decompression and restoration of CRLF reproduce the recorded official hashes.",
+  "endpoint_estimation": "USGS marks the 2025 world mine-production rows as estimated.",
+  "aggregation_rule": "No tonnes are summed across commodities; each material remains separate.",
+  "hhi_rule": "Lower bound sums squared named-country shares; upper bound treats all residual world production as one producer.",
+  "reserve_limit": "Reserve-to-output is a static diagnostic, not years until depletion. Reserves change with prices, technology, exploration and reporting.",
+  "rare_earth_revision_conflict": "The ScienceBase data release reports >85 Mt of 2025 world reserves, while the current MCS 2026 v1.3 chapter reports >75 Mt. The risk table therefore excludes the rare-earth reserve-to-output ratio.",
+  "world3_mapping_limit": "Mine production is a flow and cannot directly calibrate World3's latent aggregate stock of nonrenewable resources."
+}

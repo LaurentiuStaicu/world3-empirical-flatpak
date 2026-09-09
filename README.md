@@ -103,6 +103,12 @@ sunt păstrate pentru dezvoltarea viitoare. EROI, clima, apa, mineralele,
 infrastructura AI, conflictele și politicile nu sunt încă feedbackuri cuplate
 în rularea centrală.
 
+Pentru minerale există acum un registru diagnostic separat, actualizat cu USGS
+MCS 2026: cupru, nichel, litiu, cobalt, pământuri rare și grafit natural.
+Producția, rezervele și concentrarea geografică sunt păstrate distinct și nu
+sunt confundate cu stocul latent agregat din World3. Auditul este documentat în
+[`science/docs/technology-minerals-audit-2026-09-08.md`](science/docs/technology-minerals-audit-2026-09-08.md).
+
 ## Instalare pe elementary OS 8
 
 ### Fără terminal

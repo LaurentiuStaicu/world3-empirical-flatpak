@@ -115,6 +115,13 @@ PYTHONPATH=src:scripts .venv/bin/python scripts/ingest_regional_agricultural_cli
 PYTHONPATH=src:scripts .venv/bin/python scripts/evaluate_regional_agricultural_stress.py
 ```
 
+Pentru auditul mineralelor tehnologice:
+
+```bash
+PYTHONPATH=src:scripts .venv/bin/python scripts/ingest_technology_minerals.py
+PYTHONPATH=src:scripts .venv/bin/python scripts/evaluate_technology_minerals.py
+```
+
 Pentru auditul domeniilor lookup:
 
 ```bash
