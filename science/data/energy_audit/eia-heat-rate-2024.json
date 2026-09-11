@@ -1,0 +1,68 @@
+{
+  "source_url": "https://www.eia.gov/electricity/annual/table.php?t=epa_08_01.html",
+  "release_date": "2025-10-16",
+  "retrieved_on": "2026-09-11",
+  "available_from": "2026-09-11",
+  "extraction": "Manual transcription of Table 8.1; original bytes not archived",
+  "unit": "Btu/net kWh",
+  "scope": "US utility and independent power producer electricity-only plants; excludes CHP and commercial/industrial sectors",
+  "evidence_type": "reported_historical_statistic",
+  "heating_value_basis": "source basis retained; no NCV conversion established here",
+  "records": [
+    {
+      "year": 2014,
+      "natural_gas": 7907,
+      "coal": 10428
+    },
+    {
+      "year": 2015,
+      "natural_gas": 7869,
+      "coal": 10495
+    },
+    {
+      "year": 2016,
+      "natural_gas": 7863,
+      "coal": 10493
+    },
+    {
+      "year": 2017,
+      "natural_gas": 7803,
+      "coal": 10465
+    },
+    {
+      "year": 2018,
+      "natural_gas": 7811,
+      "coal": 10481
+    },
+    {
+      "year": 2019,
+      "natural_gas": 7725,
+      "coal": 10551
+    },
+    {
+      "year": 2020,
+      "natural_gas": 7725,
+      "coal": 10655
+    },
+    {
+      "year": 2021,
+      "natural_gas": 7689,
+      "coal": 10583
+    },
+    {
+      "year": 2022,
+      "natural_gas": 7740,
+      "coal": 10689
+    },
+    {
+      "year": 2023,
+      "natural_gas": 7721,
+      "coal": 10745
+    },
+    {
+      "year": 2024,
+      "natural_gas": 7754,
+      "coal": 10777
+    }
+  ]
+}

@@ -43,3 +43,18 @@ class EnergyEmissionsTests(unittest.TestCase):
             advance_atmospheric_co2(stock_gtco2=1, years=1,
                 anthropogenic_gtco2_per_year=0, natural_net_source_gtco2_per_year=0,
                 removal_gtco2_per_year=2)
+
+
+class NetElectricityTests(unittest.TestCase):
+    def test_own_use_is_not_grid_loss(self):
+        from world3_empirical.energy_emissions import net_electricity_twh
+        self.assertEqual(net_electricity_twh(gross_twh=100, auxiliary_fraction=.05), 95)
+        with self.assertRaises(ValueError):
+            net_electricity_twh(gross_twh=100, auxiliary_fraction=1.1)
+
+    def test_eia_heat_rate_conversion(self):
+        from world3_empirical.energy_emissions import efficiency_from_heat_rate
+        self.assertAlmostEqual(efficiency_from_heat_rate(btu_per_net_kwh=7754), .44003095176683004)
+        for invalid in (0, 3000, float('nan')):
+            with self.assertRaises(ValueError):
+                efficiency_from_heat_rate(btu_per_net_kwh=invalid)

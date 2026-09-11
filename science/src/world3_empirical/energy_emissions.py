@@ -60,3 +60,22 @@ def advance_atmospheric_co2(*, stock_gtco2: float,
     if result < 0:
         raise ValueError("Removals exceed available atmospheric mass")
     return result
+
+
+def net_electricity_twh(*, gross_twh: float, auxiliary_fraction: float) -> float:
+    """Subtract plant own-use only; excludes transmission/distribution losses."""
+    _nonnegative(gross_twh=gross_twh, auxiliary_fraction=auxiliary_fraction)
+    if auxiliary_fraction > 1:
+        raise ValueError("Auxiliary fraction must not exceed one")
+    return gross_twh * (1 - auxiliary_fraction)
+
+
+def efficiency_from_heat_rate(*, btu_per_net_kwh: float) -> float:
+    """EIA rounded conversion; efficiency retains the source heating-value basis.
+
+    This is NET electric efficiency, not EROI or an NCV conversion.
+    """
+    _nonnegative(btu_per_net_kwh=btu_per_net_kwh)
+    if btu_per_net_kwh < 3412:
+        raise ValueError("Combustion heat rate implies efficiency above one")
+    return 3412 / btu_per_net_kwh
