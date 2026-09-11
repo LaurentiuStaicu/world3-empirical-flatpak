@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "extraction": "Manual transcription of four values from the official live overview; not a raw source snapshot. The original release bytes have not been archived.",
+  "records": [
+    {
+      "provider": "EIA STEO",
+      "series_id": "electricity_sales",
+      "geography": "USA",
+      "unit": "TWh",
+      "target_year": 2026,
+      "value": 4135,
+      "evidence_type": "forecast",
+      "scenario": "September 2026 reference",
+      "release_date": "2026-09-09",
+      "captured_on": "2026-09-11",
+      "available_from": "2026-09-11",
+      "source_url": "https://www.eia.gov/outlooks/steo/",
+      "source_locator": "Forecast overview: Electricity demand"
+    },
+    {
+      "provider": "EIA STEO",
+      "series_id": "electricity_sales",
+      "geography": "USA",
+      "unit": "TWh",
+      "target_year": 2027,
+      "value": 4211,
+      "evidence_type": "forecast",
+      "scenario": "September 2026 reference",
+      "release_date": "2026-09-09",
+      "captured_on": "2026-09-11",
+      "available_from": "2026-09-11",
+      "source_url": "https://www.eia.gov/outlooks/steo/",
+      "source_locator": "Forecast overview: Electricity demand"
+    },
+    {
+      "provider": "EIA STEO",
+      "series_id": "energy_related_co2",
+      "geography": "USA",
+      "unit": "Mt CO2",
+      "target_year": 2026,
+      "value": 4821,
+      "evidence_type": "forecast",
+      "scenario": "September 2026 reference",
+      "release_date": "2026-09-09",
+      "captured_on": "2026-09-11",
+      "available_from": "2026-09-11",
+      "source_url": "https://www.eia.gov/outlooks/steo/",
+      "source_locator": "Overview table: U.S. CO2 emissions"
+    },
+    {
+      "provider": "EIA STEO",
+      "series_id": "energy_related_co2",
+      "geography": "USA",
+      "unit": "Mt CO2",
+      "target_year": 2027,
+      "value": 4816,
+      "evidence_type": "forecast",
+      "scenario": "September 2026 reference",
+      "release_date": "2026-09-09",
+      "captured_on": "2026-09-11",
+      "available_from": "2026-09-11",
+      "source_url": "https://www.eia.gov/outlooks/steo/",
+      "source_locator": "Overview table: U.S. CO2 emissions"
+    }
+  ]
+}
