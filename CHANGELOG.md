@@ -2,6 +2,18 @@
 
 ## În dezvoltare
 
+- atribuie erorile de persistență eGRID: două centrale explică 93,16% și
+  82,45% din eroarea termică în cele două tranziții; păstrează toate observațiile
+  și cere verificarea configurației și a limitelor de contabilizare înaintea
+  unui nou model pe tehnologii;
+- adaugă două tranziții eGRID 2021–2023 pentru o cohortă comparabilă de
+  centrale americane exclusiv pe gaz, cu proveniență și hash-uri păstrate;
+- etichetează comparația drept hindcast publicat cu întârziere, condiționat de
+  producția țintă, nu backtest prospectiv;
+- respinge persistența brută la nivel de centrală, care pierde în toate cele
+  patru comparații față de reperul agregat simplu;
+- păstrează neschimbate curbele centrale și recomandă priors agregate și
+  pooling parțial pentru viitorul modul energetic;
 - adaugă un registru global 1900–2025 pentru cupru, nichel, litiu, cobalt,
   pământuri rare și grafit natural, cu capetele 2024–2025 din USGS MCS 2026;
 - calculează separat indicii de producție, intervalele HHI și diagnosticele de

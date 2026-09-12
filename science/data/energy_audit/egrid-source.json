@@ -1,0 +1,9 @@
+{
+  "url": "https://www.epa.gov/system/files/documents/2025-06/egrid2023_data_rev2.xlsx",
+  "data_year": 2023,
+  "revision_date": "2025-06-12",
+  "retrieved_on": "2026-09-12",
+  "sha256": "895cd81dd8662406189ad8adf5a2578dcb362cdb5cff7cca81b10ee6bd2447c6",
+  "source_size_bytes": 21213301,
+  "raw_file_in_repository": false
+}

@@ -109,6 +109,14 @@ Producția, rezervele și concentrarea geografică sunt păstrate distinct și n
 sunt confundate cu stocul latent agregat din World3. Auditul este documentat în
 [`science/docs/technology-minerals-audit-2026-09-08.md`](science/docs/technology-minerals-audit-2026-09-08.md).
 
+Pentru energia pe gaz există și un audit eGRID 2021–2023 la nivel de centrală.
+El păstrează proveniența, separă activitatea de intensitate și arată că
+persistența brută a fiecărei centrale este mai slabă decât un reper agregat
+simplu. Fiind condiționat de producția deja observată și bazat pe ediții
+publicate ulterior anului datelor, rămâne un hindcast de stabilitate, nu o
+prognoză. Rezultatele sunt documentate în
+[`science/docs/egrid-temporal-stability-audit-2026-09-12.md`](science/docs/egrid-temporal-stability-audit-2026-09-12.md).
+
 ## Instalare pe elementary OS 8
 
 ### Fără terminal

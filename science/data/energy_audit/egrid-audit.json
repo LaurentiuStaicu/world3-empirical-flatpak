@@ -1,0 +1,42 @@
+{
+  "input_plants": 12612,
+  "eligible_plants": 735,
+  "excluded_first_reason": {
+    "biomass_adjustment": 357,
+    "chp_or_unknown_adjustment": 85,
+    "missing_or_nonpositive_quantities": 130,
+    "not_exactly_gas_generation": 9783,
+    "sector": 1522
+  },
+  "groups_by_co2_and_heat_source": {
+    "EIA | EIA": {
+      "plants": 167,
+      "net_mwh": 16434916.071999995,
+      "heat_mmbtu": 144949818.35099995,
+      "co2_short_tons": 8473858.397000004,
+      "heat_rate_btu_per_net_kwh": 8819.626319719971,
+      "co2_kg_per_net_mwh": 467.74531692170524,
+      "implied_co2_kg_per_mmbtu": 53.03459579413977
+    },
+    "EPA/CAPD | EPA/CAPD": {
+      "plants": 567,
+      "net_mwh": 1106652959.057,
+      "heat_mmbtu": 8355663660.456998,
+      "co2_short_tons": 495315030.6640004,
+      "heat_rate_btu_per_net_kwh": 7550.392010497147,
+      "co2_kg_per_net_mwh": 406.03717148500317,
+      "implied_co2_kg_per_mmbtu": 53.77696560926883
+    },
+    "EPA/CAPD; EIA | EPA/CAPD; EIA": {
+      "plants": 1,
+      "net_mwh": 105248.0,
+      "heat_mmbtu": 1212652.344,
+      "co2_short_tons": 72098.998,
+      "heat_rate_btu_per_net_kwh": 11521.856415323806,
+      "co2_kg_per_net_mwh": 621.457041985506,
+      "implied_co2_kg_per_mmbtu": 53.937231951526684
+    }
+  },
+  "source_sha256": "895cd81dd8662406189ad8adf5a2578dcb362cdb5cff7cca81b10ee6bd2447c6",
+  "interpretation": "Source-stratified accounting diagnostic, not independent prediction validation"
+}

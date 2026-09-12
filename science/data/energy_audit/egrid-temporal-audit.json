@@ -1,0 +1,117 @@
+{
+  "audit_type": "release_lagged_temporal_stability_hindcast",
+  "transitions": [
+    {
+      "training_year": 2021,
+      "target_year": 2022,
+      "eligible_training_plants": 673,
+      "eligible_target_plants": 685,
+      "matched_plants": 635,
+      "exiting_plants": 38,
+      "entering_plants": 50,
+      "matched_share_of_target_generation_pct": 94.70528206481131,
+      "raw_source_transitions": {
+        "EIA | EIA -> EIA | EIA": 120,
+        "EIA | EPA/CAMD -> EIA | EPA/CAMD": 8,
+        "EIA | EPA/CAMD -> EPA/CAMD | EPA/CAMD": 1,
+        "EIA | EPA/CAMD; EIA -> EIA | EPA/CAMD; EIA": 1,
+        "EPA/CAMD | EPA/CAMD -> EPA/CAMD | EPA/CAMD": 499,
+        "EPA/CAMD; EIA | EPA/CAMD -> EPA/CAMD; EIA | EPA/CAMD": 6
+      },
+      "normalized_source_family_transitions": {
+        "EIA | EIA -> EIA | EIA": 120,
+        "EIA | EIA+EPA -> EIA | EIA+EPA": 1,
+        "EIA | EPA -> EIA | EPA": 8,
+        "EIA | EPA -> EPA | EPA": 1,
+        "EIA+EPA | EPA -> EIA+EPA | EPA": 6,
+        "EPA | EPA -> EPA | EPA": 499
+      },
+      "signals": {
+        "heat_rate_btu_per_net_kwh": {
+          "training_aggregate_intensity": 7575.4423745322065,
+          "target_aggregate_intensity": 7616.198986411964,
+          "aggregate_intensity_change_pct": 0.5380096615450025,
+          "plant_specific_persistence": {
+            "aggregate_bias_pct": 29.87294002233689,
+            "quantity_weighted_absolute_percentage_error_pct": 32.330512790673424,
+            "wmape_change_defined": true,
+            "wmape_change_vs_cohort_mean_pct": 192.8861259440773
+          },
+          "training_cohort_mean_persistence": {
+            "aggregate_bias_pct": -0.5351306071765038,
+            "quantity_weighted_absolute_percentage_error_pct": 11.038594841753108
+          }
+        },
+        "co2_kg_per_net_mwh": {
+          "training_aggregate_intensity": 408.13223263841763,
+          "target_aggregate_intensity": 410.1800565806047,
+          "aggregate_intensity_change_pct": 0.5017550142875749,
+          "plant_specific_persistence": {
+            "aggregate_bias_pct": 29.94268251422454,
+            "quantity_weighted_absolute_percentage_error_pct": 32.39388408560572,
+            "wmape_change_defined": true,
+            "wmape_change_vs_cohort_mean_pct": 192.78421518029577
+          },
+          "training_cohort_mean_persistence": {
+            "aggregate_bias_pct": -0.4992500023668467,
+            "quantity_weighted_absolute_percentage_error_pct": 11.06408146547711
+          }
+        }
+      },
+      "interpretation": "Release-lagged matched-panel stability audit conditional on target-year generation; not a real-time forecast backtest and not evidence for changing BAU Hibrid 2026."
+    },
+    {
+      "training_year": 2022,
+      "target_year": 2023,
+      "eligible_training_plants": 685,
+      "eligible_target_plants": 735,
+      "matched_plants": 649,
+      "exiting_plants": 36,
+      "entering_plants": 86,
+      "matched_share_of_target_generation_pct": 95.32806936799834,
+      "raw_source_transitions": {
+        "EIA | EIA -> EIA | EIA": 134,
+        "EPA/CAMD | EPA/CAMD -> EPA/CAPD | EPA/CAPD": 510,
+        "EPA/CAMD; EIA | EPA/CAMD -> EPA/CAPD | EPA/CAPD": 5
+      },
+      "normalized_source_family_transitions": {
+        "EIA | EIA -> EIA | EIA": 134,
+        "EIA+EPA | EPA -> EPA | EPA": 5,
+        "EPA | EPA -> EPA | EPA": 510
+      },
+      "signals": {
+        "heat_rate_btu_per_net_kwh": {
+          "training_aggregate_intensity": 7602.707975424348,
+          "target_aggregate_intensity": 7551.433248371514,
+          "aggregate_intensity_change_pct": -0.6744271543584035,
+          "plant_specific_persistence": {
+            "aggregate_bias_pct": 12.91951485730445,
+            "quantity_weighted_absolute_percentage_error_pct": 14.701370588000572,
+            "wmape_change_defined": true,
+            "wmape_change_vs_cohort_mean_pct": 33.11234186675578
+          },
+          "training_cohort_mean_persistence": {
+            "aggregate_bias_pct": 0.6790065589719729,
+            "quantity_weighted_absolute_percentage_error_pct": 11.044333216462007
+          }
+        },
+        "co2_kg_per_net_mwh": {
+          "training_aggregate_intensity": 409.48471073408916,
+          "target_aggregate_intensity": 405.99372121077005,
+          "aggregate_intensity_change_pct": -0.8525323246039607,
+          "plant_specific_persistence": {
+            "aggregate_bias_pct": 13.137305841825508,
+            "quantity_weighted_absolute_percentage_error_pct": 14.905707801526647,
+            "wmape_change_defined": true,
+            "wmape_change_vs_cohort_mean_pct": 34.00250239794733
+          },
+          "training_cohort_mean_persistence": {
+            "aggregate_bias_pct": 0.8598629340641484,
+            "quantity_weighted_absolute_percentage_error_pct": 11.123454812255039
+          }
+        }
+      },
+      "interpretation": "Release-lagged matched-panel stability audit conditional on target-year generation; not a real-time forecast backtest and not evidence for changing BAU Hibrid 2026."
+    }
+  ]
+}
