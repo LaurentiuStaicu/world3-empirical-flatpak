@@ -2,6 +2,10 @@
 
 ## În dezvoltare
 
+- atribuie erorile de persistență eGRID: două centrale explică 93,16% și
+  82,45% din eroarea termică în cele două tranziții; păstrează toate observațiile
+  și cere verificarea configurației și a limitelor de contabilizare înaintea
+  unui nou model pe tehnologii;
 - adaugă două tranziții eGRID 2021–2023 pentru o cohortă comparabilă de
   centrale americane exclusiv pe gaz, cu proveniență și hash-uri păstrate;
 - etichetează comparația drept hindcast publicat cu întârziere, condiționat de

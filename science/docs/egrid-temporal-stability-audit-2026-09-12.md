@@ -64,6 +64,12 @@ does not prove that a constant global intensity is structurally correct. It
 shows that an unregularized plant-level prior is not justified by these two
 transitions.
 
+Follow-up attribution in `egrid-influence-audit-2026-09-12.md` finds that two
+plants account for 93.16% and 82.45% of heat-input error in the respective
+transitions. The result therefore diagnoses unregularized ratio persistence,
+not plant-level modeling in general. These years are now exploratory evidence
+for any subsequent threshold or shrinkage choice.
+
 EPA renamed the dominant provenance label from `EPA/CAMD` to `EPA/CAPD` in
 2023. The audit preserves exact labels and also normalizes these two names to an
 EPA source family, preventing an organizational rename from being interpreted
