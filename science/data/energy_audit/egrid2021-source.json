@@ -1,0 +1,9 @@
+{
+  "url": "https://www.epa.gov/system/files/documents/2023-01/eGRID2021_data.xlsx",
+  "data_year": 2021,
+  "release_date": "2023-01-30",
+  "retrieved_on": "2026-09-12",
+  "sha256": "0bab3376509c79168ba19dff111e8a5ca7724043229af47af5cb5b6f71465644",
+  "source_size_bytes": 14097047,
+  "raw_file_in_repository": false
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.epa.gov/system/files/documents/2024-01/egrid2022_data.xlsx",
+  "data_year": 2022,
+  "release_date": "2024-01-30",
+  "retrieved_on": "2026-09-12",
+  "sha256": "c73fdc561aa402d0f6ed3cc35e5d961bee6af6e003c9c035b40f757f8480b76b",
+  "source_size_bytes": 15602850,
+  "raw_file_in_repository": false
+}

@@ -1,4 +1,4 @@
-"""Usage: python3 scripts/audit_egrid.py /path/to/egrid2023_data_rev2.xlsx OUTPUT_DIR
+"""Usage: python3 scripts/audit_egrid.py SOURCE.xlsx OUTPUT_DIR [DATA_YEAR]
 
 Read-only workbook extraction. Outputs JSON, never modifies the source workbook.
 Requires openpyxl. Original file SHA must match the reviewed EPA revision.
@@ -12,23 +12,26 @@ from world3_empirical.egrid_audit import audit,FIELDS
 
 def main():
     source=Path(sys.argv[1]); out=Path(sys.argv[2])
+    year=int(sys.argv[3]) if len(sys.argv)>3 else 2023
     sha=hashlib.sha256(source.read_bytes()).hexdigest()
-    expected=json.loads((ROOT/'science/data/energy_audit/egrid-source.json').read_text())
+    metadata_name='egrid-source.json' if year==2023 else f'egrid{year}-source.json'
+    expected=json.loads((ROOT/'science/data/energy_audit'/metadata_name).read_text())
     if sha != expected['sha256']:
         raise ValueError('Unreviewed source revision: SHA-256 mismatch')
     w=openpyxl.load_workbook(source,read_only=True,data_only=True)
-    rows=w['PLNT23'].iter_rows(values_only=True)
+    rows=w[f'PLNT{str(year)[-2:]}'].iter_rows(values_only=True)
     next(rows); header=next(rows)
     if any(header.count(k)!=1 for k in FIELDS):
         raise ValueError('Missing or duplicate workbook fields')
-    report,selected=audit(dict(zip(header,r)) for r in rows if any(v is not None for v in r))
+    report,selected=audit((dict(zip(header,r)) for r in rows if any(v is not None for v in r)), year)
     w.close()
     report['source_sha256']=sha
     report['interpretation']='Source-stratified accounting diagnostic, not independent prediction validation'
     out.mkdir(parents=True,exist_ok=True)
-    for name,value in [('egrid-audit.json',report),('egrid-cohort.json',selected)]:
+    prefix='egrid' if year==2023 else f'egrid{year}'
+    for name,value in [(f'{prefix}-audit.json',report),(f'{prefix}-cohort.json',selected)]:
         data=(json.dumps(value,indent=2)+'\n').encode()
-        if name == 'egrid-cohort.json':
+        if name.endswith('-cohort.json'):
             name += '.gz'
             data=gzip.compress(data,mtime=0)
         temp=out/(name+'.tmp');temp.write_bytes(data);temp.replace(out/name)

@@ -6,8 +6,8 @@ FIELDS = ('YEAR','ORISPL','PNAME','SECTOR','PLPRMFL','CHPFLAG','USETHRMO',
           'RMBMFLAG','PLGSPR','PLNGENAN','UNHTI','UNCO2','UNCO2SRC','UNHTISRC')
 
 
-def exclusion(row):
-    if row['YEAR'] != 2023:
+def exclusion(row, expected_year=2023):
+    if row['YEAR'] != expected_year:
         return 'other_year'
     if row['SECTOR'] not in ('Electric Utility', 'IPP Non-CHP'):
         return 'sector'
@@ -26,7 +26,7 @@ def exclusion(row):
     return None
 
 
-def audit(rows):
+def audit(rows, expected_year=2023):
     excluded = Counter()
     selected = []
     seen = set()
@@ -38,7 +38,7 @@ def audit(rows):
         if key in seen:
             raise ValueError('Duplicate plant-year')
         seen.add(key)
-        reason = exclusion(row)
+        reason = exclusion(row, expected_year)
         if reason:
             excluded[reason] += 1
         else:

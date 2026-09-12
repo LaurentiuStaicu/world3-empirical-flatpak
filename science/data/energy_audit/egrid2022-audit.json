@@ -1,0 +1,61 @@
+{
+  "input_plants": 11973,
+  "eligible_plants": 685,
+  "excluded_first_reason": {
+    "biomass_adjustment": 378,
+    "chp_or_unknown_adjustment": 182,
+    "missing_or_nonpositive_quantities": 124,
+    "missing_provenance": 3,
+    "not_exactly_gas_generation": 9038,
+    "sector": 1563
+  },
+  "groups_by_co2_and_heat_source": {
+    "EIA | EIA": {
+      "plants": 146,
+      "net_mwh": 24375309.17,
+      "heat_mmbtu": 189633585.81500003,
+      "co2_short_tons": 11083045.614000004,
+      "heat_rate_btu_per_net_kwh": 7779.740740617651,
+      "co2_kg_per_net_mwh": 412.48173648271853,
+      "implied_co2_kg_per_mmbtu": 53.01998488576506
+    },
+    "EPA/CAMD | EPA/CAMD": {
+      "plants": 523,
+      "net_mwh": 985655687.9870001,
+      "heat_mmbtu": 7463863877.718002,
+      "co2_short_tons": 443250837.20000005,
+      "heat_rate_btu_per_net_kwh": 7572.485979319427,
+      "co2_kg_per_net_mwh": 407.96233451591246,
+      "implied_co2_kg_per_mmbtu": 53.874293809201326
+    },
+    "EIA | EPA/CAMD": {
+      "plants": 8,
+      "net_mwh": 368269.0,
+      "heat_mmbtu": 5748489.896,
+      "co2_short_tons": 335967.78599999996,
+      "heat_rate_btu_per_net_kwh": 15609.486261401313,
+      "co2_kg_per_net_mwh": 827.6147288823812,
+      "implied_co2_kg_per_mmbtu": 53.01998509258328
+    },
+    "EPA/CAMD; EIA | EPA/CAMD": {
+      "plants": 7,
+      "net_mwh": 23328706.998,
+      "heat_mmbtu": 177494117.489,
+      "co2_short_tons": 10535201.179999998,
+      "heat_rate_btu_per_net_kwh": 7608.399278374785,
+      "co2_kg_per_net_mwh": 409.6829603177474,
+      "implied_co2_kg_per_mmbtu": 53.84614362737007
+    },
+    "EIA | EPA/CAMD; EIA": {
+      "plants": 1,
+      "net_mwh": 24303.0,
+      "heat_mmbtu": 448591.901,
+      "co2_short_tons": 26217.742,
+      "heat_rate_btu_per_net_kwh": 18458.293255976627,
+      "co2_kg_per_net_mwh": 978.6584149963824,
+      "implied_co2_kg_per_mmbtu": 53.01998410278272
+    }
+  },
+  "source_sha256": "c73fdc561aa402d0f6ed3cc35e5d961bee6af6e003c9c035b40f757f8480b76b",
+  "interpretation": "Source-stratified accounting diagnostic, not independent prediction validation"
+}

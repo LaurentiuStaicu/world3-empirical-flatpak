@@ -178,6 +178,21 @@ industriale este numai reancorarea la nivelul IIP din 2025, nu o structură sau
 dinamică nouă. Auditul rămâne diagnostic și este documentat în
 `science/docs/unido-iip-volume-audit-2026-09-08.md`.
 
+Un audit fizic separat construiește cohorte anuale reproductibile de centrale
+americane exclusiv pe gaz din eGRID2021–2023. Pentru centralele prezente în doi
+ani consecutivi, intensitatea termică agregată și intensitatea directă a CO₂ se
+modifică cu mai puțin de 1% în ambele tranziții. Persistența brută la nivel de
+centrală are însă WMAPE de 14,70–32,39%, mai slabă în toate cele patru
+comparații decât media agregată a cohortei, cu WMAPE de 11,04–11,12%.
+
+Acesta este un hindcast de stabilitate publicat cu întârziere, condiționat de
+producția observată în anul țintă, nu un backtest prospectiv al emisiilor sau al
+cererii de combustibil. Rezultatul respinge introducerea unei reguli naive de
+persistență pe centrală și recomandă pentru un viitor modul energetic priors
+agregate, separarea activității de intensitate și pooling parțial. Nu schimbă
+curbele centrale. Protocolul este în
+`science/docs/egrid-temporal-stability-audit-2026-09-12.md`.
+
 În release-ul actual, rularea centrală (candidatul 114) produce 1.273 de
 evenimente de avertizare, aparținând la 21 de mesaje distincte; cele 12 rulări
 admise au între 884 și 1.693 de evenimente. Numărul mare confirmă că domeniul

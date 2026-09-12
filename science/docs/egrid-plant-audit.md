@@ -43,9 +43,11 @@ composition, dispatch and reporting methods can confound between-group differenc
 
 This resolves plant-year alignment for a reproducible cohort. It does not
 validate forecasts, estimate a global efficiency, or recalibrate World3.
-A genuine predictive test needs earlier-year training data, later-year matching
-plants, technology/dispatch controls and unit-level emissions-method checks.
-Central curves and the Flatpak version remain unchanged.
+The subsequent 2021–2023 matched-panel audit is documented in
+`egrid-temporal-stability-audit-2026-09-12.md`. It rejects raw plant-level
+persistence in favor of a simpler aggregate prior, but remains release-lagged
+and conditional on target-year generation. Central curves and the Flatpak
+version remain unchanged.
 
 EPA source integration methodology:
 https://www.epa.gov/egrid/frequent-questions-about-egrid
